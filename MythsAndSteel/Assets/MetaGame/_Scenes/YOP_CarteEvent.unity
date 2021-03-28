@@ -11541,33 +11541,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5786262}
     m_Modifications:
-    - target: {fileID: 1831040572, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
-      propertyPath: _speedTiles
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 2443697204554867568, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
       propertyPath: m_Name
       value: TilesSelection
       objectReference: {fileID: 0}
-    - target: {fileID: 2443697204554867569, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2443697204554867582, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2443697204554867582, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.9560857
-      objectReference: {fileID: 0}
-    - target: {fileID: 2443697204554867582, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.9560857
-      objectReference: {fileID: 0}
-    - target: {fileID: 2443697204554867582, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.9560857
       objectReference: {fileID: 0}
     - target: {fileID: 2443697204554867582, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
       propertyPath: m_LocalPosition.x
