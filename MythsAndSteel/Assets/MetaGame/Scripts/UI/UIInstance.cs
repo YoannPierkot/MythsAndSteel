@@ -26,5 +26,11 @@ public class UIInstance : MonoSingleton<UIInstance>{
     [SerializeField] private GameObject _eventCardObject = null;
     public GameObject EventCardObject => _eventCardObject;
 
+    //Transform pour les cartes events du J1
+    [SerializeField] private Transform _eventCardJ1Transform = null;
+    public Transform EventCardJ1Transform => _eventCardJ1Transform;
 
+    //Transform pour les cartes events du J2
+    [SerializeField] private Transform _eventCardJ2Transform = null;
+    public Transform EventCardJ2Transform => _eventCardJ2Transform;
 }
