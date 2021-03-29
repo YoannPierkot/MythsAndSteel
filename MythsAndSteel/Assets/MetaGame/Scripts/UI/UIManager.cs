@@ -7,6 +7,10 @@ public class UIManager : ScriptableObject
 {
     [Header("Cartes événements")]
     [SerializeField] EventCardClass _eventCardClass = null;
+    public EventCardClass EventCardClass => _eventCardClass;
+
+    int _lastNumberOfEventJ1 = 0;
+    int _lastNumberOfEventJ2 = 0;
 
     #region PhaseDeJeu
     /// <summary>
@@ -35,11 +39,27 @@ public class UIManager : ScriptableObject
     }
 
     /// <summary>
-    /// get a random event card and add it to the player
+    /// Update l'UI des cartes event
     /// </summary>
-    /// <param name="PlayerId"></param>
-    public void AddRandomEvent(int PlayerId){
-        int randomEvent = Random.Range(0, _eventCardClass.NumberCarteEvent + 1);
+    public void UpdateEventUI(){
+        if(_lastNumberOfEventJ1 != ScriptPlayerWait.Instance.EventCardJ1.Count){
+            _lastNumberOfEventJ1 = ScriptPlayerWait.Instance.EventCardJ1.Count;
+
+
+        }
+    }
+
+    /// <summary>
+    /// Ajoute une carte event
+    /// </summary>
+    /// <param name="player"></param>
+    public void AddEventCardObj(int player, MYthsAndSteel_Enum.EventCard card){
+        if(player == 1){
+            GameObject newEvent = Instantiate(UIInstance.Instance.EventCardObject,
+                                  UIInstance.Instance.EventCardJ1Transform.GetChild(UIInstance.Instance.EventCardJ1Transform.childCount - 1).transform.position,
+                                  Quaternion.identity,
+                                  UIInstance.Instance.EventCardJ1Transform);
+        }
     }
     #endregion Evenement
 

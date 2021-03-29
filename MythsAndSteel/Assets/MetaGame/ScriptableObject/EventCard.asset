@@ -12,4 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f335cacb2c9920c418f4ed96837fe027, type: 3}
   m_Name: EventCard
   m_EditorClassIdentifier: 
-  _numberCarteEvent: 0
+  _numberCarteEvent: 21
+  _eventCardList:
+  - _eventName: "Pointeurs laser optimis\xE9s"
+    _eventDescription: "Augmentez d'un point la port\xE9e de 2 unit\xE9s alli\xE9es
+      de votre choix pour ce tour."
+    _eventCardType: 0
+    _eventSprite: {fileID: 0}
+    _eventCost: 0
+  - _eventName: "Fil barbel\xE9"
+    _eventDescription: "Placez le jeton sur une intersection entre 2 cases. La premi\xE8re
+      unit\xE9 qui passe par ce jeton perd 2 points de vie. Le pion est ensuite retir\xE9
+      du plateau."
+    _eventCardType: 1
+    _eventSprite: {fileID: 0}
+    _eventCost: 1
+  - _eventName: "D\xE9ploiement acc\xE9l\xE9r\xE9"
+    _eventDescription: "Posez une unit\xE9 d'infanterie sur une case adjacente \xE0
+      une de vos unit\xE9s. Elle peut \xEAtre ativ\xE9e durant ce tour."
+    _eventCardType: 2
+    _eventSprite: {fileID: 0}
+    _eventCost: 1
+  - _eventName: Activation de nodus
+    _eventDescription: "Utilisez votre pouvoir orgonique n'importe quand durant votre
+      tour si vous n'en avez pas utilis\xE9 au d\xE9but du tour."
+    _eventCardType: 3
+    _eventSprite: {fileID: 0}
+    _eventCost: 0
+  - _eventName: "R\xE9approvisionnement"
+    _eventDescription: "Soignez 2 points de vie sur une unit\xE9 alli\xE9e ou 1 point
+      de vie sur deux unit\xE9s alli\xE9es."
+    _eventCardType: 4
+    _eventSprite: {fileID: 0}
+    _eventCost: 0
+  - _eventName: "Illusion strat\xE9gique"
+    _eventDescription: "Vous \xE9changez la position de 2 unit\xE9s alli\xE9es d\xE9j\xE0
+      activ\xE9es durant ce tour ou de 2 unit\xE9s ennemies sur le plateau de jeu."
+    _eventCardType: 5
+    _eventSprite: {fileID: 0}
+    _eventCost: 0
+  - _eventName: "D\xE9tonation d'orgone"
+    _eventDescription: "Posez les jetons sur 3 cases adjacentes. A la fin de prochain
+      tour adverse, toutes les unit\xE9s dans cette zone perdent 2 points de vie. "
+    _eventCardType: 6
+    _eventSprite: {fileID: 0}
+    _eventCost: 1
+  - _eventName: "Bombardement a\xE9rien"
+    _eventDescription: "Inflige 1 d\xE9g\xE2t \xE0 une unit\xE9 ennemie et d\xE9placez-la
+      de 1 vers une case qu'elle peut normalement traverser."
+    _eventCardType: 7
+    _eventSprite: {fileID: 0}
+    _eventCost: 0
+  - _eventName: "S\xE9rum exp\xE9rimental"
+    _eventDescription: "Augmentez d'1 point le d\xE9placement de 2 unit\xE9s alli\xE9es
+      de votre choix pour ce tour. "
+    _eventCardType: 8
+    _eventSprite: {fileID: 0}
+    _eventCost: 0

@@ -11203,6 +11203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b77dde02f14bec40ba3cb9ebd0babcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _eventCardJ1: 150000001600000017000000
+  _eventCardJ2: 18000000190000001a000000
 --- !u!1 &1792325813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5729802673627382403, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
