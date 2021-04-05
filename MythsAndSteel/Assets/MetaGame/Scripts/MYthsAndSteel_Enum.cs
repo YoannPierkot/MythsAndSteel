@@ -41,4 +41,9 @@ public class MYthsAndSteel_Enum : MonoBehaviour
     public enum TerrainType{
         Sol, Forêt, Bosquet, Plage, Colline, Haute_colline, Mont, Ravin, Eau, Boue, Rivière_Nord, Rivière_Sud, Rivière_Est, Rivière_Ouest, Fleuve, Ruisseau, Pont_Nord, Pont_Sud, Pont_Est, Pont_Ouest, Route, Rails, Maison, Immeuble, Ruines, Usine, Point_de_ressource, Gare, Bunker, Cabane_Isatabu, Point_Objectif
     }
+
+    public enum Owner
+    {
+        neutral, red, blue
+    }
 }

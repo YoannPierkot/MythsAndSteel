@@ -37,6 +37,30 @@ public class TileScript : MonoBehaviour
     [SerializeField] private List<MYthsAndSteel_Enum.TerrainType> _terrainEffectList = new List<MYthsAndSteel_Enum.TerrainType>();
     public List<MYthsAndSteel_Enum.TerrainType> TerrainEffectList => _terrainEffectList;
 
+    [SerializeField] private int _ResourcesCounter = 0;
+    public int ResourcesCounter
+    {
+        get
+        {
+            return _ResourcesCounter;
+        }
+        set
+        {
+            _ResourcesCounter = value;
+        }
+    }
+    [SerializeField] private MYthsAndSteel_Enum.Owner _owner;
+    public MYthsAndSteel_Enum.Owner owner
+    {
+        get
+        {
+            return _owner;
+        }
+        set
+        {
+            _owner = value;
+        }
+    }
 
     private void Start(){
         //Met l'unité à la bonne position
