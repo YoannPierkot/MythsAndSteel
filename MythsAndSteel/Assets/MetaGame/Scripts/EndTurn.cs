@@ -29,19 +29,16 @@ public class EndTurn : MonoBehaviour
                 if(S.Unit != null)
                 {
                     UnitScript US = S.Unit.GetComponent<UnitScript>();
-                    if (US.UnitSO.IsInRedArmy)
-                    {
+                    if (PlayerStatic.CheckIsUnitArmy(US.GetComponent<UnitScript>(), true)){
                         ResourceCountRed++;
                         S.ResourcesCounter--;
                     }
-                    else if (!US.UnitSO.IsInRedArmy)
-                    {
+                    else{
                         ResourceCountBlue++;
                         S.ResourcesCounter--;
                     }
                 }
-                if(S.ResourcesCounter == 0)
-                {
+                if(S.ResourcesCounter == 0){
                     S.TerrainEffectList.Remove(MYthsAndSteel_Enum.TerrainType.Point_de_ressource);
                 }
             }
@@ -88,23 +85,30 @@ public class EndTurn : MonoBehaviour
     /// <param name="RedArmy"></param>
     public void ChangeOwner(TileScript TileSc, bool RedArmy)
     {
-        if(TileSc.owner == MYthsAndSteel_Enum.Owner.blue)
+        if(TileSc.owner == MYthsAndSteel_Enum.Owner.blue && RedArmy)
         {
             ObjOwnedByBlue--;
-        }
-        if (TileSc.owner == MYthsAndSteel_Enum.Owner.red)
-        {
-            ObjOwnedByRed--;
-        }
-        if (RedArmy)
-        {
             TileSc.owner = MYthsAndSteel_Enum.Owner.red;
             ObjOwnedByRed++;
         }
-        if (!RedArmy)
+        if (TileSc.owner == MYthsAndSteel_Enum.Owner.red && !RedArmy)
         {
+            ObjOwnedByRed--;
             TileSc.owner = MYthsAndSteel_Enum.Owner.blue;
             ObjOwnedByBlue++;
+        }
+        if(TileSc.owner == MYthsAndSteel_Enum.Owner.neutral)
+        {
+            if(RedArmy)
+            {
+                TileSc.owner = MYthsAndSteel_Enum.Owner.red;
+                ObjOwnedByRed++;
+            }
+            else
+            {
+                TileSc.owner = MYthsAndSteel_Enum.Owner.blue;
+                ObjOwnedByBlue++;
+            }
         }
     }
 
