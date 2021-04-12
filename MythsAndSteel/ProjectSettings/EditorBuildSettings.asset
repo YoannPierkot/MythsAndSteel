@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MetaGame/_Scenes/Menu/TitleScreen.unity
+    path: Assets/MetaGame/_Scenes/Menu/TitleScreen 1.unity
+    guid: aa847f97c9cb2d74e8652a5e3611e0c5
+  - enabled: 1
+    path: Assets/MetaGame/_Scenes/PASingleMenuOption.unity
     guid: 999c843bc3effdf469da91d7e8d699ed
   - enabled: 1
     path: Assets/MetaGame/_Scenes/MainScene.unity
     guid: 7ef584947fef55a45b31d07c5ba7268e
+  - enabled: 1
+    path: Assets/MetaGame/_Scenes/PAMenuOptionGame.unity
+    guid: 003e31d6d44ac7f479100ec8582116cd
   m_configObjects: {}
