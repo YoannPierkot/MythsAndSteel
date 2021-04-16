@@ -295,4 +295,12 @@ public class PhaseActivation : MonoBehaviour{
         UIInstance.Instance.DesactivateNextPhaseButton();
         _canChooseCard = true;
     }
+
+    public void DisplayConfirmActivation()
+    {
+        if (J1Choix == true)
+        {
+            
+        }
+    }
 }
