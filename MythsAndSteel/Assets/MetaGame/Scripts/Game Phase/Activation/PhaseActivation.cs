@@ -71,7 +71,8 @@ public class PhaseActivation : MonoBehaviour{
                 //On vérifie si le joueur 1 choisit sa carte
                 if(J1Verif && Input.GetKeyDown(J1CarteVerif.inputCarteActivation)){
                     foreach(CarteActivation Carteactivations in RedCartesActivation){
-                        RedPlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(1f, 0f, 0f, 1f);
+                        RedPlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                        Debug.Log("1");
                     }
 
                     J1DernièreValeurActivation = float.Parse(J1CarteVerif.valeurActivation) / 10;
@@ -99,7 +100,8 @@ public class PhaseActivation : MonoBehaviour{
                             {
                                 foreach(CarteActivation Carteactivations in RedCartesActivation)
                                 {
-                                    RedPlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(1f, 0f, 0f, 1f);
+                                    RedPlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                                    Debug.Log("2");
                                 }
                                 J1Choix = true;
                                 J1Verif = false;
@@ -125,6 +127,7 @@ public class PhaseActivation : MonoBehaviour{
                                 {
                                     Image image = RedPlayerPanel.transform.GetChild(carteactivations.IndexCarteActivation).GetComponent<Image>();
                                     image.color = new Color(0f, 1f, 0f, 1f);
+                                    Debug.Log("3");
                                     J1CarteVerif = carteactivation;
                                     if(carteactivations == J1CarteVerif) { }
                                     else if(carteactivations != J1CarteVerif)
@@ -134,6 +137,8 @@ public class PhaseActivation : MonoBehaviour{
                                 }
                                 J1Verif = true;
                                 J1Choix = false;
+
+                                
                             }
                         }
                     }
@@ -144,7 +149,8 @@ public class PhaseActivation : MonoBehaviour{
             if(!_j2CarteChoisie){
                 if(J2Verif && Input.GetKeyDown(J2CarteVerif.inputCarteActivation)){
                     foreach(CarteActivation Carteactivations in BlueCartesActivation){
-                        BluePlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(0f, 0f, 1f, 1f);
+                        BluePlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                        Debug.Log("4");
                     }
 
                     J2DernièreValeurActivation = float.Parse(J2CarteVerif.valeurActivation) / 10;
@@ -167,7 +173,8 @@ public class PhaseActivation : MonoBehaviour{
                         if(Input.GetKeyDown(Carteactivation.inputCarteActivation)){
                             foreach(CarteActivation Carteactivations in BlueCartesActivation)
                             {
-                                BluePlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(0f, 0f, 1f, 1f);
+                                BluePlayerPanel.transform.GetChild(Carteactivations.IndexCarteActivation).GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+                                Debug.Log("5");
                             }
                             J2Choix = true;
                             J2Verif = false;
@@ -253,12 +260,14 @@ public class PhaseActivation : MonoBehaviour{
             GameManager.Instance.SetPlayerStart(true);
             RedPlayerPanel.transform.GetChild(J1CarteVerif.IndexCarteActivation).GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
             BluePlayerPanel.transform.GetChild(J2CarteVerif.IndexCarteActivation).GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            Debug.Log("6");
             _result.SetActive(true);
         }
         else{
             GameManager.Instance.SetPlayerStart(false);
             RedPlayerPanel.transform.GetChild(J1CarteVerif.IndexCarteActivation).GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
             BluePlayerPanel.transform.GetChild(J2CarteVerif.IndexCarteActivation).GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            Debug.Log("7");
             _result.SetActive(true);
         }
 
