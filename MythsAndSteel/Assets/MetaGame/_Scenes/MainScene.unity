@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5157,7 +5157,7 @@ GameObject:
   - component: {fileID: 377036695}
   - component: {fileID: 377036694}
   m_Layer: 0
-  m_Name: ConfirmedBlueActivation
+  m_Name: HasConfirmedBluePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5172,15 +5172,15 @@ RectTransform:
   m_GameObject: {fileID: 377036692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -265.69897}
-  m_LocalScale: {x: 4.0234, y: 4.0234, z: 4.0234}
+  m_LocalScale: {x: 7.751482, y: 7.751482, z: 7.751482}
   m_Children: []
   m_Father: {fileID: 2125945373}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: 201.00006}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -520, y: -240}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377036694
 MonoBehaviour:
@@ -10977,6 +10977,8 @@ MonoBehaviour:
     IndexCarteActivation: 11
     inputCarteActivation: 118
   RedPlayerPanel: {fileID: 1658831362}
+  ConfirmPanelRed: {fileID: 1345947791}
+  HasConfirmedPanelRed: {fileID: 1059351620}
   BlueCartesActivation:
   - valeurActivation: 22
     IndexCarteActivation: 0
@@ -11015,6 +11017,8 @@ MonoBehaviour:
     IndexCarteActivation: 11
     inputCarteActivation: 47
   BluePlayerPanel: {fileID: 954388457}
+  ConfirmPanelBlue: {fileID: 1624467538}
+  HasConfirmedPanelBlue: {fileID: 377036692}
   _result: {fileID: 1584021893}
 --- !u!114 &918848098 stripped
 MonoBehaviour:
@@ -12526,7 +12530,7 @@ GameObject:
   - component: {fileID: 1059351623}
   - component: {fileID: 1059351622}
   m_Layer: 0
-  m_Name: ConfirmedRedActivation
+  m_Name: HasConfirmedRedPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12541,15 +12545,15 @@ RectTransform:
   m_GameObject: {fileID: 1059351620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -265.69897}
-  m_LocalScale: {x: 4.0234, y: 4.0234, z: 4.0234}
+  m_LocalScale: {x: 7.6871076, y: 7.6871076, z: 7.6871076}
   m_Children: []
   m_Father: {fileID: 2125945373}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -551, y: -221}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 529, y: 263}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059351622
 MonoBehaviour:
@@ -15767,7 +15771,7 @@ GameObject:
   - component: {fileID: 1345947794}
   - component: {fileID: 1345947793}
   m_Layer: 0
-  m_Name: ConfirmRedActivation
+  m_Name: ConfirmRedPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15782,15 +15786,15 @@ RectTransform:
   m_GameObject: {fileID: 1345947791}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -265.69897}
-  m_LocalScale: {x: 4.0234, y: 4.0234, z: 4.0234}
+  m_LocalScale: {x: 7.6871076, y: 7.6871076, z: 7.6871076}
   m_Children: []
   m_Father: {fileID: 2125945373}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -551, y: -221}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 529, y: 263}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345947793
 MonoBehaviour:
@@ -18615,7 +18619,7 @@ GameObject:
   - component: {fileID: 1624467541}
   - component: {fileID: 1624467540}
   m_Layer: 0
-  m_Name: ConfirmBlueActivation
+  m_Name: ConfirmBluePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18630,15 +18634,15 @@ RectTransform:
   m_GameObject: {fileID: 1624467538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -265.69897}
-  m_LocalScale: {x: 4.0234, y: 4.0234, z: 4.0234}
+  m_LocalScale: {x: 7.751482, y: 7.751482, z: 7.751482}
   m_Children: []
   m_Father: {fileID: 2125945373}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: 201.00006}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -520, y: -240}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1624467540
 MonoBehaviour:
