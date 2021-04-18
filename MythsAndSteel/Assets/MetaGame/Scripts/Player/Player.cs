@@ -10,6 +10,8 @@ public class Player
     [Header("ARMY INFO")]
     //nom de l'armée
     public string ArmyName;
+    public string ArmyNameNomMasc;
+    public string ArmyNameNomFem;
 
     [Header("ACTIVATION")]
     //Nombre d'activation restante

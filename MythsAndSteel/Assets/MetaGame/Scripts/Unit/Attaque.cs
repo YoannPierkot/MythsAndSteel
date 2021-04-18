@@ -101,8 +101,6 @@ public class Attaque : MonoSingleton<Attaque>
         DiceResult = firstDiceInt + secondDiceInt;
 
         RandomMore();
-
-        Debug.Log("Dice Result : " + DiceResult);
     }
 
     /// <summary>
@@ -165,51 +163,55 @@ public class Attaque : MonoSingleton<Attaque>
     void AnimationUpdate()
     {
         GameObject ActualUnit = RaycastManager.Instance.ActualUnitSelected;
-        GameObject ActualEnemy = selectedUnitEnnemy;
-
-        float X = ActualEnemy.transform.position.x - ActualUnit.transform.position.x;
-        float Y = ActualEnemy.transform.position.y - ActualUnit.transform.position.y;
-
-        if (X >= 0)
+        
+        if(ActualUnit.GetComponent<UnitScript>().Animation != null)
         {
-            if (Mathf.Abs(X) > Mathf.Abs(Y))
+            GameObject ActualEnemy = selectedUnitEnnemy;
+
+            float X = ActualEnemy.transform.position.x - ActualUnit.transform.position.x;
+            float Y = ActualEnemy.transform.position.y - ActualUnit.transform.position.y;
+
+            if(X >= 0)
             {
-                ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 1); //right
-                ActualUnit.GetComponent<SpriteRenderer>().flipX = true;
+                if(Mathf.Abs(X) > Mathf.Abs(Y))
+                {
+                    ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 1); //right
+                    ActualUnit.GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else if(Mathf.Abs(X) <= Mathf.Abs(Y))
+                {
+                    if(Y > 0)
+                    {
+                        ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 2); // up
+                    }
+                    else if(Y < 0)
+                    {
+                        ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 3); // down
+                    }
+                }
             }
-            else if (Mathf.Abs(X) <= Mathf.Abs(Y))
+            if(X < 0)
             {
-                if (Y > 0)
+                if(Mathf.Abs(X) > Mathf.Abs(Y))
                 {
-                    ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 2); // up
+                    ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 1); // left
+                    ActualUnit.GetComponent<SpriteRenderer>().flipX = false;
                 }
-                else if (Y < 0)
+                else if(Mathf.Abs(X) <= Mathf.Abs(Y))
                 {
-                    ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 3); // down
+                    if(Y > 0)
+                    {
+                        ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 2); // up
+                    }
+                    else if(Y < 0)
+                    {
+                        ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 3); // down
+                    }
                 }
             }
+            ActualUnit.GetComponent<UnitScript>().Animation.SetBool("Attack", true);
+            StartCoroutine(AnimationWait(ActualUnit.GetComponent<UnitScript>().Animation, "Attack"));
         }
-        if (X < 0)
-        {
-            if (Mathf.Abs(X) > Mathf.Abs(Y))
-            {
-                ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 1); // left
-                ActualUnit.GetComponent<SpriteRenderer>().flipX = false;
-            }
-            else if (Mathf.Abs(X) <= Mathf.Abs(Y))
-            {
-                if (Y > 0)
-                {
-                    ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 2); // up
-                }
-                else if (Y < 0)
-                {
-                    ActualUnit.GetComponent<UnitScript>().Animation.SetInteger("A", 3); // down
-                }
-            }
-        }
-        ActualUnit.GetComponent<UnitScript>().Animation.SetBool("Attack", true);
-        StartCoroutine(AnimationWait(ActualUnit.GetComponent<UnitScript>().Animation, "Attack"));
     }
 
     public IEnumerator AnimationWait(Animator AnimToWait, string BoolName)

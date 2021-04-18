@@ -159,8 +159,9 @@ public class InputManager : MonoBehaviour
             if(t > _timeToWaitForSkipPhase)
             {
                 UIInstance.Instance.ShowValidationPanel("Passer à la phase suivante", "Êtes-vous sur de vouloir passer à la phase suivante? En passant la phase vous n'aurez pas la possibilité de revenir en arrière.");
-                GameManager.Instance._eventCall += SkipPhaseFunc;
+                GameManager.Instance.CliCToChangePhase();
                 GameManager.Instance._eventCallCancel += CancelSkipPhase;
+                GameManager.Instance._eventCall += SkipPhaseFunc;
                 hasShowPanel = true;
                 t = 0;
                 UIInstance.Instance.SkipPhaseImage.GetComponent<RectTransform>().sizeDelta = new Vector2(0, UIInstance.Instance.SkipPhaseImage.GetComponent<RectTransform>().sizeDelta.y);
@@ -172,7 +173,6 @@ public class InputManager : MonoBehaviour
     /// Quand le joueur accepte de changer de phase
     /// </summary>
     void SkipPhaseFunc(){
-        GameManager.Instance.ChangePhase();
         hasShowPanel = false;
     }
 

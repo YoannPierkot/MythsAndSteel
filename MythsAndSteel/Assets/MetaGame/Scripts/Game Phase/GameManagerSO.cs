@@ -108,7 +108,6 @@ public class GameManagerSO : ScriptableObject
 
             case MYthsAndSteel_Enum.PhaseDeJeu.Activation:
                 GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.Activation);
-
                 GoToActivationPhase();
                 break;
 

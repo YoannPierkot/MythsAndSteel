@@ -734,8 +734,8 @@ public class Mouvement : MonoSingleton<Mouvement>
     /// <param name="EndPos"></param>
     private void AnimationUpdate(GameObject Unit, GameObject EndPos)
     {
-        Unit.GetComponent<UnitScript>().Animation.SetFloat("X", EndPos.transform.position.x - Unit.transform.position.x);
-        Unit.GetComponent<UnitScript>().Animation.SetFloat("Y", EndPos.transform.position.y - Unit.transform.position.y);
-        Unit.GetComponent<SpriteRenderer>().flipX = Unit.GetComponent<UnitScript>().Animation.GetFloat("X") > 0;
+            Unit.GetComponent<UnitScript>().Animation.SetFloat("X", EndPos.transform.position.x - Unit.transform.position.x);
+            Unit.GetComponent<UnitScript>().Animation.SetFloat("Y", EndPos.transform.position.y - Unit.transform.position.y);
+            Unit.GetComponent<SpriteRenderer>().flipX = Unit.GetComponent<UnitScript>().Animation.GetFloat("X") > 0;
     }
 }

@@ -49,6 +49,8 @@ public class GameManager : MonoSingleton<GameManager>{
     [SerializeField] private MYthsAndSteel_Enum.PhaseDeJeu _actualTurnPhase = MYthsAndSteel_Enum.PhaseDeJeu.Debut;
     public MYthsAndSteel_Enum.PhaseDeJeu ActualTurnPhase => _actualTurnPhase;
 
+    [SerializeField] private ChangeActivPhase _changeActivPhase = null;
+
     [Header("REFERENCES DES SCRIPTABLE")]
     //Event Manager
     [SerializeField] private EventCardClass _eventCardSO = null;
@@ -241,7 +243,11 @@ public class GameManager : MonoSingleton<GameManager>{
     /// </summary>
     void OnclickedEvent(){
         SwitchPhaseObjectUI();
-        if(ActualTurnPhase != MYthsAndSteel_Enum.PhaseDeJeu.Debut){
+        if(ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.Debut){
+            _isInTurn = false;
+        }
+        else
+        {
             _isInTurn = true;
         }
     }
@@ -249,6 +255,7 @@ public class GameManager : MonoSingleton<GameManager>{
     public void GoPhase(MYthsAndSteel_Enum.PhaseDeJeu phase)
     {
         _actualTurnPhase = phase;
+        _changeActivPhase.ChangeActivObj();
     }
 
     #region UIFunction
@@ -269,12 +276,19 @@ public class GameManager : MonoSingleton<GameManager>{
         {
             createPanel(1);
         }
-    
 
-        if(ActualTurnPhase + 1 == MYthsAndSteel_Enum.PhaseDeJeu.Activation){
+
+
+        if(ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.Debut)
+        {
             StartCoroutine(waitToChange());
         }
-        else{
+        else if(ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.Strategie && !ManagerSO.GetDebutFunction())
+        {
+            StartCoroutine(waitToChange());
+        }
+        else
+        {
             ManagerSO.GoToPhase();
         }
     }
