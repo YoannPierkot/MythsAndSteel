@@ -120,13 +120,44 @@ public class MouseCommand : MonoBehaviour
         UI.AttackStat._minDamageValueGam.GetComponent<TextMeshProUGUI>().text = unit.DamageMinimum.ToString();
         UI.AttackStat._maxDamageValueGam.GetComponent<TextMeshProUGUI>().text = unit.DamageMaximum.ToString();
 
+
+        for (int i = UI.capacityList.Count - 1; i >= 0; i--)
+        {
+            Destroy(UI.capacityList[UI.capacityList.Count - 1]);
+            UI.capacityList.RemoveAt(UI.capacityList.Count - 1);
+        }
+
+        if (RaycastManager.Instance.Tile.GetComponent<TileScript>().Unit.TryGetComponent<Capacity>(out Capacity Capa))
+        {
+            // CAPACITY 1.             
+            if (Capa.ReturnInfo(UI.capacityPrefab, 0) != null)
+            {
+                UI.capacityParent.transform.parent.parent.GetComponent<ScrollRect>().verticalScrollbar.value = 1;
+                GameObject CAPA1 = Instantiate(Capa.ReturnInfo(UI.capacityPrefab, 0), UI.capacityParent.transform.position, Quaternion.identity);
+                CAPA1.transform.SetParent(UI.capacityParent.transform);
+                CAPA1.transform.localScale = new Vector3(.9f, .9f, .9f);
+                UI.capacityList.Add(CAPA1);
+                UI.capacityParent.GetComponent<RectTransform>().sizeDelta = new Vector2(UI.capacityParent.GetComponent<RectTransform>().sizeDelta.x, 212 * UI.effetDeTerrain.Count);
+            }
+            // CAPACITY 2. 
+            if (Capa.ReturnInfo(UI.capacityPrefab, 1) != null)
+            {
+                UI.capacityParent.transform.parent.parent.GetComponent<ScrollRect>().verticalScrollbar.value = 1;
+                GameObject CAPA2 = Instantiate(Capa.ReturnInfo(UI.capacityPrefab, 1), UI.capacityParent.transform.position, Quaternion.identity);
+                CAPA2.transform.SetParent(UI.capacityParent.transform);
+                CAPA2.transform.localScale = new Vector3(.9f, .9f, .9f);
+                UI.capacityList.Add(CAPA2);
+                UI.capacityParent.GetComponent<RectTransform>().sizeDelta = new Vector2(UI.capacityParent.GetComponent<RectTransform>().sizeDelta.x, 212 * UI.effetDeTerrain.Count);
+            }
+        }
+
+
         //Statistique de la Page 2 du Carnet.  
         //Compléter avec les Images des Tiles.
         //UIInstance.Instance.MiddleImageTerrain[0].GetComponent<Image>().sprite = RaycastManager.Instance.Tile.GetComponent<TileScript>().TerrainEffectList[0].Image
         //UIInstance.Instance.MiddleImageTerrain[1].GetComponent<Image>().sprite = RaycastManager.Instance.Tile.GetComponent<TileScript>().TerrainEffectList[1].Image;
 
-
-        for(int i = UI.effetDeTerrain.Count - 1; i >= 0; i--)
+        for (int i = UI.effetDeTerrain.Count - 1; i >= 0; i--)
         {
             Destroy(UI.effetDeTerrain[UI.effetDeTerrain.Count - 1]);
             UI.effetDeTerrain.RemoveAt(UI.effetDeTerrain.Count - 1);

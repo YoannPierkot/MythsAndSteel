@@ -108,7 +108,18 @@ public class UIInstance : MonoSingleton<UIInstance>
     [SerializeField] private AttackStat _attackStat;
     public AttackStat AttackStat => _attackStat;
 
-  
+    // Parent des capacités dans la page 1.
+    [SerializeField] private GameObject _capacityParent;
+    public GameObject capacityParent => _capacityParent;
+
+    // Préfab slot capacité.
+    [SerializeField] private GameObject _capacityPrefab;
+    public GameObject capacityPrefab => _capacityPrefab;
+
+    // List des préfabs actuels.
+    [SerializeField] private List<GameObject> _capacitylist;
+    public List<GameObject> capacityList => _capacitylist;
+
     //Comporte les descriptions et sprites pour chaque Attribut. 
     //Si vous changez la taille ou le positionnement des élements de l'Array il faut absolument que la position dans l'Arraye de Chaque ObjectsAttributs correspondent à l'ID de son enum.
     public TextSpriteAttributUnit[] textSpriteAttributUnit = new TextSpriteAttributUnit[11];

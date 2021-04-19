@@ -162,7 +162,6 @@ public class UnitScript : MonoBehaviour
             {
                 UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartShieldSprite, _life + _shield);
             }
-
         }
         else
         {
