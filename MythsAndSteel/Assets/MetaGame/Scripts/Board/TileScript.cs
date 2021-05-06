@@ -143,6 +143,15 @@ public class TileScript : MonoBehaviour
                             if (sprite != null) child.GetComponent<SpriteRenderer>().sprite = sprite;
                         }
                         break;
+                    case MYthsAndSteel_Enum.ChildTileType.MovePath:
+                        tag = "DisplayMovePath";
+                        if (gam.tag == tag)
+                        {
+                            child = gam;
+                            child.GetComponent<SpriteRenderer>().enabled = true;
+                            if (sprite != null) child.GetComponent<SpriteRenderer>().sprite = sprite;
+                        }
+                        break;
                 }
             }
         }
@@ -179,11 +188,15 @@ public class TileScript : MonoBehaviour
                     case MYthsAndSteel_Enum.ChildTileType.MoveArrow:
                         tag = "DisplayArrowForMove";
                         break;
+                    case MYthsAndSteel_Enum.ChildTileType.MovePath:
+                        tag = "DisplayMovePath";
+                        break;
                 }
 
                 if (gam.tag == tag)
                 {
                     child = gam;
+                    Debug.Log("desactive " + child.name);
                     child.GetComponent<SpriteRenderer>().enabled = false;
                     if (destroy)
                     {

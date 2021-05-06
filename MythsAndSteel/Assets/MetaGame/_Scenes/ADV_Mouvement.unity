@@ -5919,6 +5919,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6244242718017290110, guid: 05ea443c18494aa4b9bebdf213b20ae8, type: 3}
   m_PrefabInstance: {fileID: 3573671939702946865}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &409550975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409550974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f401c3105a8d0bb4995c646f8c89ea47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Activate: 0
+  Fx:
+  - {fileID: 409550978}
+  minA: 0
+  maxA: 1
+  speed: 0.2
+  A: 0
+--- !u!212 &409550978 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6244242718017290051, guid: 05ea443c18494aa4b9bebdf213b20ae8, type: 3}
+  m_PrefabInstance: {fileID: 3573671939702946865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &438218564
 GameObject:
   m_ObjectHideFlags: 0
@@ -7822,13 +7846,16 @@ MonoBehaviour:
   DownArrow: {fileID: 21300000, guid: bd1a6d9a70c7ccf49b65ecf2d7bb035f, type: 3}
   LeftArrow: {fileID: 21300000, guid: 70127292118e5c140b876fe11638224a, type: 3}
   RightArrow: {fileID: 21300000, guid: 1bf576e2db6e9f34faf4034ce7ff7623, type: 3}
-  Virage1: {fileID: 21300000, guid: 93c5cf34bfcab8b4ba8fceed00c83bb6, type: 3}
-  Virage2: {fileID: 21300000, guid: 6fdb541a34b6f384f80bef2e6560c1e8, type: 3}
-  Virage3: {fileID: 21300000, guid: a92abf8e17228734ca2222b7c863f0fe, type: 3}
-  Virage4: {fileID: 21300000, guid: 7dfc13ee717fa7448adf9a1e0203cdcb, type: 3}
+  Virage1: {fileID: 21300000, guid: a92abf8e17228734ca2222b7c863f0fe, type: 3}
+  Virage2: {fileID: 21300000, guid: 7dfc13ee717fa7448adf9a1e0203cdcb, type: 3}
+  Virage3: {fileID: 21300000, guid: 93c5cf34bfcab8b4ba8fceed00c83bb6, type: 3}
+  Virage4: {fileID: 21300000, guid: 6fdb541a34b6f384f80bef2e6560c1e8, type: 3}
   Horizontal: {fileID: 21300000, guid: ada634ee2914a1f48b37a9229bf0fcb3, type: 3}
   Vertical: {fileID: 21300000, guid: cd130a772161ea34a93e8f39188e3dad, type: 3}
-  ArrowedTile: 
+  Lastup: {fileID: 21300000, guid: a9cfe6292a6844b49aa6ac6bb37dc5b4, type: 3}
+  Lastdown: {fileID: 21300000, guid: 5e2ef65510d41924b998277d90e53651, type: 3}
+  Lastright: {fileID: 21300000, guid: eabead6d7680bdd498c30fe336d8e49d, type: 3}
+  Lastleft: {fileID: 21300000, guid: 51a616662a24953479be4db714874840, type: 3}
 --- !u!4 &554525475
 Transform:
   m_ObjectHideFlags: 0
@@ -19591,14 +19618,6 @@ PrefabInstance:
     - target: {fileID: 6244242718017290048, guid: 05ea443c18494aa4b9bebdf213b20ae8, type: 3}
       propertyPath: _life
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6244242718017290048, guid: 05ea443c18494aa4b9bebdf213b20ae8, type: 3}
-      propertyPath: _moveLeft
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6244242718017290048, guid: 05ea443c18494aa4b9bebdf213b20ae8, type: 3}
-      propertyPath: _moveSpeed
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6244242718017290048, guid: 05ea443c18494aa4b9bebdf213b20ae8, type: 3}
       propertyPath: _actualTileld
@@ -35521,7 +35540,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5198453593246595935}
   m_HandleRect: {fileID: 4578493738485675085}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

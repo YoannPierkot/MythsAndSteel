@@ -24,7 +24,7 @@ public class MYthsAndSteel_Enum : MonoBehaviour
     /// </summary>
     public enum ChildTileType
     {
-        AttackSelect, MoveSelect, EventSelect, MoveArrow
+        AttackSelect, MoveSelect, EventSelect, MoveArrow, MovePath
     }
 
     /// <summary>

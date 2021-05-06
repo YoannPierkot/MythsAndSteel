@@ -89,6 +89,11 @@ public class Mouvement : MonoSingleton<Mouvement>
     [SerializeField] private Sprite Virage4 = null;
     [SerializeField] private Sprite Horizontal = null;
     [SerializeField] private Sprite Vertical = null;
+    [SerializeField] private Sprite Lastup = null;
+    [SerializeField] private Sprite Lastdown = null;
+    [SerializeField] private Sprite Lastright = null;
+    [SerializeField] private Sprite Lastleft = null;
+
 
     #endregion RenduSpriteTile
 
@@ -386,6 +391,7 @@ public class Mouvement : MonoSingleton<Mouvement>
             Highlight(tileId, Range, tileId);
             UIInstance.Instance.DesactivateNextPhaseButton();
         }
+        DisplayMoveArrow();
     }
 
     /// <summary>
@@ -437,6 +443,7 @@ public class Mouvement : MonoSingleton<Mouvement>
         _mvmtRunning = false;
 
         Attaque.Instance.Attack();
+        DisplayMoveArrow();
     }
 
     /// <summary>
@@ -552,8 +559,6 @@ public class Mouvement : MonoSingleton<Mouvement>
                             check = true;
                             mUnit.GetComponent<UnitScript>().MoveLeft -= 2; // sup 2 mvmt.
                             selectedTileId.Add(tileId);
-                            TilesManager.Instance.TileList[tileId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _tileSprite);
-
                             Attaque.Instance.RemoveTileSprite();
                             Attaque.Instance.StartAttackSelectionUnit(tileId);
                         }
@@ -577,8 +582,6 @@ public class Mouvement : MonoSingleton<Mouvement>
                                 mUnit.GetComponent<UnitScript>().MoveSpeedBonus--;
                             }
                             selectedTileId.Add(tileId);
-                            TilesManager.Instance.TileList[tileId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _tileSprite);
-
                             Attaque.Instance.RemoveTileSprite();
                             Attaque.Instance.StartAttackSelectionUnit(tileId);
                         }
@@ -593,7 +596,6 @@ public class Mouvement : MonoSingleton<Mouvement>
                         RouteBonus = true;
                         check = true;
                         selectedTileId.Add(tileId);
-                        TilesManager.Instance.TileList[tileId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _tileSprite);
                         Attaque.Instance.RemoveTileSprite();
                         Attaque.Instance.StartAttackSelectionUnit(tileId);
                     }
@@ -603,7 +605,6 @@ public class Mouvement : MonoSingleton<Mouvement>
                         {
                             mUnit.GetComponent<UnitScript>().MoveLeft--; // sup 1 mvmt.
                             selectedTileId.Add(tileId);
-                            TilesManager.Instance.TileList[tileId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _tileSprite);
 
                             Attaque.Instance.RemoveTileSprite();
                             Attaque.Instance.StartAttackSelectionUnit(tileId);
@@ -612,7 +613,6 @@ public class Mouvement : MonoSingleton<Mouvement>
                         {
                             mUnit.GetComponent<UnitScript>().MoveSpeedBonus--; // sup 1 mvmt.
                             selectedTileId.Add(tileId);
-                            TilesManager.Instance.TileList[tileId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _tileSprite);
 
                             Attaque.Instance.RemoveTileSprite();
                             Attaque.Instance.StartAttackSelectionUnit(tileId);
@@ -638,7 +638,7 @@ public class Mouvement : MonoSingleton<Mouvement>
         {
             UIInstance.Instance.ActivationUnitPanel.CloseMovementPanel();
         }
-        //DisplayMoveArrow();
+        DisplayMoveArrow();
     }
 
     /// <summary>
@@ -660,7 +660,6 @@ public class Mouvement : MonoSingleton<Mouvement>
     /// </summary>
     public void ApplyMouvement()
     {
-
         if (!SoundController.Instance.Source.isPlaying)
         {
             SoundController.Instance.PlaySound(RaycastManager.Instance.ActualUnitSelected.GetComponent<UnitScript>().SonDeplacement);
@@ -785,40 +784,273 @@ public class Mouvement : MonoSingleton<Mouvement>
         Unit.GetComponent<UnitScript>().Animation.SetFloat("Y", EndPos.transform.position.y - Unit.transform.position.y);
         Unit.GetComponent<SpriteRenderer>().flipX = Unit.GetComponent<UnitScript>().Animation.GetFloat("X") > 0;
     }
-
-    /*private void DisplayMoveArrow()
+    public List<int> GetNeighbourDirect(int tileId, int Range)
     {
-        if (mUnit.GetComponent<UnitScript>().MoveLeft != 0)
+        List<int> Temp = new List<int>();
+        if (Range > 0)
         {
-
-            if (_newNeighbourId.Contains(selectedTileId[selectedTileId.Count - 1] + 9))
+            foreach (int ID in PlayerStatic.GetNeighbourDiag(tileId, TilesManager.Instance.TileList[tileId].GetComponent<TileScript>().Line, false))
             {
-                TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1] + 9].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, UpArrow);
-            }
-
-            if (newNeighbourId.Contains(selectedTileId[selectedTileId.Count - 1] - 9))
-            {
-                TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1] - 9].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, DownArrow);
-            }
-
-            if (newNeighbourId.Contains(selectedTileId[selectedTileId.Count - 1] + 1))
-            {
-                TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1] + 1].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, RightArrow);
-            }
-
-            if (newNeighbourId.Contains(selectedTileId[selectedTileId.Count - 1] - 1))
-            {
-                TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1] - 1].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, LeftArrow);
+                TileScript TileSc = TilesManager.Instance.TileList[ID].GetComponent<TileScript>();
+                bool i = false;
+                if (GameManager.Instance.IsPlayerRedTurn)
+                {
+                    if (TilesManager.Instance.TileList[ID].GetComponent<TileScript>().Unit != null)
+                    {
+                        if (!TilesManager.Instance.TileList[ID].GetComponent<TileScript>().Unit.GetComponent<UnitScript>().UnitSO.IsInRedArmy)
+                        {
+                            i = true;
+                        }
+                        if (TilesManager.Instance.TileList[ID].GetComponent<TileScript>().Unit.GetComponent<UnitScript>().UnitSO.IsInRedArmy && Range == 1)
+                        {
+                            i = true;
+                        }
+                    }
+                }
+                if (!GameManager.Instance.IsPlayerRedTurn)
+                {
+                    if (TilesManager.Instance.TileList[ID].GetComponent<TileScript>().Unit != null)
+                    {
+                        if (TilesManager.Instance.TileList[ID].GetComponent<TileScript>().Unit.GetComponent<UnitScript>().UnitSO.IsInRedArmy)
+                        {
+                            i = true;
+                        }
+                        if (!TilesManager.Instance.TileList[ID].GetComponent<TileScript>().Unit.GetComponent<UnitScript>().UnitSO.IsInRedArmy && Range == 1)
+                        {
+                            i = true;
+                        }
+                    }
+                }
+                foreach (MYthsAndSteel_Enum.TerrainType Type in TileSc.TerrainEffectList)
+                {
+                    if (EffectToCheck.Contains(Type))
+                    {
+                        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Ravin, ID) || PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Eau, ID))
+                        {
+                            i = true;
+                            break;
+                        }
+                        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Rivière_Est, tileId) && PlayerStatic.CheckDirection(tileId, ID) == MYthsAndSteel_Enum.Direction.Est && !PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Pont_Est, tileId))
+                        {
+                            i = true;
+                            break;
+                        }
+                        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Rivière_Nord, tileId) && PlayerStatic.CheckDirection(tileId, ID) == MYthsAndSteel_Enum.Direction.Nord && !PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Pont_Nord, tileId))
+                        {
+                            i = true;
+                            break;
+                        }
+                        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Rivière_Sud, tileId) && PlayerStatic.CheckDirection(tileId, ID) == MYthsAndSteel_Enum.Direction.Sud && !PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Pont_Sud, tileId))
+                        {
+                            i = true;
+                            break;
+                        }
+                        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Rivière_Ouest, tileId) && PlayerStatic.CheckDirection(tileId, ID) == MYthsAndSteel_Enum.Direction.Ouest && !PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Pont_Ouest, tileId))
+                        {
+                            i = true;
+                            break;
+                        }
+                        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Mont, ID) || PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Forêt, ID))
+                        {
+                            if (Range >= 2 && !i)
+                            {
+                                i = true;
+                                TilesManager.Instance.TileList[ID].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _selectedSprite);
+                                if (!Temp.Contains(ID) && !selectedTileId.Contains(ID))
+                                {
+                                    Temp.Add(ID);
+                                }
+                                break;
+                            }
+                            else
+                            {
+                                i = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (!i)
+                {
+                    TilesManager.Instance.TileList[ID].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveSelect, _selectedSprite);
+                    if (!Temp.Contains(ID) && !selectedTileId.Contains(ID))
+                    {
+                        Temp.Add(ID);
+                    }
+                }
             }
         }
+        return Temp;
+    }
 
-        if (selectedTileId.Count > 1)
+     List<int> ArrowedTile = new List<int>();
+     List<int> PathTile = new List<int>();
+    private void DisplayMoveArrow()
+    {
+        if (PathTile.Count > 0)
         {
-            Debug.Log("Détruire fleches");
-            TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 2] + 9].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow);
-            TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 2] - 1].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow);
-            TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 2] + 1].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow);
-            TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 2] - 9].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow);
+            foreach (int T in PathTile)
+            {
+                TilesManager.Instance.TileList[T].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath);
+            }
+            PathTile.Clear();
         }
-    }*/
+        if(ArrowedTile.Count > 0)
+        {
+            foreach (int T in ArrowedTile)
+            {
+                TilesManager.Instance.TileList[T].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow);
+            }
+        }
+        ArrowedTile = new List<int>();
+
+        if (selectedTileId.Count > 0)
+        {
+            if (GetNeighbourDirect(selectedTileId[selectedTileId.Count - 1], mUnit.GetComponent<UnitScript>().MoveLeft).Count > 0)
+            {
+                foreach (int ID in GetNeighbourDirect(selectedTileId[selectedTileId.Count - 1], mUnit.GetComponent<UnitScript>().MoveLeft))
+                {
+                    switch (PlayerStatic.CheckDirection(selectedTileId[selectedTileId.Count - 1], ID))
+                    {
+                        case MYthsAndSteel_Enum.Direction.Nord:
+                            TilesManager.Instance.TileList[ID].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, UpArrow);
+
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Sud:
+                            TilesManager.Instance.TileList[ID].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, DownArrow);
+
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Est:
+                            TilesManager.Instance.TileList[ID].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, RightArrow);
+
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Ouest:
+                            TilesManager.Instance.TileList[ID].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MoveArrow, LeftArrow);
+
+                            break;
+                    }
+                    ArrowedTile.Add(ID);
+                }
+            }
+        }
+        if(selectedTileId.Count >= 2)
+        {
+            for (int i = 1; i < selectedTileId.Count - 1; i++)
+            {
+                MYthsAndSteel_Enum.Direction avant = PlayerStatic.CheckDirection(selectedTileId[i - 1], selectedTileId[i]);
+                MYthsAndSteel_Enum.Direction apres = PlayerStatic.CheckDirection(selectedTileId[i + 1], selectedTileId[i]);
+
+                if(avant == MYthsAndSteel_Enum.Direction.Sud)
+                {
+                    switch (apres)
+                    {
+                        case MYthsAndSteel_Enum.Direction.Nord: 
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Vertical);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Est:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage1);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Ouest:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage2);
+                            break;
+                    }
+                }
+                else if (avant == MYthsAndSteel_Enum.Direction.Nord)
+                {
+                    switch (apres)
+                    {
+                        case MYthsAndSteel_Enum.Direction.Sud:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Vertical);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Est:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage4);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Ouest:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage3);
+                            break;
+                    }
+                }
+                else if (avant == MYthsAndSteel_Enum.Direction.Est)
+                {
+                    switch (apres)
+                    {
+                        case MYthsAndSteel_Enum.Direction.Ouest:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Horizontal);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Sud:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage1);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Nord:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage4);
+                            break;
+                    }
+                }
+                else if (avant == MYthsAndSteel_Enum.Direction.Ouest)
+                {
+                    switch (apres)
+                    {
+                        case MYthsAndSteel_Enum.Direction.Est:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Horizontal);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Sud:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage2);
+                            break;
+                        case MYthsAndSteel_Enum.Direction.Nord:
+                            TilesManager.Instance.TileList[selectedTileId[i]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Virage3);
+                            break;
+                    }
+                }
+                PathTile.Add(selectedTileId[i]);
+
+            }
+            switch (PlayerStatic.CheckDirection(selectedTileId[selectedTileId.Count - 1], selectedTileId[selectedTileId.Count - 2]))
+            {
+                case MYthsAndSteel_Enum.Direction.Nord:
+                    PathTile.Add(selectedTileId[selectedTileId.Count - 1]);
+                    if(mUnit.GetComponent<UnitScript>().MoveLeft + mUnit.GetComponent<UnitScript>().MoveSpeedBonus == 0)
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, DownArrow);
+                    }
+                    else
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Lastup);
+                    }
+
+                    break;
+                case MYthsAndSteel_Enum.Direction.Sud:
+                    PathTile.Add(selectedTileId[selectedTileId.Count - 1]);
+                    if (mUnit.GetComponent<UnitScript>().MoveLeft + mUnit.GetComponent<UnitScript>().MoveSpeedBonus == 0)
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, UpArrow);
+                    }
+                    else
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Lastdown);
+                    }
+                    break;
+                case MYthsAndSteel_Enum.Direction.Est:
+                    PathTile.Add(selectedTileId[selectedTileId.Count - 1]);
+                    if (mUnit.GetComponent<UnitScript>().MoveLeft + mUnit.GetComponent<UnitScript>().MoveSpeedBonus == 0)
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, LeftArrow);
+                    }
+                    else
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Lastright);
+                    }
+                    break;
+                case MYthsAndSteel_Enum.Direction.Ouest:
+                    PathTile.Add(selectedTileId[selectedTileId.Count - 1]);
+                    if (mUnit.GetComponent<UnitScript>().MoveLeft + mUnit.GetComponent<UnitScript>().MoveSpeedBonus == 0)
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, RightArrow);
+                    }
+                    else
+                    {
+                        TilesManager.Instance.TileList[selectedTileId[selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.MovePath, Lastleft);
+                    }
+                    break;
+            }
+        }
+    }
 }

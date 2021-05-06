@@ -9,6 +9,7 @@ TagManager:
   - MoveSelectable
   - AttackSelectable
   - DisplayArrowForMove
+  - DisplayMovePath
   layers:
   - Default
   - TransparentFX

@@ -64,7 +64,7 @@ public class UnitScript : MonoBehaviour
     [SerializeField] int _moveSpeed;
     public int MoveSpeed => _moveSpeed;
     public int MoveSpeedBonus = 0;
-
+    public bool BonusUsed = false;
     // Déplacement réstant de l'unité durant cette activation
     [SerializeField] int _moveLeft;
     public int MoveLeft
