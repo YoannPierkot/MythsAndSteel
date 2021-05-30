@@ -15,9 +15,7 @@ MonoBehaviour:
   UnitName: Canon T90
   Description: Cette unite ne sert a rien
   typeUnite: 0
-
-  LifeMax: 6
-
+  LifeMax: 5
   ShieldMax: 2
   AttackRange: 2
   MoveSpeed: 5

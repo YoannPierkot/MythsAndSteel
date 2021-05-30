@@ -72,7 +72,7 @@ public class ChargeRedPlayer : ChargeOrgone
         {
             Attaque.Instance.PanelBlockant1.SetActive(true);
             Attaque.Instance.PanelBlockant2.SetActive(true);
-        
+            Debug.Log("R3Laucnhed");
             GameManager.Instance._eventCall += UseCharge3RedPlayer;
             if (PlayerPrefs.GetInt("Avertissement") == 0)
             {
@@ -102,8 +102,6 @@ public class ChargeRedPlayer : ChargeOrgone
         Debug.Log("R5");
         if (MythsAndSteel.Orgone.OrgoneCheck.CanUseOrgonePower(5, 1))
         {
-      
-
             Attaque.Instance.PanelBlockant1.SetActive(true);
             Attaque.Instance.PanelBlockant2.SetActive(true);
             Debug.Log("R5Laucnhed"); 
@@ -125,7 +123,6 @@ public class ChargeRedPlayer : ChargeOrgone
         List<GameObject> TempSelectablelist = PlayerInstance.GetComponent<UnitReference>().UnitClassCreableListRedPlayer;
         PlayerInstance.GetComponent<UnitReference>().UnitClassCreableListRedPlayer = UnitListForOrgone;
         RenfortPhase.Instance.CreateRenfort(true);
-        UIInstance.Instance.boutonAnnulerRenfort.SetActive(false);
         mouseCommand.GetComponent<MouseCommand>().MenuRenfortUI(true);
 
         while (GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ1)

@@ -30,13 +30,12 @@ public class CameraMovement : MonoBehaviour
         
        
 
-        if (mousePos.y > 1050f - margin && camPos.y < camPosMax)
+        if (mousePos.y > 1080f - margin && camPos.y < camPosMax)
         {
             this.transform.position = camPos + Vector3.up * camSpeed * Time.deltaTime;
-            
 
         }
-        else if(mousePos.y > 1050f - margin && camPos.y >= camPosMax)
+        else if(mousePos.y > 1080f - margin && camPos.y >= camPosMax)
         {
             AnimatorMainBordure.SetBool("Haut", true);
         }

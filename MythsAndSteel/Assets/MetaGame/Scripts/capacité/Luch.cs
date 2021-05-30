@@ -57,13 +57,9 @@ public class Luch : Capacity
             {
                 if (PlayerStatic.CheckDirection(LastTile.TileId, TilesManager.Instance.TileList[D].GetComponent<TileScript>().TileId) == Direct)
                 {
-                    if (TilesManager.Instance.TileList[D].GetComponent<TileScript>().Unit ==null)
-                    {
                     check = true;
-              
                     GameManager.Instance.TileChooseList.Add(TilesManager.Instance.TileList[D]);
                     finaltile = TilesManager.Instance.TileList[D];
-                    }
                 }
             }
             if (check == false)

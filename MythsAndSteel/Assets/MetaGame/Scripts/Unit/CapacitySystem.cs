@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CapacitySystem : MonoSingleton<CapacitySystem>
 {
-    public bool capacityTryStart = false;
     [SerializeField] private Sprite attacklaunchspritebutton;
     [SerializeField] private Sprite attackcancelspritebutton;
     [SerializeField]
@@ -82,20 +81,16 @@ public class CapacitySystem : MonoSingleton<CapacitySystem>
             {
                 if (!Unit.GetComponent<UnitScript>().RunningCapacity)
                 {
-                    capacityTryStart = true; 
                     Attaque.Instance.StopAttack();
                     Mouvement.Instance.StopMouvement(true);
-                    
                     Unit.GetComponent<UnitScript>().StartCapacity();
                     Unit.GetComponent<UnitScript>().RunningCapacity = true;
                     PanelBlockant1.SetActive(true);
                     PanelBlockant2.SetActive(true);
                     Updatebutton();
-                    capacityTryStart = false;
                 }
                 else if (Unit.GetComponent<UnitScript>().RunningCapacity)
                 {
-
                     Unit.GetComponent<UnitScript>().StopCapacity();
                     Unit.GetComponent<UnitScript>().RunningCapacity = false;
                     PanelBlockant1.SetActive(false);

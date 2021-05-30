@@ -944,8 +944,7 @@ public class MouseCommand : MonoBehaviour
                 UIInstance.Instance.PageUnitéRenfort._lifeValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                 UIInstance.Instance.PageUnitéRenfort._rangeValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                 UIInstance.Instance.PageUnitéRenfort._moveValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité1.GetComponent<Image>().sprite = unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.Sprite;
-
+                UIInstance.Instance.PageUnitéRenfort._damageValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
 
                 //Statistique pour l'unité2
@@ -953,7 +952,7 @@ public class MouseCommand : MonoBehaviour
                 UIInstance.Instance.PageUnitéRenfort._lifeValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[1].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                 UIInstance.Instance.PageUnitéRenfort._rangeValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[1].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                 UIInstance.Instance.PageUnitéRenfort._moveValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[1].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité2.GetComponent<Image>().sprite = unitReference.UnitClassCreableListRedPlayer[1].GetComponent<UnitScript>().UnitSO.Sprite;
+                UIInstance.Instance.PageUnitéRenfort._damageValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[1].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
 
                 //Statistique pour l'unité3
@@ -961,17 +960,16 @@ public class MouseCommand : MonoBehaviour
                 UIInstance.Instance.PageUnitéRenfort._lifeValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[2].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                 UIInstance.Instance.PageUnitéRenfort._rangeValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[2].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                 UIInstance.Instance.PageUnitéRenfort._moveValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[2].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité3.GetComponent<Image>().sprite = unitReference.UnitClassCreableListRedPlayer[2].GetComponent<UnitScript>().UnitSO.Sprite;
-
+                UIInstance.Instance.PageUnitéRenfort._damageValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[2].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
                 #endregion UpdateTexteRenfort1a3
 
                 #region UpdateImageRenfort1a3
                 //Update Ressource en fonction du nombre.
 
-
-                //Si la première unité de l'armée Rouge a besoin de plus de 2 ressources.
-                if (unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.CreationCost > 2)
+               
+                    //Si la première unité de l'armée Rouge a besoin de plus de 2 ressources.
+                    if (unitReference.UnitClassCreableListRedPlayer[0].GetComponent<UnitScript>().UnitSO.CreationCost > 2)
                     {
                         UIInstance.Instance.RessourceUnit_PasTouche._unité1Ressource[2].SetActive(true);
                         UIInstance.Instance.RessourceUnit_PasTouche._unité1Ressource[3].SetActive(true);
@@ -1031,11 +1029,10 @@ public class MouseCommand : MonoBehaviour
                         UIInstance.Instance.PageUnitéRenfort._lifeValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[3].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                         UIInstance.Instance.PageUnitéRenfort._rangeValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[3].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                         UIInstance.Instance.PageUnitéRenfort._moveValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[3].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                    UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité4.GetComponent<Image>().sprite = unitReference.UnitClassCreableListRedPlayer[3].GetComponent<UnitScript>().UnitSO.Sprite;
+                        UIInstance.Instance.PageUnitéRenfort._damageValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[3].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
-
-                    //Image Ressource pour l'unité 4 de l'armée Rouge.
-                    UIInstance.Instance.RessourceUnit_PasTouche._unité4Ressource[0].SetActive(true);
+                        //Image Ressource pour l'unité 4 de l'armée Rouge.
+                        UIInstance.Instance.RessourceUnit_PasTouche._unité4Ressource[0].SetActive(true);
                         UIInstance.Instance.RessourceUnit_PasTouche._unité4Ressource[1].SetActive(true);
 
                         //Si la quatrième unité de l'armée Rouge a besoin de plus de 2 ressources.
@@ -1061,11 +1058,10 @@ public class MouseCommand : MonoBehaviour
                             UIInstance.Instance.PageUnitéRenfort._lifeValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[4].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                             UIInstance.Instance.PageUnitéRenfort._rangeValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[4].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                             UIInstance.Instance.PageUnitéRenfort._moveValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[4].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                        UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité5.GetComponent<Image>().sprite = unitReference.UnitClassCreableListRedPlayer[4].GetComponent<UnitScript>().UnitSO.Sprite;
+                            UIInstance.Instance.PageUnitéRenfort._damageValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[4].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
-
-                        //Image Ressource pour l'unité 5 de l'armée Rouge.
-                        UIInstance.Instance.RessourceUnit_PasTouche._unité5Ressource[0].SetActive(true);
+                            //Image Ressource pour l'unité 5 de l'armée Rouge.
+                            UIInstance.Instance.RessourceUnit_PasTouche._unité5Ressource[0].SetActive(true);
                             UIInstance.Instance.RessourceUnit_PasTouche._unité5Ressource[1].SetActive(true);
 
                             //Si la cinquième unité de l'armée Rouge a besoin de plus de 2 ressources.
@@ -1091,11 +1087,10 @@ public class MouseCommand : MonoBehaviour
                                 UIInstance.Instance.PageUnitéRenfort._lifeValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[5].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                                 UIInstance.Instance.PageUnitéRenfort._rangeValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[5].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                                 UIInstance.Instance.PageUnitéRenfort._moveValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[5].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                            UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité6.GetComponent<Image>().sprite = unitReference.UnitClassCreableListRedPlayer[5].GetComponent<UnitScript>().UnitSO.Sprite;
+                                UIInstance.Instance.PageUnitéRenfort._damageValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListRedPlayer[5].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
-
-                            //Image Ressource pour l'unité6 de l'armée Rouge.
-                            UIInstance.Instance.RessourceUnit_PasTouche._unité6Ressource[0].SetActive(true);
+                                //Image Ressource pour l'unité6 de l'armée Rouge.
+                                UIInstance.Instance.RessourceUnit_PasTouche._unité6Ressource[0].SetActive(true);
                                 UIInstance.Instance.RessourceUnit_PasTouche._unité6Ressource[1].SetActive(true);
 
                                 //Si la sixième unité de l'armée Rouge a besoin de plus de 2 ressources.
@@ -1155,8 +1150,7 @@ public class MouseCommand : MonoBehaviour
                 UIInstance.Instance.PageUnitéRenfort._lifeValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[0].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                 UIInstance.Instance.PageUnitéRenfort._rangeValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[0].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                 UIInstance.Instance.PageUnitéRenfort._moveValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[0].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité1.GetComponent<Image>().sprite = unitReference.UnitClassCreableListBluePlayer[0].GetComponent<UnitScript>().UnitSO.Sprite;
-
+                UIInstance.Instance.PageUnitéRenfort._damageValor1.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[0].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
 
                 //Statistique pour l'unité 2 de l'armée Bleu.
@@ -1164,8 +1158,7 @@ public class MouseCommand : MonoBehaviour
                 UIInstance.Instance.PageUnitéRenfort._lifeValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[1].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                 UIInstance.Instance.PageUnitéRenfort._rangeValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[1].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                 UIInstance.Instance.PageUnitéRenfort._moveValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[1].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité2.GetComponent<Image>().sprite = unitReference.UnitClassCreableListBluePlayer[1].GetComponent<UnitScript>().UnitSO.Sprite;
-
+                UIInstance.Instance.PageUnitéRenfort._damageValor2.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[1].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
 
                 //Statistique pour l'unité 3 de l'armée Bleu.
@@ -1173,8 +1166,7 @@ public class MouseCommand : MonoBehaviour
                 UIInstance.Instance.PageUnitéRenfort._lifeValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[2].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                 UIInstance.Instance.PageUnitéRenfort._rangeValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[2].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                 UIInstance.Instance.PageUnitéRenfort._moveValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[2].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité3.GetComponent<Image>().sprite = unitReference.UnitClassCreableListBluePlayer[2].GetComponent<UnitScript>().UnitSO.Sprite;
-
+                UIInstance.Instance.PageUnitéRenfort._damageValor3.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[2].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
                 #endregion Update Textuelle Renforts de 1 à 3 pour l'équipe Bleu
 
                 #region Update Image Renforts de 1 à 3 pour l'équipe Bleu
@@ -1244,7 +1236,7 @@ public class MouseCommand : MonoBehaviour
                     UIInstance.Instance.PageUnitéRenfort._lifeValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[3].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                     UIInstance.Instance.PageUnitéRenfort._rangeValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[3].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                     UIInstance.Instance.PageUnitéRenfort._moveValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[3].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                    UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité4.GetComponent<Image>().sprite = unitReference.UnitClassCreableListBluePlayer[3].GetComponent<UnitScript>().UnitSO.Sprite;
+                    UIInstance.Instance.PageUnitéRenfort._damageValor4.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[3].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
                     //Image Ressource pour l'unité 4 de l'armée Bleu.
                     UIInstance.Instance.RessourceUnit_PasTouche._unité4Ressource[0].SetActive(true);
@@ -1273,7 +1265,7 @@ public class MouseCommand : MonoBehaviour
                         UIInstance.Instance.PageUnitéRenfort._lifeValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[4].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                         UIInstance.Instance.PageUnitéRenfort._rangeValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[4].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                         UIInstance.Instance.PageUnitéRenfort._moveValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[4].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                        UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité5.GetComponent<Image>().sprite = unitReference.UnitClassCreableListBluePlayer[4].GetComponent<UnitScript>().UnitSO.Sprite;
+                        UIInstance.Instance.PageUnitéRenfort._damageValor5.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[4].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
 
                         //Image Ressource pour l'unité 5 de l'armée Bleu.
@@ -1303,8 +1295,7 @@ public class MouseCommand : MonoBehaviour
                             UIInstance.Instance.PageUnitéRenfort._lifeValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[5].GetComponent<UnitScript>().UnitSO.LifeMax.ToString();
                             UIInstance.Instance.PageUnitéRenfort._rangeValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[5].GetComponent<UnitScript>().UnitSO.AttackRange.ToString();
                             UIInstance.Instance.PageUnitéRenfort._moveValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[5].GetComponent<UnitScript>().UnitSO.MoveSpeed.ToString();
-                            UIInstance.Instance.EmplacementImageMenuRenfort._imageUnité6.GetComponent<Image>().sprite = unitReference.UnitClassCreableListBluePlayer[5].GetComponent<UnitScript>().UnitSO.Sprite;
-
+                            UIInstance.Instance.PageUnitéRenfort._damageValor6.GetComponent<TextMeshProUGUI>().text = unitReference.UnitClassCreableListBluePlayer[5].GetComponent<UnitScript>().UnitSO.DamageMinimum.ToString();
 
                             //Image Ressource pour l'unité 6 de l'armée Bleu.
                             UIInstance.Instance.RessourceUnit_PasTouche._unité6Ressource[0].SetActive(true);

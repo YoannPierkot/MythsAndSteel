@@ -832,8 +832,6 @@ public bool MélodieSinistre = false;
             {
                 if (!_hasStartMove) PlayerScript.Instance.RedPlayerInfos.ActivationLeft--;
                 UIInstance.Instance.UpdateActivationLeft();
-               
-
             }
             else if ((!_unitSO.IsInRedArmy && !_unitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.Possédé)) || (_unitSO.IsInRedArmy && _unitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.Possédé) && !MélodieSinistre))
             {
@@ -862,33 +860,21 @@ public bool MélodieSinistre = false;
 
         _isActionDone = true;
         RunningCapacity = false;
-
         CapacitySystem.Instance.PanelBlockant1.SetActive(false);
         CapacitySystem.Instance.PanelBlockant2.SetActive(false);
-        GameManager.Instance.StopEventModeTile();
-        GameManager.Instance.StopEventModeUnit();
         CapacitySystem.Instance.Updatebutton();
         UIInstance.Instance.ActivateNextPhaseButton();
-        RaycastManager.Instance.ActualTileSelected = null;
-        RaycastManager.Instance.ActualUnitSelected = null;
-        Attaque.Instance.Selected = false; 
         checkActivation();
     }
 
     public void StopCapacity(bool FromCptyScript = false)
     {
-     
-        GameManager.Instance.StopEventModeTile();
-        GameManager.Instance.StopEventModeUnit();
         CapacitySystem.Instance.CapacityRunning = false;
         CapacitySystem.Instance.PanelBlockant1.SetActive(false);
         CapacitySystem.Instance.PanelBlockant2.SetActive(false);
         UIInstance.Instance.ActivateNextPhaseButton();
         RunningCapacity = false;
-
         CapacitySystem.Instance.Updatebutton();
-        Attaque.Instance.StartAttackSelectionUnit(ActualTiledId);
-        Mouvement.Instance.StartMvmtForSelectedUnit();
         if (TryGetComponent<Capacity>(out Capacity T))
         {
             if (!FromCptyScript)
@@ -896,7 +882,6 @@ public bool MélodieSinistre = false;
                 T.StopCpty();
             }
         }
-
     }
 
     public void ResetStatutPossesion()

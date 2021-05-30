@@ -215,7 +215,7 @@ public class RaycastManager : MonoSingleton<RaycastManager>
                         
                         _actualTileSelected = _tile;
                         ActualUnitSelected = _unitInTile;
-                     
+                        ActualUnitSelected.GetComponent<UnitScript>().StopCapacity();
                         Mouvement.Instance.StartMvmtForSelectedUnit();
                         Attaque.Instance.StartAttackSelectionUnit();
                     }
@@ -269,19 +269,11 @@ public class RaycastManager : MonoSingleton<RaycastManager>
     public void Deselect(){
         if(GameManager.Instance.ChooseUnitForEvent && _unitInTile != null)
         {
-            if( GameManager.Instance.SelectableUnit.Contains(UnitInTile))
-            {
-
             GameManager.Instance.RemoveUnitToList(_unitInTile);
-            }
         }
         else if(GameManager.Instance.ChooseTileForEvent)
         {
-            if (GameManager.Instance._selectableTiles.Contains(UnitInTile))
-            {
-
             GameManager.Instance.RemoveTileToList(_tile);
-            }
         }
     }
 

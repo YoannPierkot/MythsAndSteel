@@ -412,17 +412,6 @@ public class GameManager : MonoSingleton<GameManager>
     /// <param name="armyUnit"></param>
     public void StartEventModeUnit(int numberUnit, bool redPlayer, List<GameObject> _unitSelectable, string title, string description, bool multiplesUnit = false)
     {
-        if (IsPlayerRedTurn && ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2)
-        {
-
-            UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = false;
-
-        }
-        else if (!IsPlayerRedTurn && ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2)
-        {
-
-            UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = false;
-        }
 
         UIInstance.Instance.DesactivateNextPhaseButton();
         _titleValidation = title;
@@ -436,35 +425,17 @@ public class GameManager : MonoSingleton<GameManager>
         _selectableUnit.AddRange(_unitSelectable);
         _redPlayerUseEvent = redPlayer;
         _canSelectMultiples = multiplesUnit;
-        if(!DoingEpxlosionOrgone)
-        {
 
         foreach (GameObject gam in _selectableUnit)
         {
+
             TilesManager.Instance.TileList[gam.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
         }
-        }
-        else
-        {
-            foreach (GameObject gam in _selectableUnit)
-            {
-                if (gam.GetComponent<UnitScript>()._hasStartMove && Mouvement.Instance._selectedTileId != null)
-                {
-                    TilesManager.Instance.TileList[Mouvement.Instance._selectedTileId[Mouvement.Instance._selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
 
-                }
-                else
-                {
-
-                     TilesManager.Instance.TileList[gam.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
-                }
-            }
-        }
        if(!DoingEpxlosionOrgone && PlayerPrefs.GetInt("Avertissement") == 0 || PlayerPrefs.GetInt("Avertissement") == 1)
         {
 
         _eventCall += StopEventModeUnit;
-          
         }
        
 
@@ -477,22 +448,6 @@ public class GameManager : MonoSingleton<GameManager>
     /// </summary>
  public   void StopEventModeUnit()
     {
-        if (GameManager.Instance.IsPlayerRedTurn)
-        {
-            if (UIInstance.Instance.RedRenfortCount == 0)
-            {
-
-            UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = true;
-            }
-        }
-        else
-        {
-            if (UIInstance.Instance.BlueRenfortCount == 0)
-            {
-
-            UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = true;
-            }
-        }
         _titleValidation = "";
         _descriptionValidation = "";
 
@@ -589,11 +544,8 @@ public class GameManager : MonoSingleton<GameManager>
                     if(DoingEpxlosionOrgone)
                     {
                         _eventCall += StopEventModeUnit;
-
-                       DoingEpxlosionOrgone = false;
                     }
                     _eventCall();
-         
                 }
                
                 UIInstance.Instance.ShowValidationPanel(_titleValidation, _descriptionValidation);
@@ -631,16 +583,7 @@ public class GameManager : MonoSingleton<GameManager>
     /// <param name="_tileSelectable"></param>
     public void StartEventModeTiles(int numberOfTile, bool redPlayer, List<GameObject> _tileSelectable, string title, string description, bool multiplesTile = false)
     {
-        if (GameManager.Instance.IsPlayerRedTurn)
-        {
-            UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = false;
-
-        }
-        else
-        {
-
-            UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = false;
-        }
+        //
         UIInstance.Instance.DesactivateNextPhaseButton();
         Attaque.Instance.PanelBlockant1.SetActive(true);
         Attaque.Instance.PanelBlockant2.SetActive(true);
@@ -668,24 +611,6 @@ public class GameManager : MonoSingleton<GameManager>
     /// </summary>
     public void StopEventModeTile()
     {
-        if (IsPlayerRedTurn && ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2)
-        {
-            if (UIInstance.Instance.RedRenfortCount == 0)
-            {
-
-            UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = true;
-            }
-
-        }
-        else if(!IsPlayerRedTurn && ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2)
-        {
-            if (UIInstance.Instance.BlueRenfortCount == 0)
-            {
-
-            UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = true;
-            }
-
-        }
         _titleValidation = "";
         _descriptionValidation = "";
 

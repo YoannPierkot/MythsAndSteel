@@ -199,7 +199,7 @@ public class Player
             OrgoneExploseCancel = true;
             GameManager.Instance.IsCheckingOrgone = false;
 
-          
+            GameManager.Instance.DoingEpxlosionOrgone = false;
 
             if (GameManager.Instance._waitToCheckOrgone != null)
             {

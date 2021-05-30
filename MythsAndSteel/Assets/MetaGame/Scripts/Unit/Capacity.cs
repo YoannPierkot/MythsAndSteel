@@ -19,18 +19,15 @@ public class Capacity : MonoBehaviour
 
     virtual public void EndCpty()
     {
-
         Debug.Log("Active La capacité 1");
     }
 
     virtual public void StartCpty()
     {
-  
         Debug.Log("Active La capacité 1");
     }
     virtual public void StopCpty()
     {
-       
         Debug.Log("Active La capacité 1");
     }
 

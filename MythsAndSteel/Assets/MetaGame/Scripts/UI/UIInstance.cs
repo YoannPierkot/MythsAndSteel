@@ -6,9 +6,6 @@ using TMPro;
 
 public class UIInstance : MonoSingleton<UIInstance>
 {
-    public int RedRenfortCount = 0;
-    public int BlueRenfortCount = 0;
-    public GameObject boutonAnnulerRenfort;
     public Animator DownSliderJauge;
     public bool skiPhaseTouche = true;
     #region PhaseDeJeu
