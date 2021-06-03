@@ -118,10 +118,7 @@ public class GameManagerSO : ScriptableObject
 
             case MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ1:
                 GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ1);
-                foreach (GameObject unit in GameManager.Instance.IsPlayerRedTurn ? PlayerScript.Instance.UnitRef.UnitListBluePlayer : PlayerScript.Instance.UnitRef.UnitListRedPlayer)
-                {
-                    unit.GetComponent<UnitScript>().ResetTurn();
-                }
+
                 UIInstance.Instance.ActiveOrgoneChargeButton();
                 if(GameManager.Instance.IsPlayerRedStarting)
                 {
@@ -138,6 +135,10 @@ public class GameManagerSO : ScriptableObject
 
             case MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1:
                 GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1);
+                foreach (GameObject unit in GameManager.Instance.IsPlayerRedTurn ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer)
+                {
+                    unit.GetComponent<UnitScript>().ResetTurn();
+                }
                 UIInstance.Instance.DesactiveOrgoneChargeButton();
                 if (GameManager.Instance.IsPlayerRedTurn)
                 {
@@ -168,6 +169,7 @@ public class GameManagerSO : ScriptableObject
 
             case MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ2:
 
+                GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ2);
                 RaycastManager.Instance.ActualUnitSelected = null;
                 RaycastManager.Instance.ActualTileSelected = null;
                 if (GameManager.Instance.IsPlayerRedTurn)
@@ -180,10 +182,7 @@ public class GameManagerSO : ScriptableObject
                 {
                     UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = false;
                 }
-                foreach (GameObject unit in GameManager.Instance.IsPlayerRedTurn ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer)
-                {
-                    unit.GetComponent<UnitScript>().ResetTurn();
-                }
+                
                 if (GameManager.Instance.possesion)
                 {
                     Debug.Log(GameManager.Instance.IsPlayerRedTurn);
@@ -197,7 +196,6 @@ public class GameManagerSO : ScriptableObject
 
                     }
                 }
-                GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ2);
                 foreach (GameObject TS in TilesManager.Instance.TileList)
                 {
                     foreach (MYthsAndSteel_Enum.TerrainType T1 in TS.GetComponent<TileScript>().TerrainEffectList)
@@ -354,7 +352,11 @@ public class GameManagerSO : ScriptableObject
                 break;
 
             case MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2:
-                
+                GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2);
+                foreach (GameObject unit in GameManager.Instance.IsPlayerRedTurn ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer)
+                {
+                    unit.GetComponent<UnitScript>().ResetTurn();
+                }
                 UIInstance.Instance.DesactiveOrgoneChargeButton();
                 if(GameManager.Instance.IsPlayerRedTurn)
                 {
@@ -378,7 +380,6 @@ public class GameManagerSO : ScriptableObject
                     GameManager.Instance.SabotageStat = 3;
                 }
                 UIInstance.Instance.UpdateActivationLeft();
-                GameManager.Instance.GoPhase(MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2);
                 GoToActionJ2Phase();
                 break;
 

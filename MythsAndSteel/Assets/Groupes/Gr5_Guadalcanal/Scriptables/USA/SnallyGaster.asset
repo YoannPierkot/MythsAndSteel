@@ -20,13 +20,17 @@ MonoBehaviour:
   AttackRange: 1
   MoveSpeed: 2
   CreationCost: 0
+  numberOfUnitToAttack: 1
   DamageMinimum: 1
   NumberRangeMin: {x: 5, y: 7}
   DamageMaximum: 2
   NumberRangeMax: {x: 8, y: 12}
-  Son1: {fileID: 0}
-  Son2: {fileID: 0}
+  SonAttaque: {fileID: 8300000, guid: 3279ed92f37d3704a8993d19656aa86b, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 3762bcbab864ec541bdb36c528e65d66, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
   Sprite: {fileID: 21300000, guid: f3080ceed1d69304ca9b12848367cbe1, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 1
+  UnitAttributs: 050000000000000000000000

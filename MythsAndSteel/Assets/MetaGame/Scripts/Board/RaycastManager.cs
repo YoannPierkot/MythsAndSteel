@@ -95,7 +95,8 @@ public class RaycastManager : MonoSingleton<RaycastManager>
 
         //Remplace le gameObject Tile pour avoir en avoir une sauvegarde
         _tile = hit.collider != null ? hit.collider.gameObject : null;
-
+        
+       
         //Assigne l'unité si la tile qui est sélectionnée possède une unité
         _unitInTile = _tile != null ? _tile.GetComponent<TileScript>().Unit != null ? _tile.GetComponent<TileScript>().Unit : null : null;
 
@@ -113,6 +114,8 @@ public class RaycastManager : MonoSingleton<RaycastManager>
                 //Si le joueur n'a pas continué sa combinaison d'action( Shif+clic), alors quand ma souris reste sur une case sans cliqué, l'interface résumé des statistiques s'active.
                 _mouseCommand.MouseOverWithoutClick();
             }
+  
+            
         }
         else
         {

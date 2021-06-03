@@ -72,7 +72,7 @@ public class AttaqueUI1 : MonoBehaviour
                     Done = true;
                     MinSlider.SetActive(true);
                     MinSlider.transform.position = new Vector3(Borne[u - 2].transform.position.x, MinSlider.transform.position.y, MinSlider.transform.position.z);
-                    MinSlider.GetComponentInChildren<TextMeshProUGUI>().text = Unit.DamageMinimum.ToString();
+                    MinSlider.GetComponentInChildren<TextMeshProUGUI>().text = (Unit.DamageMinimum + Unit.DamageBonus).ToString();
                 }
                 Borne[u - 2].sprite = Minimum;
                 Min.Add(u);
@@ -98,7 +98,7 @@ public class AttaqueUI1 : MonoBehaviour
                     Done = true;
                     MaxSlider.SetActive(true);
                     MaxSlider.transform.position = new Vector3(Borne[u - 2].transform.position.x, MaxSlider.transform.position.y, MaxSlider.transform.position.z); 
-                    MaxSlider.GetComponentInChildren<TextMeshProUGUI>().text = Unit.DamageMaximum.ToString();
+                    MaxSlider.GetComponentInChildren<TextMeshProUGUI>().text = (Unit.DamageMaximum + Unit.DamageBonus).ToString();
                 }
                 Borne[u - 2].sprite = Maximum;
                 Max.Add(u);
