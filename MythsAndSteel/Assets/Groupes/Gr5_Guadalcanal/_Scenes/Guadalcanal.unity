@@ -5762,7 +5762,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.6875, y: 0.53125}
+  m_Size: {x: 15, y: 9.71875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -23769,11 +23769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
       propertyPath: _damageMaximum
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
       propertyPath: _damageMinimum
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
       propertyPath: _SonDeplacement
@@ -23781,19 +23781,19 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
     - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
       propertyPath: _numberRangeMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
-      propertyPath: _numberRangeMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
-      propertyPath: _numberRangeMin.x
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
-      propertyPath: _numberRangeMin.y
+      propertyPath: _numberRangeMax.y
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
+      propertyPath: _numberRangeMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707557024412655209, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
+      propertyPath: _numberRangeMin.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4707557024412655210, guid: 58e09c580f7ab16419499ddb20657f81, type: 3}
       propertyPath: m_Sprite
@@ -31232,7 +31232,7 @@ MonoBehaviour:
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0
     TileCentreZoneOrgone: {fileID: 1036877431}
-    _Ressource: 5
+    _Ressource: 0
     GoalCapturePointsNumber: 0
     HasCreateUnit: 0
     dontTouchThis: 0
@@ -31248,7 +31248,7 @@ MonoBehaviour:
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0
     TileCentreZoneOrgone: {fileID: 1321010384}
-    _Ressource: 3
+    _Ressource: 0
     GoalCapturePointsNumber: 0
     HasCreateUnit: 0
     dontTouchThis: 0

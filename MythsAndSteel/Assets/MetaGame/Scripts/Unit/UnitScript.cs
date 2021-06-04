@@ -745,6 +745,8 @@ public bool MélodieSinistre = false;
     public void AddDiceToUnit(int value)
     {
         _diceBonus += value;
+
+        
     }
     #endregion ChangementStat
 
