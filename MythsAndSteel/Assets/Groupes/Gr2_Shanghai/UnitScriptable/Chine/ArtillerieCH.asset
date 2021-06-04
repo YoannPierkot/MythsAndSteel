@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: ArtillerieCH
+  m_EditorClassIdentifier: 
+  UnitName: Feldhaub PAK
+  Description: "Le Fledhaub PAK est une artillerie lente et exp\xE9rimentale d\xE9riv\xE9e
+    d\u2019exp\xE9rimentations sur la Feldhaubitze 18 de 15cm capable de tirer plusieurs
+    fois \xE0 la suite. Sa capacit\xE9 \xE0 pouvoir attaquer rapidement d\u2019une
+    cible \xE0 une autre est permise par des projectiles d\u2019\xE9nergie issus
+    de recherches allemandes. Elle profifite alors de sa pleine puissance une fois
+    ancr\xE9e dans le sol ou sur un FAMO, avec lequel elle a \xE9t\xE9 con\xE7ue
+    en concordance."
+  typeUnite: 2
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 3
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: d7670bed0d3f1e64eb67a3f34602a2e4, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 7643151864355216139, guid: 6378ade0f67926d48933d05bd5a58489, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

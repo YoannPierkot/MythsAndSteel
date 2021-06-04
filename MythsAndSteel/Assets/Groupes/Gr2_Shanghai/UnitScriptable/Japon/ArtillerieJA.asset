@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: ArtillerieJA
+  m_EditorClassIdentifier: 
+  UnitName: Canon Type 90
+  Description: "Le Canon d\u2019artillerie Type 90 a originellement \xE9t\xE9 d\xE9velopp\xE9
+    par l\u2019entreprise fran\xE7aise Schneider en 1930 dans un mod\xE8le de 240mm.
+    Quand il est r\xE9cup\xE9r\xE9 par les Japonais \xE0 l\u2019aube de la Seconde
+    Guerre mondiale, ceux-ci imaginent une version beaucoup plus lourde et am\xE9lior\xE9e.
+    Notamment, \xE0 l\u2019aide des nouvelles avanc\xE9es technologiques de l\u2019\xE9poque
+    en mati\xE8re d\u2019alliages et de constructions, apport\xE9s par l\u2019Hyperchimie."
+  typeUnite: 2
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 3
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 7}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 8, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 3762bcbab864ec541bdb36c528e65d66, type: 3}
+  SonMort: {fileID: 8300000, guid: ee370d463985e914a86e6c7f05f89ae1, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 8793639957104055765, guid: ea98918d82026b14e957fdf481b99465, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

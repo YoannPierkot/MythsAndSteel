@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: MytheJA1
+  m_EditorClassIdentifier: 
+  UnitName: Kitsune
+  Description: "La Kitsune est un esprit libre digne d\u2019une d\xE9esse en puissance.
+    S\xE9vissant depuis le IXe si\xE8cle au Japon, cet esprit ressemblant \xE0 un
+    renard prend possession d\u2019une personne et vit paisiblement dans son corps.
+    Profond\xE9ment attach\xE9 au pays qui l\u2019a vu na\xEEtre, un esprit de Kitsune
+    rejoint les rangs de l\u2019arm\xE9e japonaise et sert d\u2019ic\xF4ne divine.
+    Elle se bat avec la foudre et l\u2019environnement, dans le but d\u2019apporter
+    la victoire \xE0 sa patrie."
+  typeUnite: 3
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 3
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 75390453c5bf00b41ac72806ac30b5aa, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 9730be46a62c8134aa1d072c5bd437ff, type: 3}
+  SonMort: {fileID: 8300000, guid: 4074a9248aeb0394c95aa950695cafab, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 12b0ea8cb1d0a414181274db68743326, type: 3}
+  Sprite: {fileID: 4723107735738678597, guid: 43218a16e2130884182d907c12ab9b42, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000
