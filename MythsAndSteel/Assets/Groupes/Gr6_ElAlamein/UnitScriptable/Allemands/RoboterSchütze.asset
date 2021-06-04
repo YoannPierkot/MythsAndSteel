@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: "RoboterSch\xFCtze"
+  m_EditorClassIdentifier: 
+  UnitName: "Robotersch\xFCtze"
+  Description: "Cr\xE9\xE9 par les industries Krupp, ce m\xE9cha est un des atouts
+    principaux de l'avanc\xE9e Allemande en Afrique du Nord, alliant une adaptabilit\xE9
+    mortelle \xE0 une grande r\xE9sistance. "
+  typeUnite: 5
+  LifeMax: 5
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 8}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f0cc405b19e534f44ad12632fc399159, type: 3}
+  SonMort: {fileID: 8300000, guid: de2caf5e444715b4bb4b1e5442723be2, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -8682637265819157277, guid: 5194f470acfdb834e93abf178faefb13, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

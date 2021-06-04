@@ -8,15 +8,17 @@ public class Romel : Capacity
     GameObject usine;
     [SerializeField] Unit_SO TransformationRomel;
     [SerializeField] RuntimeAnimatorController TransformationRomelAnimator;
-    [SerializeField] SpriteRenderer TransformationRomelsprite; 
+    [SerializeField] SpriteRenderer TransformationRomelsprite;
+    [SerializeField] GameObject ShadowRomel;
+    [SerializeField] Sprite Shadow; 
     public override void StartCpty()
     {
         int ressourcePlayer = 0;
-        if (!gameObject.GetComponent<UnitScript>().UnitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.Possédé))
+        if (!gameObject.GetComponent<UnitScript>().UnitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.PossÃ©dÃ©))
         {
             ressourcePlayer = GetComponent<UnitScript>().UnitSO.IsInRedArmy ? PlayerScript.Instance.RedPlayerInfos.Ressource : PlayerScript.Instance.BluePlayerInfos.Ressource;
         }
-        else if (gameObject.GetComponent<UnitScript>().UnitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.Possédé))
+        else if (gameObject.GetComponent<UnitScript>().UnitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.PossÃ©dÃ©))
         {
             ressourcePlayer = GetComponent<UnitScript>().UnitSO.IsInRedArmy ? PlayerScript.Instance.BluePlayerInfos.Ressource : PlayerScript.Instance.RedPlayerInfos.Ressource;
         }
@@ -67,7 +69,7 @@ public class Romel : Capacity
 
                     }
 
-                    UIInstance.Instance.ShowValidationPanel(Capacity1Name, "Êtes-vous sûr de vouloir utiliser la transformation de Romel ?");
+                    UIInstance.Instance.ShowValidationPanel(Capacity1Name, "ï¿½tes-vous sï¿½r de vouloir utiliser la transformation de Romel ?");
                     break;
                 }
                 //tilelist.Add(TilesManager.Instance.TileList[i]);
@@ -99,7 +101,8 @@ public class Romel : Capacity
    
         }
         GetComponent<Animator>().runtimeAnimatorController = TransformationRomelAnimator;
-        GetComponent<UnitScript>().UpdateLifeHeartShieldUI(GameManager.Instance.IsPlayerRedTurn ? UIInstance.Instance.RedHeartSprite : UIInstance.Instance.BlueHeartSprite,GetComponent<UnitScript>().Life);
+        ShadowRomel.GetComponent<SpriteRenderer>().sprite = Shadow;
+        GetComponent<UnitScript>().UpdateLifeHeartShieldUI(GameManager.Instance.IsPlayerRedTurn ? UIInstance.Instance.RedHeartSprite : UIInstance.Instance.BlueHeartSprite,GetComponent<UnitScript>().UnitSO.LifeMax);
      
         Destroy(GetComponent<Romel>());
     }

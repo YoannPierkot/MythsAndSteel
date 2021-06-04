@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -5314434597889247586
     second: Odnance_Idle_1
+  - first:
+      213: -3688798284312584431
+    second: Atillerie_Idle_0
+  - first:
+      213: 2123417322629929890
+    second: Atillerie_Idle_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Odnance_Idle_0
+      name: Atillerie_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252f10bbdab1464b0800000000000000
-      internalID: -5448199216230698414
+      spriteID: 11f5a772181ceccc0800000000000000
+      internalID: -3688798284312584431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odnance_Idle_1
+      name: Atillerie_Idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -144,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e96f3cae3e55f36b0800000000000000
-      internalID: -5314434597889247586
+      spriteID: 2ab9449fdc4e77d10800000000000000
+      internalID: 2123417322629929890
       vertices: []
       indices: 
       edges: []
