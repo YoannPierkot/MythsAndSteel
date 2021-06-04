@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: hansel&Gretel
+  m_EditorClassIdentifier: 
+  UnitName: Hansel & Gretel
+  Description: "Depuis le d\xE9but des ann\xE9es 1930, un programme allemand cherche
+    \xE0 cr\xE9er des supersoldats dans l\u2019arm\xE9e allemande. Entra\xEEnements
+    intensifs, drogues,d\xE9buts d\u2019implants cybern\xE9tiques, utilisation d\u2019Hyperchimie
+    : tout est test\xE9. L\u2019\xE9crasante majorit\xE9 des sujets tests sont morts
+    ou ont donn\xE9s de pi\xE8tres r\xE9sultats. Cependant, deux jumeaux, des orphelins,
+    ont d\xE9montr\xE9 une r\xE9sistance et une adaptation aux traitements remarquables,
+    leurs permettant de pousser leurs corps bien au-del\xE0 des limites humaines. 
+    Aujourd\u2019hui, le fr\xE8re et la soeur,r\xE9pondant aux noms de code Hansel
+    et Gretel. Bien plus rapides et plus forts que de simples humains, \xE9quip\xE9s
+    de proth\xE8ses cybern\xE9tiques de pointe, agissant avec une synchronicit\xE9
+    d\xE9concertante, les jumeaux sont alors d\xE9p\xEAch\xE9s sur Stalingrad en
+    d\xE9cembre 1942."
+  typeUnite: 3
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 6465c61dd228dbf4bac28a9b757e6d13, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 0}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -286814259939055985, guid: 051034affe76d5f4bb8c7f9d09e2b11e, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 020000000000000000000000

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: granatwerfer
+  m_EditorClassIdentifier: 
+  UnitName: Granatwerfer 42
+  Description: "Isol\xE9s dans les rues de Stalingrad, les artilleurs allemands ont
+    d\xFB abandonner leurs canons. Le g\xE9nie militaire a bricol\xE9 en urgence
+    des syst\xE8mes de mortiers portatifs utilisables par une petite \xE9quipe d\u2019individus.
+    Cependant, ils ne sont pas \xE0 sous-estimer, les exosquelettes allemands permettant
+    de porter des charges lourdes, ces mortiers sont de v\xE9ritables canons miniatures. "
+  typeUnite: 2
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 4
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 8}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 0}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -7214590730705817189, guid: 5bb72fe5678c53c4f849bfd7f6d75f98, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 010000000000000000000000

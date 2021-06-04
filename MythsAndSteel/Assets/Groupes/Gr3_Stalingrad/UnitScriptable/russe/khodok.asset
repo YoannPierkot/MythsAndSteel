@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: khodok
+  m_EditorClassIdentifier: 
+  UnitName: Khodok
+  Description: "L\u2019invasion allemande for\xE7a l\u2019URSS \xE0 tout faire pour
+    rattraper son retard dans le d\xE9veloppement de technologie de m\xE9chas. Manquant
+    de temps et de technique, le g\xE9nie sovi\xE9tique finit par produire le tout
+    premier m\xE9cha du pays, le Khodok, qui compense son manque de sophistication
+    par un blindage monstrueux. Si celui ci parvenait \xE0 \xEAtre bris\xE9 alors,
+    le poids de son armure en moins, son habilet\xE9 en combat se verrait d\xE9cupl\xE9e,
+    devenant ainsi un v\xE9ritable dieu du champ de bataille.. "
+  typeUnite: 5
+  LifeMax: 5
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 1
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 4
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 0ca07458c9c9da4428e5ab5f250ea49a, type: 3}
+  SonDeplacement: {fileID: 0}
+  SonMort: {fileID: 0}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -3330890570063059398, guid: f4cc180dae74d6b40824fec8c904b135, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 020000000000000000000000

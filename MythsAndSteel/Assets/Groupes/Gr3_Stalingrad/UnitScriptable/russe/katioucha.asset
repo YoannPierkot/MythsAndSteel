@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: katioucha
+  m_EditorClassIdentifier: 
+  UnitName: Katioucha
+  Description: "V\xE9hicule militaire transportant une immense batterie de missiles,
+    le Katioucha ou \xAB orgue de Staline \xBB utilise une technologie de contr\xF4le
+    filaire afin de diriger ses projectiles avec une grande pr\xE9cision, faisant
+    pleuvoir la mort sur les troupes retranch\xE9es dans la ville.  Leurs explosions
+    d\xE9vastatrices sont dues \xE0 un m\xE9lange de gaz instables issus de l\u2019Hyperchimie
+    augmentant grandement leur potentiel meurtrier."
+  typeUnite: 2
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 3
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 8, y: 12}
+  DamageMaximum: 0
+  NumberRangeMax: {x: 0, y: 0}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 0}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 3116143096227232076, guid: 43115885b62bf82448c59865d6b70850, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 010000000000000000000000

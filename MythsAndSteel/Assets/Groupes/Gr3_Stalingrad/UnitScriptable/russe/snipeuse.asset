@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: snipeuse
+  m_EditorClassIdentifier: 
+  UnitName: Snipeuse
+  Description: "Unit\xE9 f\xE9minine d\u2019infanterie form\xE9e dans le but de devenir
+    une formation de tireuses d\u2019\xE9lite, les snipeuses russes sont redout\xE9es
+    de toute l\u2019arm\xE9e allemande. Surnomm\xE9es les sorci\xE8res de l\u2019arm\xE9e
+    rouge, la pr\xE9cision mortelle de leurs attaques implacables est bien connue
+    pour avoir caus\xE9 de nombreux morts du c\xF4t\xE9 allemand avant m\xEAme le
+    d\xE9but de certaines batailles, cr\xE9ant la panique dans les rangs ennemis,
+    comme une mal\xE9diction. "
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 3
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 672ed031b3907f14a9b1d2f3e52f71b8, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 0}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 2053948764156585857, guid: 54c392d9d4495044c96644477d6b8897, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000
