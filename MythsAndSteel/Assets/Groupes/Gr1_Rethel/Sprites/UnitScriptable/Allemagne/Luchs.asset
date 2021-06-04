@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Luchs
+  m_EditorClassIdentifier: 
+  UnitName: Luchs
+  Description: "Fascin\xE9s par la vitesse et l'agressivit\xE9, les ing\xE9nieurs
+    allemands \xE9taient \xE0 larecherche d'une machine \xE0 la fois rapide et destructrice.
+    C'est ainsi qu'a \xE9t\xE9 cr\xE9\xE9 le Luchs, une machine rapide et puissante
+    capable de cr\xE9er des trous dans les lignes de front ennemies"
+  typeUnite: 5
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 0
+  numberOfUnitToAttack: 0
+  DamageMinimum: 2
+  NumberRangeMin: {x: 6, y: 10}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 89daf35245073a741817d9d3ab9980d1, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 06000000

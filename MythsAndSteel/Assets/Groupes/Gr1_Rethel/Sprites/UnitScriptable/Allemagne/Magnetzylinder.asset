@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Magnetzylinder
+  m_EditorClassIdentifier: 
+  UnitName: Magnetzylinder
+  Description: "Le MagnetZylinder est une artillerie allemande parue peu avant le
+    d\xE9but de la Seconde Guerre mondiale. \xC9quip\xE9e de chenilles pour un mouvement
+    assez rapide , et arm\xE9e d\u2019un puissant canon \xE0 tr\xE8s longue port\xE9e
+    , elle a la possibilit\xE9 d\u2019envoyer un aimant universel qui attirera n\u2019importe
+    quelle unit\xE9 se trouvant \xE0 proximit\xE9 du projectile."
+  typeUnite: 2
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 4
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 0
+  DamageMinimum: 1
+  NumberRangeMin: {x: 6, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e909c0d798388184293656b9a8942cf5, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 28609512a625b4b4592facda107fc0c3, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 
