@@ -35,5 +35,5 @@ MonoBehaviour:
   Sprite: {fileID: 859910330887159464, guid: f0d02dc98a9774f4a8420ed401cd8ce6, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
-  IsInRedArmy: 1
+  IsInRedArmy: 0
   UnitAttributs: 000000000000000000000000
