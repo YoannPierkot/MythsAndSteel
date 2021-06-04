@@ -27,7 +27,7 @@ MonoBehaviour:
   ShieldMax: 0
   AttackRange: 2
   MoveSpeed: 2
-  CreationCost: 0
+  CreationCost: 4
   numberOfUnitToAttack: 1
   DamageMinimum: 1
   NumberRangeMin: {x: 4, y: 7}
