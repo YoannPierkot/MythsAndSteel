@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Panther
+  m_EditorClassIdentifier: 
+  UnitName: Panther
+  Description: "Imp\xE9n\xE9trable avec son blindage synth\xE9tis\xE9 \xE0 l\u2019aide
+    de l\u2019Hyperchimie, et terrifiant avec son canon \xE0 acc\xE9l\xE9rateur de
+    particules permettant de tirer un faisceau de particules allant \xE0 la vitesse
+    de la lumi\xE8re. Cette puissance a un co\xFBt qui am\xE8ne  \xE0 quelques inconv\xE9nients
+    : le canon met du temps \xE0 charger son projectile et la rotation de sa tourelle
+    est tr\xE8s lente."
+  typeUnite: 1
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 4
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 8, y: 12}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 4, y: 7}
+  SonAttaque: {fileID: 8300000, guid: 29287153e5aec97449a9895cd955e088, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -5037695876932802142, guid: 7acce2b2db3656f4080242b347cf9d44, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

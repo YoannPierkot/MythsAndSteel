@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Howitzer M1
+  m_EditorClassIdentifier: 
+  UnitName: Howitzer M1
+  Description: "Surnomm\xE9 le \xAB Dragon noir \xBB, ce mastodonte, de par sa taille
+    et sa puissance de feu avec son canon 240 mm, est l\u2019artillerie la plus puissante
+    d\xE9ploy\xE9e par les Am\xE9ricains. Elle est capable de tirer un projectile
+    d\xE9flagr\xE9 par une explosion concentr\xE9e en Orgone. Elle permet d\u2019infliger
+    de lourds d\xE9g\xE2ts dans une vaste zone et rayer de la carte m\xEAme le plus
+    r\xE9sistant des chars."
+  typeUnite: 2
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 4
+  MoveSpeed: 1
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 8, y: 12}
+  DamageMaximum: 0
+  NumberRangeMax: {x: 0, y: 0}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 1069175793449582831, guid: 8e9ec15680f2ac54b92516aceea5b427, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 010000000000000000000000

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Hugo Krass
+  m_EditorClassIdentifier: 
+  UnitName: Hugo Krass
+  Description: "Ayant une pr\xE9d\xE9termination pour \xEAtre un grand guerrier strat\xE8ge
+    et f\xE9roce, Kraas s\u2019est fait remarquer d\xE8s les premi\xE8res offensives
+    allemandes, ce qui lui permit d\u2019\xEAtre rapidement promu, au fil des ann\xE9es
+    de guerre, Generaloberst. L'Allemagne elle-m\xEAme le r\xE9compensa en faisant
+    de lui le 1er Wunderwaffe de la nation. Par un nouveau corps en parti m\xE9canis\xE9
+    avec le meilleur de la technologie allemande, il est de plus en plus puissant
+    plus sa Mesali qui le constitue est charg\xE9 en \xE9lectricit\xE9. il devient
+    l\u2019avatar de la guerre elle-m\xEAme."
+  typeUnite: 4
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 6, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 6465c61dd228dbf4bac28a9b757e6d13, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: a0758a606cbfc2f4c9d9b79bf5b9ac15, type: 3}
+  VoiceLine: {fileID: 8300000, guid: b7c6424d86169914999717464bdd7108, type: 3}
+  Sprite: {fileID: -1532876983021969478, guid: ff0aabcdfc7798247bab2b28772fc0f3, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000
