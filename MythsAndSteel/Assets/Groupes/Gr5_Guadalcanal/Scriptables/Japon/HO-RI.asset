@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: HO-RI
   m_EditorClassIdentifier: 
   UnitName: HO-RI
-  Description: 
+  Description: "Unit\xE9 blind\xE9e puissante, le HO-RI est n\xE9anmoins d\xE9licat
+    \xE0 utiliser efficacement. Son blindage lui permet d\u2019encaisser des coups
+    \xE0 longue distance, et son canon puissant tirant des obus allant jusqu\u2019\xE0
+    jusqu\u2019\xE0 36 kilogrammes et sur 6000 m\xE8tres, le rend dangereux lors
+    d\u2019une ma\xEEtrise du terrain. Cependant, sa faible mobilit\xE9 et basse
+    vitesse de rotation de tourelle le rend vuln\xE9rable en combat rapproch\xE9.
+    Ce char bien souvent sous-estim\xE9 est pourtant redoutable sous les ordres d'un
+    commandant capable d\u2019utiliser le terrain \xE0 son avantage.  "
   typeUnite: 0
   LifeMax: 2
   ShieldMax: 0
@@ -29,7 +36,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: 21300000, guid: fb27acc96d7e7534db3be48d00f4b338, type: 3}
+  Sprite: {fileID: 21300000, guid: b9a1727b12653634c89a51139bcdafdb, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 0

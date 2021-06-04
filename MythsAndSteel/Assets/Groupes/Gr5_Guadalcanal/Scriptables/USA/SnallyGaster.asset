@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: SnallyGaster
   m_EditorClassIdentifier: 
   UnitName: Snallygaster
-  Description: 
+  Description: "Le folklore ame\u0301ricain parle d\u2019une vieille cre\u0301ature,
+    un me\u0301lange e\u0301trange entre un dragon et un oiseau : le Snallygaster,
+    une sorte de vampire suc\u0327ant le sang de ses victimes. Son seul objectif
+    et de nourrir par le sang sa faim insatiable d\u2019e\u0302tres vivants."
   typeUnite: 3
   LifeMax: 6
   ShieldMax: 0
@@ -29,7 +32,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: 3762bcbab864ec541bdb36c528e65d66, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: 21300000, guid: f3080ceed1d69304ca9b12848367cbe1, type: 3}
+  Sprite: {fileID: 21300000, guid: e454548898d79494f987c15ec54de1fe, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 1

@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: M2 Mortar
   m_EditorClassIdentifier: 
   UnitName: M2 Mortar
-  Description: 
+  Description: "Le Mortier M2 est une arme avec un canon lisse faisant 60 millime\u0300tres.
+    Avec un chargement par la bouche et un angle de tir e\u0301leve\u0301, ce mortier
+    est parfait pour accompagner les unite\u0301s d\u2019infanterie sur le terrain.
+    Il e\u0301tait si pratique que de nombreuses arme\u0301es l\u2019a utilise\u0301.
+    Adapte\u0301 a\u0300 tous les terrains, il devient donc une artillerie de choix
+    pour Guadalcanal, la\u0300 ou\u0300 les bois, les rivie\u0300res, la plage et
+    le climat tropical font du combat une course a\u0300 l\u2019adaptation.  "
   typeUnite: 2
   LifeMax: 2
   ShieldMax: 0
@@ -29,7 +35,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: 7065755690493594391, guid: c6da4d7877259494a84e1a05c51a2e7e, type: 3}
+  Sprite: {fileID: 21300000, guid: 365027fd4104f59449e1f3ef64067314, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 1

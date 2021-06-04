@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: Gashadokuro
   m_EditorClassIdentifier: 
   UnitName: Gashadokuro
-  Description: 
+  Description: "Les retomb\xE9es retomb\xE9es d\u2019Orgone dues \xE0 la mort des
+    soldats s\u2019assemblent et forment le Gashadokuro. Cet \xE9norme squelette
+    ne vit que pour venger ceux qui l\u2019ont fait na\xEEtre. La guerre, laissant
+    des ruines jonch\xE9es de cadavres dans son sillage, est un climat propice \xE0
+    l\u2019\xE9veil de cette cr\xE9ature. Apparaissant r\xE9guli\xE8rement dans l\u2019arm\xE9e
+    japonaise, son \xE9tat instable rend les soldats m\xE9fiants \xE0 son \xE9gard,
+    craignant un soudain changement de camp. A la vue de cette cr\xE9ature, leurs
+    dents claquent et leurs os s\u2019entrechoquent."
   typeUnite: 3
   LifeMax: 3
   ShieldMax: 0
@@ -29,7 +36,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: c3e654ae96d74de408d7af4db50d2b37, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: 21300000, guid: 21205e098a33601499ab2edd4405d50d, type: 3}
+  Sprite: {fileID: 21300000, guid: 8d25c9c5a6bc47d418791138cf438d0e, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 0

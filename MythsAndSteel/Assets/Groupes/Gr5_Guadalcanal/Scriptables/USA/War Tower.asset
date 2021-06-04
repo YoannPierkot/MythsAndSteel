@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: War Tower
   m_EditorClassIdentifier: 
   UnitName: The War Tower
-  Description: 
+  Description: "L'Am\xE9rique de\u0301cide de se concentrer sur la cre\u0301ation
+    de me\u0301chas capables de servir sur le long terme et facilement modifiables.
+    Dans cet esprit a e\u0301te\u0301 cre\u0301e\u0301 le me\u0301cha War Tower,
+    un grand assemblage blinde\u0301, parfait pour accompagner ses allie\u0301s dans
+    les assauts de front. Cre\u0301e\u0301 pour prote\u0301ger ses allie\u0301s et
+    forcer le passage a\u0300 travers les lignes ennemies, il est dirige\u0301 a\u0300
+    distance via un syste\u0300me d\u2019ondes radio chiffre\u0301es, permettant
+    de ne pas mettre en danger un potentiel e\u0301quipage.  "
   typeUnite: 5
   LifeMax: 5
   ShieldMax: 0
@@ -29,7 +36,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: -1319762501067140958, guid: a51ac018af2521e4b949790a16fe5f22, type: 3}
+  Sprite: {fileID: 21300000, guid: f6021fd8c57b70b498dedb433bfc40e7, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 1

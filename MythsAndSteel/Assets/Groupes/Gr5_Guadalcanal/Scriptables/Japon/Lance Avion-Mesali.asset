@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Lance Avion-Mesali
   m_EditorClassIdentifier: 
   UnitName: Lance Avion-Mesali
-  Description: 
+  Description: "Les progr\xE8s technologiques et la doctrine du sacrifice du soi
+    au nom de l\u2019Empereur les a conduit \xE0 inventer une arme farfelue, le lance-avion
+    V-Mesali. Gr\xE2ce \xE0 la puissance \xE9nerg\xE9tique du Mesali et de l\u2019ing\xE9niosit\xE9
+    des Japonais, ce lance-avion d\u2019une technique incroyable permet \xE0 l\u2019arm\xE9e
+    de percer les plus solides rangs ennemis. Cette artillerie ayant une puissance
+    de tirs \xE9lev\xE9e voit sa mobilit\xE9 l\xE9g\xE8rement r\xE9duite."
   typeUnite: 2
   LifeMax: 2
   ShieldMax: 0
@@ -22,14 +27,14 @@ MonoBehaviour:
   CreationCost: 0
   numberOfUnitToAttack: 1
   DamageMinimum: 1
-  NumberRangeMin: {x: 0, y: 0}
-  DamageMaximum: 0
-  NumberRangeMax: {x: 2, y: 12}
+  NumberRangeMin: {x: 5, y: 7}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 8, y: 12}
   SonAttaque: {fileID: 8300000, guid: ccc875c9e7211c54aa3567ac8e41fa8c, type: 3}
   SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: -6361703502446688980, guid: 57ab69ccf57ac5244a33862ee364d691, type: 3}
+  Sprite: {fileID: 21300000, guid: 750f6e09cee267b4fa6fff00fe5da307, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 0

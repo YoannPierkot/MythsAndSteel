@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: "Samoura\xEF Crabe"
   m_EditorClassIdentifier: 
   UnitName: "Samoura\xEF Crabe"
-  Description: 
+  Description: "Les samoura\xEFs crabes sont des ma\xEEtres du combat. Ils sont agiles
+    et loyaux envers leur ma\xEEtre et ils portent le surnom de \xABSamoura\xEF Heikegani\xBB
+    gr\xE2ce \xE0 l\u2019apparence de leur armure en carapace de crabe. Des rumeurs
+    affirment \xE9galement que ces crabes sont la r\xE9incarnation d\u2019anciens
+    guerriers morts. L\u2019armure am\xE9lior\xE9e des samoura\xEFs crabes leur conf\xE8re
+    de nombreux avantages dans le sable. Leur sabre \xE9nerg\xE9tique dernier cri
+    appuie leur force au combat rapproch\xE9."
   typeUnite: 0
   LifeMax: 2
   ShieldMax: 0
@@ -29,7 +35,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
   SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
   VoiceLine: {fileID: 0}
-  Sprite: {fileID: -403284302823463041, guid: 558508edbca3bce4c8fa3bfde4498020, type: 3}
+  Sprite: {fileID: 21300000, guid: e1049f710a5dd5748b1ec04ca4182c9c, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 0
