@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 6 Robin Hood
+  m_EditorClassIdentifier: 
+  UnitName: Robin Hood
+  Description: "Il y a longtemps, dans la for\xEAt de Sherwood, un homme connu sous
+    le nom de Robin Hood \xE9tait empreint d\u2019un ardent d\xE9sir de justice,
+    il volait aux riches pour donner aux pauvres. Un jour, par inadvertance, Robin
+    se retrouva au beau milieu d\u2019une forte concentration d\u2019Orgone. L\u2019effet
+    fut imm\xE9diat : le voleur absorba l\u2019Orgone et devint immortel."
+  typeUnite: 3
+  LifeMax: 1
+  ShieldMax: 0
+  AttackRange: 3
+  MoveSpeed: 8
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 4, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e39657182710cbe4c972fd637e4922c8, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: fa7d111ab84c33343a37107baae66d45, type: 3}
+  SonMort: {fileID: 8300000, guid: 3def8537d557fae42b3c29eca7d1e8fb, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 10951c8d6119e994bbce185499a0ec57, type: 3}
+  Sprite: {fileID: 21300000, guid: 36662c177ce8d634ca164e0133ad79a0, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 050000000000000000000000

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 2 Pyromeccanico
+  m_EditorClassIdentifier: 
+  UnitName: Pyromeccanico
+  Description: "Le masque des m\xE9caniciens italiens cible automatiquement les anomalies
+    pr\xE9sentes sur les objets m\xE9caniques pour optimiser leur r\xE9paration.
+    Leurs bras permettent de manipuler des charges plus encombrantes. "
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 2, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 48d905388e42a064aa8928c1bb401f19, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: fa7d111ab84c33343a37107baae66d45, type: 3}
+  SonMort: {fileID: 8300000, guid: ceb8a8d834b352a4c8486b7d2d24599c, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 48d905388e42a064aa8928c1bb401f19, type: 3}
+  Sprite: {fileID: 21300000, guid: 830be18d91b85ea46a46eddfaa4b245d, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

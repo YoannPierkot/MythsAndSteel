@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 4 British mule
+  m_EditorClassIdentifier: 
+  UnitName: British mule
+  Description: "Modifi\xE9e pour s\u2019adapter \xE0 tout type de terrains, la Mule
+    a \xE9t\xE9 renforc\xE9e avec un grappin massif, lui permettant de se tracter
+    dans les zones les plus abruptes. "
+  typeUnite: 1
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 75eb51c29c91ff34ea134a51146e0b18, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: b6e35b01ed1d08c45b4f3226848cce55, type: 3}
+  SonMort: {fileID: 8300000, guid: bea5b243000e36f4a93808df7b56727b, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 672ed031b3907f14a9b1d2f3e52f71b8, type: 3}
+  Sprite: {fileID: 21300000, guid: 17a00ef970909bc44a8942c5811a9f25, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 050000000000000000000000

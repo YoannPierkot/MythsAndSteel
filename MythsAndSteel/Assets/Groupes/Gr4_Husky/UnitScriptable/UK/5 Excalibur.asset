@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 5 Excalibur
+  m_EditorClassIdentifier: 
+  UnitName: Excalibur
+  Description: "Cr\xE9\xE9 pour \xEAtre un dieu de la destruction m\xE9canique, ce
+    m\xE9cha britannique est envoy\xE9 lorsqu\u2019il faut une force de frappe particuli\xE8rement
+    violente sur le champ de bataille. "
+  typeUnite: 5
+  LifeMax: 6
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 9
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 44355c59ea85c80428e5313c54d82f4a, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 3215b8f8ad59b094ebaa00b1b001b5a4, type: 3}
+  SonMort: {fileID: 8300000, guid: bea5b243000e36f4a93808df7b56727b, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 44355c59ea85c80428e5313c54d82f4a, type: 3}
+  Sprite: {fileID: 21300000, guid: 5141cae9fc6fae04aa7a776c8e8e799d, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 010000000000000000000000

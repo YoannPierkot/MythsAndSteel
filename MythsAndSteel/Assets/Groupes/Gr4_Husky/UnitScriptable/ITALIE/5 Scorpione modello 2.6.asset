@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 5 Scorpione modello 2.6
+  m_EditorClassIdentifier: 
+  UnitName: Scorpione modello 2.6
+  Description: "Le canon \xE9lectromagn\xE9tique de cette artillerie permet des tirs
+    \xE0 longue distance avec un minimum de moyen. Les obus r\xE9pulsifs ont \xE9t\xE9
+    cr\xE9\xE9s par le cyclope St\xE9rop\xE8s. "
+  typeUnite: 2
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 4
+  MoveSpeed: 4
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 8}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 8109bcbb1b8a687449fd77906235bed8, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: b6e35b01ed1d08c45b4f3226848cce55, type: 3}
+  SonMort: {fileID: 8300000, guid: bea5b243000e36f4a93808df7b56727b, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 8109bcbb1b8a687449fd77906235bed8, type: 3}
+  Sprite: {fileID: 21300000, guid: feb41d22587260b439fbd3b606589cfb, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000
