@@ -58,7 +58,20 @@ public bool MélodieSinistre = false;
     //Portée
     [SerializeField] int _attackRange;
     public int AttackRange => _attackRange;
-    public int AttackRangeBonus = 0;
+
+    public int _attackRangeBonus = 0;
+    public int AttackRangeBonus
+    {
+        get
+        {
+            return _attackRangeBonus;
+        }
+        set
+        {
+            _attackRangeBonus = value;
+        }
+    }
+  
 
     [Space]
     //Dégats minimum infligé
@@ -664,8 +677,8 @@ public bool MélodieSinistre = false;
         if (Animation != null)
         {
             
-            Animation.SetBool("Dead", true); 
-
+            Animation.SetBool("Dead", true);
+            yield return new WaitForEndOfFrame();
             yield return new WaitForSeconds(Animation.GetCurrentAnimatorStateInfo(0).length);
         }
 
@@ -745,6 +758,8 @@ public bool MélodieSinistre = false;
     public void AddDiceToUnit(int value)
     {
         _diceBonus += value;
+
+        
     }
     #endregion ChangementStat
 

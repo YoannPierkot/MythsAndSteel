@@ -69,12 +69,12 @@ public class MouseCommand : MonoBehaviour
 
         //Statistique pour le MouseOver.
         UnitScript unit = RaycastManager.Instance.UnitInTile.GetComponent<UnitScript>();
-
+        
         UI.TitlePanelMouseOver.GetComponent<TextMeshProUGUI>().text = unit.UnitSO.UnitName;
-        UI.MouseOverStats._lifeGam.GetComponent<TextMeshProUGUI>().text = unit.Life.ToString();
-        UI.MouseOverStats._rangeGam.GetComponent<TextMeshProUGUI>().text = unit.AttackRange.ToString();
-        UI.MouseOverStats._moveGam.GetComponent<TextMeshProUGUI>().text = unit.MoveSpeed.ToString();
-
+        UI.MouseOverStats._lifeGam.GetComponent<TextMeshProUGUI>().text = (unit.Life + unit.Shield).ToString();
+        UI.MouseOverStats._rangeGam.GetComponent<TextMeshProUGUI>().text = (unit.AttackRange + unit.AttackRangeBonus).ToString();
+        UI.MouseOverStats._moveGam.GetComponent<TextMeshProUGUI>().text = (unit.MoveSpeed + unit.MoveSpeedBonus).ToString();
+     
         switch (unit.UnitSO.typeUnite)
         {
             case MYthsAndSteel_Enum.TypeUnite.Infanterie:
@@ -109,11 +109,12 @@ public class MouseCommand : MonoBehaviour
         //Synchronise le texte du titre.
         UI.TitlePanelShiftClicPage1.GetComponent<TextMeshProUGUI>().text = unit.UnitSO.UnitName;
         //Synchronise le texte de la vie avec l'emplacement d'UI.
-        UI.PageUnitStat._lifeGam.GetComponent<TextMeshProUGUI>().text = unit.Life.ToString();
+        UI.PageUnitStat._lifeGam.GetComponent<TextMeshProUGUI>().text = (unit.Life + unit.Shield).ToString();
         //Synchronise le texte de la valeur de la distance d'attaque de l'unité avec l'emplacement d'UI.
-      //  UI.PageUnitStat._rangeGam.GetComponent<TextMeshProUGUI>().text = unit.AttackRange.ToString();
+        //  UI.PageUnitStat._rangeGam.GetComponent<TextMeshProUGUI>().text = unit.AttackRange.ToString();
         //Synchronise le texte de la valeur de la vitesse de l'unité avec l'emplacement d'UI.
-        UI.PageUnitStat._moveGam.GetComponent<TextMeshProUGUI>().text = unit.MoveSpeed.ToString();
+        UI.PageUnitStat._rangeGam.GetComponent<TextMeshProUGUI>().text = (unit.AttackRange+ unit.AttackRangeBonus).ToString();
+        UI.PageUnitStat._moveGam.GetComponent<TextMeshProUGUI>().text = (unit.MoveSpeed+unit.MoveSpeedBonus).ToString();
 
         UpdateMiniJauge(unit);
 
@@ -266,7 +267,7 @@ public class MouseCommand : MonoBehaviour
                     Done = true;
                     UIInstance.Instance.MinSlider.SetActive(true);
                     UIInstance.Instance.MinSlider.transform.position = new Vector3(UIInstance.Instance.MiniJaugeSlot[u - 2].transform.position.x, UIInstance.Instance.MinSlider.transform.position.y, UIInstance.Instance.MinSlider.transform.position.z);
-                    UIInstance.Instance.MinSlider.GetComponentInChildren<TextMeshProUGUI>().text = Unit.DamageMinimum.ToString();
+                    UIInstance.Instance.MinSlider.GetComponentInChildren<TextMeshProUGUI>().text = (Unit.DamageMinimum + Unit.DamageBonus).ToString();
                 }
                 UIInstance.Instance.MiniJaugeSlot[u - 2].sprite = UIInstance.Instance.Minimum;
                 Min.Add(u);
@@ -292,7 +293,7 @@ public class MouseCommand : MonoBehaviour
                     Done = true;
                     UIInstance.Instance.MaxSlider.SetActive(true);
                     UIInstance.Instance.MaxSlider.transform.position = new Vector3(UIInstance.Instance.MiniJaugeSlot[u - 2].transform.position.x, UIInstance.Instance.MaxSlider.transform.position.y, UIInstance.Instance.MaxSlider.transform.position.z);
-                    UIInstance.Instance.MaxSlider.GetComponentInChildren<TextMeshProUGUI>().text = Unit.DamageMaximum.ToString();
+                    UIInstance.Instance.MaxSlider.GetComponentInChildren<TextMeshProUGUI>().text = (Unit.DamageMaximum + Unit.DamageBonus).ToString();
                 }
                 UIInstance.Instance.MiniJaugeSlot[u - 2].sprite = UIInstance.Instance.Maximum;
                 Max.Add(u);
@@ -868,22 +869,23 @@ public class MouseCommand : MonoBehaviour
     {
         if (GameManager.Instance.activationDone == false)
         {
-
-        if (!_hasCheckUnit)
-        {
-            //Si le joueur n'a pas cliqué, alors tu lances la coroutine.
-            if (_checkIfPlayerAsClic == false)
+            if (!_hasCheckUnit)
             {
-                //Coroutine : Une coroutine est une fonction qui peut suspendre son exécution (yield) jusqu'à la fin de la YieldInstruction donnée.
-                StartCoroutine(ShowObject(TimeToWait));
-                UpdateUIStats();
-                _hasCheckUnit = true;
+
+                //Si le joueur n'a pas cliqué, alors tu lances la coroutine.
+                if (_checkIfPlayerAsClic == false)
+                {
+                    //Coroutine : Une coroutine est une fonction qui peut suspendre son exécution (yield) jusqu'à la fin de la YieldInstruction donnée.
+                    StartCoroutine(ShowObject(TimeToWait));
+                    UpdateUIStats();
+                    _hasCheckUnit = true;
+                }
+
+                if (_checkIfPlayerAsClic)
+                {
+                    MouseExitWithoutClick();
+                }
             }
-        }
-        if (_checkIfPlayerAsClic)
-        {
-            MouseExitWithoutClick();
-        }
         }
     }
 

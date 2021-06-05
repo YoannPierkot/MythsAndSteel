@@ -944,7 +944,7 @@ public class Attaque : MonoSingleton<Attaque>
 
         PanelBlockant2.SetActive(false);
         RemoveTileSprite();
-
+        
         // Clear de toutes les listes et stats
         newNeighbourId.Clear();
 
@@ -1081,24 +1081,7 @@ public class Attaque : MonoSingleton<Attaque>
     public void ChangeStat()
     {
         // Applique les bonus/malus de terrains
-        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Bosquet, _selectedUnit.GetComponent<UnitScript>().ActualTiledId)) // Bosquet
-        {
-            _numberRangeMin.x -= 1;
-            _numberRangeMin.y -= 1;
-            _numberRangeMax.x -= 1;
-            
-            Debug.Log("BosquetEffectApplyed");
-        }
-
-
-
-        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Plage, _selectedUnit.GetComponent<UnitScript>().ActualTiledId) && _selectedUnit.GetComponent<Unit_SO>().typeUnite == MYthsAndSteel_Enum.TypeUnite.Infanterie) // Plage
-        {
-            _numberRangeMin.x += -2;
-            _numberRangeMin.y += -1;
-            _numberRangeMax.x += -1;
-            Debug.Log("PlayaEffectApplyed");
-        }
+    
 
 
         if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Haute_colline, selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId)) // Haute colline 2

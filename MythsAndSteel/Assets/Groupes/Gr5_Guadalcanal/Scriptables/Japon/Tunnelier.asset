@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Tunnelier
+  m_EditorClassIdentifier: 
+  UnitName: Tunnelier
+  Description: "L\u2019infanterie japonaise \xE9tant experte des environnements,
+    elle ma\xEEtrise les techniques d\xE9licates li\xE9es \xE0 la terre. Cela leur
+    permet de creuser des trous et de venir au combat rapproch\xE9. Cette tactique
+    ouvre un large \xE9ventail d'opportunit\xE9s d\u2019infiltrer les lignes ennemis
+    tout en s\u2019assurant une r\xE9ponse tactique qualitative \xE0 la mesure des
+    attentes de l\u2019Empereur. Les tunneliers portent dans leur c\u0153ur le souhait
+    d\u2019 Hiro-Hito d\u2019assouvir la domination japonaise sur le monde et de
+    creuser encore plus."
+  typeUnite: 0
+  LifeMax: 1
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 2, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 664560d710291a946a6f41a356ee270e, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

@@ -150,6 +150,7 @@ public class UIInstance : MonoSingleton<UIInstance>
 
     #endregion ShiftClicPanelP1
 
+
     #region ShiftClicPanelP2
     [Header("LISTES DES ELEMENTS UI POUR LE SHIFT CLIC DE LA PAGE 2")]
     [Tooltip("Tous les éléments qui composent l'UI pour le Shift Clic de la Page 2")]

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Hiro Onoda
+  m_EditorClassIdentifier: 
+  UnitName: Hiro Onoda
+  Description: "En 1939, peu de temps apr\xE8s s\u2019\xEAtre illustr\xE9 dans de
+    nombreuses batailles gr\xE2ce \xE0 sa volont\xE9 de fer, il fut men\xE9 \xE0
+    \xEAtre reconnu par l\u2019Empereur lui-m\xEAme pour ses exploits contre les
+    am\xE9ricains. Il rejoint l\u2019\xE9cole d\u2019entra\xEEnement intensive de
+    Kurume et il y reste trois ans, o\xF9 il s\u2019entra\xEEne dans tous les types
+    de terrain existant au Japon et apprend chaque utilisation possible de la nature.
+    Malgr\xE9 ses 23 ans, il impose un charisme que m\xEAme ses sup\xE9rieurs ne
+    peuvent contester."
+  typeUnite: 4
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 7}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 8, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 6465c61dd228dbf4bac28a9b757e6d13, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 8d7f436c51e841b4480ef5405b44a787, type: 3}
+  Sprite: {fileID: 21300000, guid: e5d2803a9cb4d8c4dad6da6fcdeff39a, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000
