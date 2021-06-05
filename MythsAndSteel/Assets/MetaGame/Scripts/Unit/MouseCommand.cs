@@ -111,9 +111,10 @@ public class MouseCommand : MonoBehaviour
         //Synchronise le texte de la vie avec l'emplacement d'UI.
         UI.PageUnitStat._lifeGam.GetComponent<TextMeshProUGUI>().text = (unit.Life + unit.Shield).ToString();
         //Synchronise le texte de la valeur de la distance d'attaque de l'unité avec l'emplacement d'UI.
-      //  UI.PageUnitStat._rangeGam.GetComponent<TextMeshProUGUI>().text = unit.AttackRange.ToString();
+        //  UI.PageUnitStat._rangeGam.GetComponent<TextMeshProUGUI>().text = unit.AttackRange.ToString();
         //Synchronise le texte de la valeur de la vitesse de l'unité avec l'emplacement d'UI.
-        UI.PageUnitStat._moveGam.GetComponent<TextMeshProUGUI>().text = unit.MoveSpeed.ToString();
+        UI.PageUnitStat._rangeGam.GetComponent<TextMeshProUGUI>().text = (unit.AttackRange+ unit.AttackRangeBonus).ToString();
+        UI.PageUnitStat._moveGam.GetComponent<TextMeshProUGUI>().text = (unit.MoveSpeed+unit.MoveSpeedBonus).ToString();
 
         UpdateMiniJauge(unit);
 

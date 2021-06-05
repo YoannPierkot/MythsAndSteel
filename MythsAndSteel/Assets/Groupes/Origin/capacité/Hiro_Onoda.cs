@@ -34,7 +34,7 @@ public class Hiro_Onoda : Capacity
             }
         }
 
-        EventTile(2, GameManager.Instance.IsPlayerRedTurn, tileList, "Regroupement Instantané", "Êtes-vous sur de vouloir déplacer les unités sur ces case?", false);
+        EventTile(2, GameManager.Instance.IsPlayerRedTurn, tileList, "Regroupement Instantané", "Êtes-vous sur de vouloir déplacer les unités sur ces cases?", false);
         GameManager.Instance._eventCall += EndCpty;
 
     }
@@ -45,5 +45,9 @@ public class Hiro_Onoda : Capacity
         {
             GameManager.Instance.TileChooseList[i].GetComponent<TileScript>().AddUnitToTile(GameManager.Instance.UnitChooseList[i].gameObject);
         }
+        GameManager.Instance._eventCall -= EndCpty;
+        GetComponent<UnitScript>().EndCapacity();
+        base.EndCpty();
+        GameManager.Instance.TileChooseList.Clear();
     }
 }

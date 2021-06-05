@@ -156,8 +156,8 @@ MonoBehaviour:
       unit\xE9 dans cette case."
     _eventType: 03000000
     render: {fileID: 21300000, guid: 2e2b4072cbf92764397a3dc1a847bb70, type: 3}
-    MustBeInstantiate: 1
-    Child: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 2443697204554867568, guid: dbbdd6f96feb272419d508542631e5e0, type: 3}
   - _terrainName: Red Orgone
     _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
       unit\xE9 dans cette case."

@@ -202,6 +202,7 @@ public class RaycastManager : MonoSingleton<RaycastManager>
                     {
                         Attaque.Instance.StopAttack();
                         Mouvement.Instance.StopMouvement(true);
+                        _mouseCommand.UpdateMiniJauge(ActualUnitSelected.GetComponent<UnitScript>());
                         UIInstance.Instance.ActivationUnitPanel.CloseMovementPanel();
                         _actualTileSelected = null;
                         ActualUnitSelected = null;

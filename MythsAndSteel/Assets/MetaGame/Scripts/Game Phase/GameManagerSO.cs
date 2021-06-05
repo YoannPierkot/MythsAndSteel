@@ -551,16 +551,12 @@ public class GameManagerSO : ScriptableObject
                         GameManager.Instance.statetImmobilisation = 3;
                     }
                 }
-                if (GameManager.Instance.IsPlayerRedTurn)
-                {
+               
 
 
                     UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = false;
-                }
-                else
-                {
-                    UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = false;
-                }
+               UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = false;
+                
            
                 PlayerScript.Instance.RedPlayerInfos.HasCreateUnit = false;
                 PlayerScript.Instance.BluePlayerInfos.HasCreateUnit = false;

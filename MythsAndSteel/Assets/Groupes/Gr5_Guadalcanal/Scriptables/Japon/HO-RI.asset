@@ -21,7 +21,7 @@ MonoBehaviour:
     vitesse de rotation de tourelle le rend vuln\xE9rable en combat rapproch\xE9.
     Ce char bien souvent sous-estim\xE9 est pourtant redoutable sous les ordres d'un
     commandant capable d\u2019utiliser le terrain \xE0 son avantage.  "
-  typeUnite: 0
+  typeUnite: 1
   LifeMax: 2
   ShieldMax: 0
   AttackRange: 2

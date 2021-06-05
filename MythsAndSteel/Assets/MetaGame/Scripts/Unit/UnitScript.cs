@@ -58,7 +58,20 @@ public bool MélodieSinistre = false;
     //Portée
     [SerializeField] int _attackRange;
     public int AttackRange => _attackRange;
-    public int AttackRangeBonus = 0;
+
+    public int _attackRangeBonus = 0;
+    public int AttackRangeBonus
+    {
+        get
+        {
+            return _attackRangeBonus;
+        }
+        set
+        {
+            _attackRangeBonus = value;
+        }
+    }
+  
 
     [Space]
     //Dégats minimum infligé
