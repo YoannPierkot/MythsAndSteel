@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
   m_Name: constantinRokossovski
   m_EditorClassIdentifier: 
-  UnitName: Constantin Rokossovski
+  UnitName: Konstantin Rokossovski
   Description: "Commandant sovi\xE9tique d\u2019origine polonaise, il est envoy\xE9
     au goulag o\xF9 il sera tortur\xE9 puis emprisonn\xE9 pendant plusieurs ann\xE9es. 
     Il est finalement lib\xE9r\xE9 et se voit redonn\xE9 son commandement en 1940.
