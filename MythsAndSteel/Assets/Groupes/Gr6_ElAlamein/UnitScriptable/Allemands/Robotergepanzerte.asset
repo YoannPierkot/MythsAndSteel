@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Robotergepanzerte
+  m_EditorClassIdentifier: 
+  UnitName: Roboter-Gepanzerte
+  Description: "Puisque les doctines de guerre des Afrika Korps ont \xE9t\xE9 bas\xE9es
+    sur les principes m\xEAmes de la Blitzkrieg, Rommel a assez vite propos\xE9 \xE0
+    son \xE9tat major d'ajouter un transport de troupes efficace \xE0 son arm\xE9e
+    d'automates. Le ch\xE2ssis de base du SdKfZ a ainsi \xE9t\xE9 adapt\xE9 pour
+    acceuillir le plus d'automates possibles et les prot\xE9ger un maximum avant
+    leur arriv\xE9e sur le champ de bataille. "
+  typeUnite: 1
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 0
+  MoveSpeed: 4
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 0
+  NumberRangeMax: {x: 0, y: 0}
+  SonAttaque: {fileID: 0}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: de2caf5e444715b4bb4b1e5442723be2, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -925409652814685979, guid: 91202e5a9216da046b072f4c3f702487, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Robotensoldaten
+  m_EditorClassIdentifier: 
+  UnitName: Robotensoldaten
+  Description: "Lorsque l'Allemagne finit par rattraper le niveau des Am\xE9ricains
+    dans le domaine des m\xE9chas, certains g\xE9n\xE9raux du Reich se mirent \xE0
+    r\xEAver de la possibilit\xE9 de les miniaturiser pour en faire une arm\xE9e
+    autonome et \xE0 l'ob\xE9issance aveugle. Les ing\xE9nieurs de Krupp se mirent
+    sur cette piste en envoyant des \xE9quipes et des prototypes en Afrique du Nord.  "
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 8}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: a27c5193505c34d47b8e591f14f7c4a8, type: 3}
+  SonMort: {fileID: 8300000, guid: de2caf5e444715b4bb4b1e5442723be2, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 652890316465994774, guid: 6e89dbde751c9d4479e4f0f5896cbc6d, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 090000000000000000000000

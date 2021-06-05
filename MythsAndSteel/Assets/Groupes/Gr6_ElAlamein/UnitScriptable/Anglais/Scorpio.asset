@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Scorpio
+  m_EditorClassIdentifier: 
+  UnitName: Project Scorpio
+  Description: "Reconnu pour son g\xE9nie strat\xE9gique, le g\xE9n\xE9ral Bernard
+    Montgomery proposa aux industries Rolls Royce d'inventer un mod\xE8le de m\xE9cha
+    capable de contrer pr\xE9cis\xE9ment les techniques de la Blitzkrieg des Afrika
+    Korps. Alliant puissance d\xE9fensive et efficacit\xE9 au corps-\xE0-corps, ce
+    m\xE9cha dispose de la capacit\xE9 d'attraper les unit\xE9s ennemies pour les
+    forces \xE0 tomber dans des pi\xE8ges. "
+  typeUnite: 5
+  LifeMax: 5
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 8}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 850059d4d397f244b97b116830397891, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
+  SonMort: {fileID: 8300000, guid: de2caf5e444715b4bb4b1e5442723be2, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 2885383445455057130, guid: 78ac8650b469fa947b2e184f8141d46c, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

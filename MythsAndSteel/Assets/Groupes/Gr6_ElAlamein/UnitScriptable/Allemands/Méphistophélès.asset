@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: "M\xE9phistoph\xE9l\xE8s"
+  m_EditorClassIdentifier: 
+  UnitName: "M\xE9phistoph\xE9l\xE8s"
+  Description: "Sans le savoir, un jeune groupe d'inconscients invoqua un jour l'un
+    des sept princes de enfers lors d'une s\xE9ance de spiritisme.  L'objectif de
+    ce d\xE9mon \xE9tant surtout de s'amuser via la destruction, il entra en contact
+    avec les forces allemandes et passa un pacte : en \xE9change de technologies
+    farfelues et amusantes, il aiderait les troupes de la Wehrmacht dans ses conqu\xEAtes."
+  typeUnite: 3
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 8}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e509d27cfaf49d14a845879b1a5a39ad, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 19907052015cd27468e3060fb67593ef, type: 3}
+  SonMort: {fileID: 8300000, guid: 3562423a3e4e1f646b4db86429661a36, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 6a201de4029a8ab44bf62c94c156ddde, type: 3}
+  Sprite: {fileID: 3473205268770018456, guid: 07156a9e62de1e84aa423bcbd0fe369a, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

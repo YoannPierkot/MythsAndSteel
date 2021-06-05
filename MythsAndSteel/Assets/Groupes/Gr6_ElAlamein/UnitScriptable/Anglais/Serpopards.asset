@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Serpopards
+  m_EditorClassIdentifier: 
+  UnitName: Serpopard
+  Description: "Lors de la conqu\xEAte de l'Egypte par l'Empire Britannique, d'anciens
+    tombeaux furent mis \xE0 jour \xE0 des fins arch\xE9ologiques et historiques.
+    Dans l'un d'eux se trouvait un couple de Serpopards, des chim\xE8res mythiques
+    de l'antiquit\xE9.  Apr\xE8s les avoir soign\xE9 gr\xE2ce \xE0 des injections
+    d'orgone, l'arm\xE9e britannique \xE9voqua la possibilit\xE9 de les employer
+    sur le champ de bataille mais sans succ\xE8s. Ce n'est que lorsque les troupes
+    du Reich se rapproch\xE8rent de leur patrie que les Serpopards se mirent \xE9trangement
+    \xE0 se battre pour prot\xE9ger leur pays, semblant comprendre toute la situation. "
+  typeUnite: 3
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 48d905388e42a064aa8928c1bb401f19, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 68ddee8ab222cf641b252b09302d6d9b, type: 3}
+  SonMort: {fileID: 8300000, guid: e6a589f501885164da7f356729363dfc, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 7088738044596619541, guid: f823609ef62497e4ab94811ad5b7e099, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 050000000000000000000000
