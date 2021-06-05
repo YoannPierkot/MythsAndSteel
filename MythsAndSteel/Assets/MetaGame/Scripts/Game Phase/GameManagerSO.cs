@@ -552,6 +552,7 @@ public class GameManagerSO : ScriptableObject
                     }
                 }
                
+               
 
 
                     UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = false;

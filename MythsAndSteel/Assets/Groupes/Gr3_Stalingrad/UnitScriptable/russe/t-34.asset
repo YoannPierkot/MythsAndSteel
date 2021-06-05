@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: t-34
+  m_EditorClassIdentifier: 
+  UnitName: T-34
+  Description: "Consid\xE9r\xE9 comme le meilleur char des alli\xE9s, voire de la
+    Seconde Guerre mondiale par des g\xE9n\xE9raux comme Guderian, le T34 est le
+    fleuron de l\u2019industrie militaire sovi\xE9tique et a contribu\xE9 \xE0 la
+    victoire de la bataille de Moscou. Le T-34 est essentiellement fabriqu\xE9 \xE0
+    Stalingrad et l'arm\xE9e sovi\xE9tique joue gros pour reprendre son avantage.
+    Apr\xE8s avoir subi des am\xE9liorations cons\xE9quentes gr\xE2ce aux innovations
+    de l\u2019Hyperchimie, il est d\xE9sormais d\xE9ploy\xE9 pour reprendre Stalingrad."
+  typeUnite: 1
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 4, y: 10}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: b39395ac31b1d9442ad9874a5948d6e3, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -8684026956287718267, guid: bf3a3ce710fcbea44b8e999fb7be0b90, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

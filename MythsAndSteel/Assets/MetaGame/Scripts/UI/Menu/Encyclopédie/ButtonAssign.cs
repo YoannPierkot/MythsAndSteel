@@ -7,6 +7,8 @@ using TMPro;
 
 public class ButtonAssign : MonoBehaviour
 {
+    [SerializeField]
+    bool isunivers = false;
     [SerializeField] bool isArmy1;
     [SerializeField] GameObject Army1;
     [SerializeField] GameObject Army2;
@@ -56,14 +58,18 @@ public class ButtonAssign : MonoBehaviour
         informationPanel.SetActive(true);
         homePanel.SetActive(false);
         UnitShown = EventSystem.current.currentSelectedGameObject.GetComponent<Encyclopedie_Unit>().AssociatedUnit;
+        if(!isunivers)
+        {
+
         UpdateMiniJauge(UnitShown);
-        UnitName.SetText(UnitShown.UnitName);
-        UnitLore.SetText(UnitShown.Description);
-        UnitImage.GetComponent<Image>().sprite = UnitShown.Sprite;
         UnitLife.SetText(UnitShown.LifeMax.ToString());
         UnitRange.SetText(UnitShown.AttackRange.ToString());
         UnitMovement.SetText(UnitShown.MoveSpeed.ToString());
         UnitType.SetText(UnitShown.typeUnite.ToString());
+        }
+        UnitName.SetText(UnitShown.UnitName);
+        UnitLore.SetText(UnitShown.Description);
+        UnitImage.GetComponent<Image>().sprite = UnitShown.Sprite;
 
     }
 
