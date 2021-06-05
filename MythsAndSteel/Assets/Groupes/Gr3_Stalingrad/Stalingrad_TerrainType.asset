@@ -238,3 +238,9 @@ MonoBehaviour:
     render: {fileID: 21300000, guid: 183b3c8a4aa201e4b980d8b2dbbcb10d, type: 3}
     MustBeInstantiate: 1
     Child: {fileID: 0}
+  - _terrainName: Objectif Neutre
+    _description: "Case \xE0 capturer pour gagner"
+    _eventType: 2a000000
+    render: {fileID: 21300000, guid: dbc14fd620ebdf648b065a74fe63cee2, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}

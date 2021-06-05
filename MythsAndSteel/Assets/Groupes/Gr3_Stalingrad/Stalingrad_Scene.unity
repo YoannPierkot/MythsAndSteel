@@ -19253,7 +19253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 753220426382525093, guid: 09173d6233fd4ee4c99a729b0b264ff4, type: 3}
       propertyPath: _terrainEffectList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 753220426382525093, guid: 09173d6233fd4ee4c99a729b0b264ff4, type: 3}
       propertyPath: _terrainEffectList.Array.data[0]
