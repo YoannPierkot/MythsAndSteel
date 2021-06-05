@@ -3745,7 +3745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2443697204554867568, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2443697204554867569, guid: 7bbc409cd689e724181e7247346a3e4b, type: 3}
       propertyPath: m_SortingOrder
@@ -4029,7 +4029,6 @@ GameObject:
   m_Component:
   - component: {fileID: 379523896}
   - component: {fileID: 379523898}
-  - component: {fileID: 379523897}
   m_Layer: 0
   m_Name: Drapeau3
   m_TagString: Untagged
@@ -4051,25 +4050,6 @@ Transform:
   m_Father: {fileID: 1338736700}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &379523897
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379523895}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e9e366e6bd014ae4880c75dbe1480ca7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &379523898
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4089,7 +4069,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fe7ed46216f4ae04db5c15298924cc0e, type: 2}
+  - {fileID: 2100000, guid: e6fb4d4629fa3e241ad783cbf706d666, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13193,7 +13173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1041681342709538973, guid: 952bdf0716382114eaa4a1733562d578, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1041681343423423036, guid: 952bdf0716382114eaa4a1733562d578, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17481,7 +17461,7 @@ Animator:
   m_GameObject: {fileID: 1453559453}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8719782a60bd5546af155b7d3b6ca99, type: 2}
+  m_Controller: {fileID: 9100000, guid: a29ff6f293b660142bb68ce5ba99392f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24497,7 +24477,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2078088482}
   - component: {fileID: 2078088484}
-  - component: {fileID: 2078088483}
   m_Layer: 0
   m_Name: Drapeau2
   m_TagString: Untagged
@@ -24519,25 +24498,6 @@ Transform:
   m_Father: {fileID: 1338736700}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2078088483
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078088481}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e9e366e6bd014ae4880c75dbe1480ca7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &2078088484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24557,7 +24517,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c1d46540ae2ddb641a9eac086706a3db, type: 2}
+  - {fileID: 2100000, guid: f31f3fef5fefbfb449b873a58652bc23, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
