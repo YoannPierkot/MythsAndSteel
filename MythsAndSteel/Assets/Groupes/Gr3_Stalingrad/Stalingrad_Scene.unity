@@ -16085,7 +16085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380239861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 4.59, z: 0}
+  m_LocalPosition: {x: 5.063, y: 2.724, z: 0}
   m_LocalScale: {x: 2.025547, y: 2.025547, z: 2.025547}
   m_Children: []
   m_Father: {fileID: 604509839}
@@ -20097,7 +20097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 753220427588857902, guid: 09173d6233fd4ee4c99a729b0b264ff4, type: 3}
       propertyPath: _terrainEffectList.Array.data[0]
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 753220427588857902, guid: 09173d6233fd4ee4c99a729b0b264ff4, type: 3}
       propertyPath: _terrainEffectList.Array.data[1]
