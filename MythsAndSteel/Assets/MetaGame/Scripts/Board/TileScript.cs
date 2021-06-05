@@ -441,18 +441,13 @@ public class TileScript : MonoBehaviour
                     }
                     Debug.Log(T._terrainName);
                     GameObject Child = Instantiate(T.Child, transform.position, Quaternion.identity);
-                    if (Type == MYthsAndSteel_Enum.TerrainType.Ruines || Type == MYthsAndSteel_Enum.TerrainType.Point_de_ressources_vide)
-                    {
-
-                        Child.GetComponent<SpriteRenderer>().sprite = T.render;
-                   
-                    }
-                    else
-                    {
+               
+                    
+                    
 
                     Child.transform.parent = this.transform;
                         Child.transform.localScale = new Vector3(.5f, .5f, .5f);
-                    }
+                    
                   
                     _Child.Add(Child);
                 }
@@ -483,6 +478,18 @@ public class TileScript : MonoBehaviour
             {
                 if (C.TryGetComponent<ChildEffect>(out ChildEffect T))
                 {
+                    if (Type == MYthsAndSteel_Enum.TerrainType.Maison || Type == MYthsAndSteel_Enum.TerrainType.Immeuble)
+                    {
+                        Debug.Log("bonsoirrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
+                            if((T.Type == MYthsAndSteel_Enum.TerrainType.Ruines))
+                            {
+                            Debug.Log("fdkjsl");
+                                C.GetComponent<SpriteRenderer>().enabled = true;
+                            }
+
+
+
+                    }
                     if (T.Type == Type)
                     {
                         GameObject G = C;

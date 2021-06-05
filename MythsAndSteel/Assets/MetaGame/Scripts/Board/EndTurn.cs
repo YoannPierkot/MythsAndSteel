@@ -160,7 +160,7 @@ public class EndTurn : MonoBehaviour
                 S.RemoveEffect(MYthsAndSteel_Enum.TerrainType.Point_de_ressource);
                 S.TerrainEffectList.Remove(MYthsAndSteel_Enum.TerrainType.Point_de_ressource);
                 S.TerrainEffectList.Add(MYthsAndSteel_Enum.TerrainType.Point_de_ressources_vide);
-                S.CreateEffect(MYthsAndSteel_Enum.TerrainType.Point_de_ressources_vide);
+              
             }
         }
         GameManager.Instance.VolDeRavitaillementStat = 3;

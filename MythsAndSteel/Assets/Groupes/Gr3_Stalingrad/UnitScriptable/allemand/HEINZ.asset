@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: HEINZ
+  m_EditorClassIdentifier: 
+  UnitName: Heinz Guderian
+  Description: "Ancien officier radio durant la Premi\xE8re Guerre mondiale ayant
+    particip\xE9 aux conflits en Russie, Heinz fut celui qui th\xE9orisa la tactique
+    de la Blitzkrieg et mena l\u2019assaut allemand sur les d\xE9fenses fran\xE7aises
+    en 1940. Il est \xE0 la t\xEAte des divisions blind\xE9es du front de l\u2019Est
+    et obtient des succ\xE8s importants en Ukraine et lors de son attaque de Moscou. 
+    Cependant, suite \xE0 la d\xE9faite allemande sur ce front, il est envoy\xE9
+    \xE0 Stalingrad pour sauver la t\xEAte de pont de la Wehrmacht sur place."
+  typeUnite: 4
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 6465c61dd228dbf4bac28a9b757e6d13, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: 8021533dba84a0a4f8cda878b4fade76, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -992802274478451619, guid: 7e7cc52c2886d63419d128cbf2424bd4, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

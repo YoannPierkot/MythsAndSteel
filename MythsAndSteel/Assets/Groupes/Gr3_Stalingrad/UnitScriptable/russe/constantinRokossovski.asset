@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: constantinRokossovski
+  m_EditorClassIdentifier: 
+  UnitName: Konstantin Rokossovski
+  Description: "Commandant sovi\xE9tique d\u2019origine polonaise, il est envoy\xE9
+    au goulag o\xF9 il sera tortur\xE9 puis emprisonn\xE9 pendant plusieurs ann\xE9es. 
+    Il est finalement lib\xE9r\xE9 et se voit redonn\xE9 son commandement en 1940.
+    Il sera la principale opposition \xE0 l\u2019arm\xE9e allemande durant la bataille
+    de Moscou et participera dans les plus grandes op\xE9rations visant \xE0 reprendre
+    le territoire pris par l\u2019ennemi, notamment l\u2019op\xE9ration Uranus."
+  typeUnite: 4
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 4, y: 10}
+  DamageMaximum: 4
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 850059d4d397f244b97b116830397891, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: dd557a8e8135fe0428517d6d2780889a, type: 3}
+  VoiceLine: {fileID: 8300000, guid: be0cac792b83a6d4cb5674720557327c, type: 3}
+  Sprite: {fileID: 3178142665158681003, guid: 3f366ae7affb6cd48be90a918259acaa, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

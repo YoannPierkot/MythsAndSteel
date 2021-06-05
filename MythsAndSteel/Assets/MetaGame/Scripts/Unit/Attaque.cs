@@ -1102,7 +1102,7 @@ public class Attaque : MonoSingleton<Attaque>
             _damageMaximum -= 1;
             Debug.Log("Dégats Reduits");
             TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().RemoveEffect(MYthsAndSteel_Enum.TerrainType.Maison);
-            TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().CreateEffect(MYthsAndSteel_Enum.TerrainType.Ruines);
+
             Debug.Log("IkeaEffectApplyed");
         }
 
@@ -1113,7 +1113,7 @@ public class Attaque : MonoSingleton<Attaque>
             Debug.Log("Annulés");
 
             TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().RemoveEffect(MYthsAndSteel_Enum.TerrainType.Immeuble);
-            TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().CreateEffect(MYthsAndSteel_Enum.TerrainType.Ruines);
+ 
             Debug.Log("BigBoumIkeaEffectApplyed");
 
         }

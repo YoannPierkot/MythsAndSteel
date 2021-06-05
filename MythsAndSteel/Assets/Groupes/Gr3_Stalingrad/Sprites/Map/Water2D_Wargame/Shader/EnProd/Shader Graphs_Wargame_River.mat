@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_Wargame_River
+  m_Shader: {fileID: -6465566751694194690, guid: 2411ec0d3de8d844c91228cb0e5d3672, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_6788e751517647329361ebe19d4333f0:
+        m_Texture: {fileID: 2800000, guid: 6ccfd767ac845734cb6b151a29fd914e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_aa79a07de92e4cbe8d5b39a74e5a835b:
+        m_Texture: {fileID: 2800000, guid: cf0d9f1cc7231d040ac692110613c8f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DepthWater_Texture:
+        m_Texture: {fileID: 2800000, guid: f62f212a85797c34c82f85b274425e63, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMapTexture:
+        m_Texture: {fileID: 2800000, guid: bf523b05fcaccad4aafb078a2f945f65, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: cf0d9f1cc7231d040ac692110613c8f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockTexture:
+        m_Texture: {fileID: 2800000, guid: 8dadc215f7974c046aec3a484b8debbf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Surface_Texture:
+        m_Texture: {fileID: 2800000, guid: 0a0b53e82d9a5374e9964f0e9a84f56b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: dd9d40e447ed749459b243114e89e53c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_1b34253d59cb4226ac8471ccd13c85b0: 1
+    - Vector1_BABBF5EC: 0
+    - _Alpha: 1
+    - _Cutoff: 1
+    - _FlowSpeed: 0.02
+    - _FlowStrength: 0.005
+    - _Size: 2
+    m_Colors:
+    - Vector2_0acd510b221c40d4bc0417c30cc9db59: {r: 10, g: 10, b: 0, a: 0}
+    - _DepthWater_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _DepthWater_Speed: {r: -0.005, g: -0.01, b: 0, a: 0}
+    - _Surface_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Surface_Speed: {r: 0.05, g: 0.1, b: 0, a: 0}
+  m_BuildTextureStacks: []
