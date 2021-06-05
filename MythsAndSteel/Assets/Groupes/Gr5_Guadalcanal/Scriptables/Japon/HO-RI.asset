@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: HO-RI
+  m_EditorClassIdentifier: 
+  UnitName: HO-RI
+  Description: "Unit\xE9 blind\xE9e puissante, le HO-RI est n\xE9anmoins d\xE9licat
+    \xE0 utiliser efficacement. Son blindage lui permet d\u2019encaisser des coups
+    \xE0 longue distance, et son canon puissant tirant des obus allant jusqu\u2019\xE0
+    jusqu\u2019\xE0 36 kilogrammes et sur 6000 m\xE8tres, le rend dangereux lors
+    d\u2019une ma\xEEtrise du terrain. Cependant, sa faible mobilit\xE9 et basse
+    vitesse de rotation de tourelle le rend vuln\xE9rable en combat rapproch\xE9.
+    Ce char bien souvent sous-estim\xE9 est pourtant redoutable sous les ordres d'un
+    commandant capable d\u2019utiliser le terrain \xE0 son avantage.  "
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 5, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: b9a1727b12653634c89a51139bcdafdb, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

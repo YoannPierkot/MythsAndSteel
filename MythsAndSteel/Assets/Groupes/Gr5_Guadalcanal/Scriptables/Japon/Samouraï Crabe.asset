@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: "Samoura\xEF Crabe"
+  m_EditorClassIdentifier: 
+  UnitName: "Samoura\xEF Crabe"
+  Description: "Les samoura\xEFs crabes sont des ma\xEEtres du combat. Ils sont agiles
+    et loyaux envers leur ma\xEEtre et ils portent le surnom de \xABSamoura\xEF Heikegani\xBB
+    gr\xE2ce \xE0 l\u2019apparence de leur armure en carapace de crabe. Des rumeurs
+    affirment \xE9galement que ces crabes sont la r\xE9incarnation d\u2019anciens
+    guerriers morts. L\u2019armure am\xE9lior\xE9e des samoura\xEFs crabes leur conf\xE8re
+    de nombreux avantages dans le sable. Leur sabre \xE9nerg\xE9tique dernier cri
+    appuie leur force au combat rapproch\xE9."
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 7}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 8, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e8225fe54bcf46d4fa7d8de053364773, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: e1049f710a5dd5748b1ec04ca4182c9c, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

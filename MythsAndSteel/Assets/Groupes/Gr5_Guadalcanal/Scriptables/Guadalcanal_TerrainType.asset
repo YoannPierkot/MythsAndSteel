@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5d52e6566d37948b1657b7c020bc26, type: 3}
+  m_Name: Guadalcanal_TerrainType
+  m_EditorClassIdentifier: 
+  _EffetDeTerrain:
+  - _terrainName: Bosquet
+    _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
+      unit\xE9 dans cette case."
+    _eventType: 02000000
+    render: {fileID: 21300000, guid: 48863003b857fc848b11f1c75cd9a003, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 2443697204554867568, guid: 396d3d03c0655e24ea80eb7815c8b32c, type: 3}
+  - _terrainName: Cabane Isatabu
+    _description: "Si une Jauge d'Orgone explose d\xFBe \xE0 l'action d'un des 2
+      joueurs, alors l'ennemi obtient une unit\xE9 Isatabu, qu'il peut faire appara\xEEtre
+      sur n'importe quelle case Cabanes Isatabu de la carte."
+    _eventType: 1e000000
+    render: {fileID: 21300000, guid: 16a4be7e295ab8d478cb87adde7b9b1b, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Colline
+    _description: "Augmente de 1 la port\xE9e d'attaque des unit\xE9s pr\xE9sents
+      sur cette case."
+    _eventType: 04000000
+    render: {fileID: 21300000, guid: 8ba6f0f0872527e43880fb296701db30, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 2443697204554867568, guid: 3810c69fe029dac4f8105e697df4d1bd, type: 3}
+  - _terrainName: Eau
+    _description: Case inaccessible en temps normal.
+    _eventType: 08000000
+    render: {fileID: 21300000, guid: e00a0eff0887dba4fa607f449760036d, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Fleuve
+    _description: "Cours d'eau plac\xE9 en bordure de case. Emp\xEAche les unit\xE9s
+      de passer en temps normal. Emp\xEAche les unit\xE9s attaquant \xE0 1 de port\xE9e
+      d'attaquer au travers."
+    _eventType: 0e000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "For\xEAt"
+    _description: "Consomme 2 D\xE9placements pour se d\xE9placer sur cette case."
+    _eventType: 01000000
+    render: {fileID: 21300000, guid: b54cc482e676adf4ba114f3a3c06dccb, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Mont
+    _description: "Consomme 2 D\xE9placements pour se d\xE9placer sur cette case."
+    _eventType: 06000000
+    render: {fileID: 21300000, guid: fbcbb5e75bc25a74a92682c34deaf6d5, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "Rivi\xE8re"
+    _description: "Cours d'eau plac\xE9 en bordure de case. Emp\xEAche les unit\xE9s
+      de passer en temps normal."
+    _eventType: 0a0000000b0000000c0000000d000000
+    render: {fileID: 21300000, guid: 29126a8e803dfc347885e8762e1357f5, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Orgone
+    _description: "Subir des d\xE9g\xE2ts ou tuer des unit\xE9s dans cette zone permet
+      d'augmenter la jauge d'orgone"
+    _eventType: 20000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Pt. Ressource
+    _description: "A chaque Phase Strat\xE9gique, les unit\xE9s sur cette case r\xE9coltent
+      1 Ressource pour leur propri\xE9taire."
+    _eventType: 1b000000
+    render: {fileID: 21300000, guid: 6e166989bf531fc4d8c0db0238c5354f, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4352697046244975141, guid: 2adb593949e96894b812049505a55b73, type: 3}
+  - _terrainName: Pt. Objectif
+    _description: "Objectif de carte, ils sont pris par une unit\xE9 \xE0 la fin
+      du prochain tour de l'adversaire suivant celui de l'arriv\xE9e de l'unit\xE9."
+    _eventType: 1f000000
+    render: {fileID: 21300000, guid: f09001e8876d1cc4fbc2fd3b20a8ced8, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Pont
+    _description: "El\xE9ment plac\xE9 en bordure de case au-dessus d'un cours d'eau,
+      permettant aux unit\xE9s de passer au travers."
+    _eventType: 10000000110000001200000013000000
+    render: {fileID: 21300000, guid: 29126a8e803dfc347885e8762e1357f5, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Sol
+    _description: Case de base, sans effet.
+    _eventType: 00000000
+    render: {fileID: 21300000, guid: 5e53db1019b119b44b2b8c2c114eaa10, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Usine
+    _description: "Permet la cr\xE9ation d'unit\xE9 sur sa case ou celles adjacentes.
+      clic droit dessus permet l\u2019ouverture du Menu Renfort."
+    _eventType: 190000001a000000
+    render: {fileID: 21300000, guid: a6096b30c18ad1149a14a6db282ece26, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: "Pt. \xC9puis\xE9"
+    _description: "Point de ressource \xE9puis\xE9"
+    _eventType: 21000000
+    render: {fileID: 21300000, guid: ba025916471d63f48be3fe5d880752b3, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 7295470563782542346, guid: a3510d7a12c1ba54e8594430f6db3e28, type: 3}
+  - _terrainName: Brasier
+    _description: "Case embras\xE9e."
+    _eventType: 22000000
+    render: {fileID: 21300000, guid: 3d22f4fa890fc2d4fb056354c5dccaba, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4840181140325066073, guid: 2c4bce46ac3d9114db40c4aa43f9fd1f, type: 3}
+  - _terrainName: Feu
+    _description: "Case emflamm\xE9e."
+    _eventType: 23000000
+    render: {fileID: 21300000, guid: f9dd8bef7361d5c489fd683fc644e5b8, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4840181140325066073, guid: 2c4bce46ac3d9114db40c4aa43f9fd1f, type: 3}
+  - _terrainName: "Barbel\xE9"
+    _description: "Inflige 2 points de d\xE9g\xE2ts."
+    _eventType: 25000000260000002700000024000000
+    render: {fileID: 21300000, guid: 9b9ce38bfad3a734ab5935779bb47782, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 2443697204554867568, guid: 6121b405301c5ea44bedafd9513f86f0, type: 3}
+  - _terrainName: "D\xE9tonation"
+    _description: "Inflige 2 points de d\xE9g\xE2ts \xE0 la fin du tour de l'adversaire."
+    _eventType: 28000000
+    render: {fileID: 21300000, guid: ce82b59a0f7b12e418fca4dbfe39b997, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4352697046244975141, guid: 61e52e18ad8013e4dbf10f00bb923c4e, type: 3}
+  - _terrainName: Objectif Rouge
+    _description: "Case \xE0 capturer pour faire gagner l'\xE9quipe Rouge"
+    _eventType: 29000000
+    render: {fileID: 21300000, guid: f09001e8876d1cc4fbc2fd3b20a8ced8, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Objectif Bleu
+    _description: "Case \xE0 capturer pour faire gagner l'\xE9quipe Bleu"
+    _eventType: 2a000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Plage
+    _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
+      unit\xE9 dans cette case."
+    _eventType: 03000000
+    render: {fileID: 21300000, guid: 2e2b4072cbf92764397a3dc1a847bb70, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Red Orgone
+    _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
+      unit\xE9 dans cette case."
+    _eventType: 20000000
+    render: {fileID: 21300000, guid: 2e2b4072cbf92764397a3dc1a847bb70, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Blue Orgone
+    _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
+      unit\xE9 dans cette case."
+    _eventType: 1f000000
+    render: {fileID: 21300000, guid: 2e2b4072cbf92764397a3dc1a847bb70, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}

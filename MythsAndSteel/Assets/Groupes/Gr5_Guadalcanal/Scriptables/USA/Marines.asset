@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Marines
+  m_EditorClassIdentifier: 
+  UnitName: Marines
+  Description: "L\u2019Ame\u0301rique et sa grandeur inspirent les troupes qui se
+    battent pour elle. Cette unite\u0301 repre\u0301sente les forces ame\u0301ricaines
+    a\u0300 merveille, ses de\u0301placements coordonne\u0301es et son souhait imposant
+    de vouloir gagner la bataille en font une unite\u0301 redoutable. Munie d\u2019un
+    fusil et d\u2019un e\u0301quipement ade\u0301quat pour la rupture en groupe,
+    il ne faut pas sous-estimer cette unite\u0301."
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 8}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: c21db588785905446978228ddb8bdaec, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

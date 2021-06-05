@@ -664,8 +664,8 @@ public bool MélodieSinistre = false;
         if (Animation != null)
         {
             
-            Animation.SetBool("Dead", true); 
-
+            Animation.SetBool("Dead", true);
+            yield return new WaitForEndOfFrame();
             yield return new WaitForSeconds(Animation.GetCurrentAnimatorStateInfo(0).length);
         }
 
@@ -745,6 +745,8 @@ public bool MélodieSinistre = false;
     public void AddDiceToUnit(int value)
     {
         _diceBonus += value;
+
+        
     }
     #endregion ChangementStat
 

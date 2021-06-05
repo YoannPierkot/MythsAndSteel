@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: M7 Priest
+  m_EditorClassIdentifier: 
+  UnitName: M7 Priest
+  Description: "Lorsque le pre\u0302tre protestant Francis Spellman de\u0301cide
+    de participer a\u0300 l\u2019effort militaire en 1939, il utilise ses connaissances
+    en Hyperchimie pour transformer le canon auto-porte\u0301e M7 Priest en une machine
+    capable de soigner les troupes. Celle-ci se re\u0301ve\u0300lera particulie\u0300rement
+    utile pour gue\u0301rir les blesse\u0301s .  "
+  typeUnite: 1
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 0
+  NumberRangeMax: {x: 0, y: 0}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 437c2c360864e6048af44caeeaa1a28c, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000
