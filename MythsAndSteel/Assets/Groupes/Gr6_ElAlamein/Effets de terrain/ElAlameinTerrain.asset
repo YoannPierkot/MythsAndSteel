@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5d52e6566d37948b1657b7c020bc26, type: 3}
+  m_Name: ElAlameinTerrain
+  m_EditorClassIdentifier: 
+  _EffetDeTerrain:
+  - _terrainName: Bosquet
+    _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
+      unit\xE9 dans cette case."
+    _eventType: 02000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 2443697204554867568, guid: 396d3d03c0655e24ea80eb7815c8b32c, type: 3}
+  - _terrainName: Boue
+    _description: "Inflige 1 point de d\xE9g\xE2ts aux unit\xE9s sur cette case ne
+      s'\xE9tant pas d\xE9plac\xE9 \xE0 la fin du tour de son joueur."
+    _eventType: 09000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 2443697204554867568, guid: 5fdffc6cd4d65b5448a4e32cff9fb3a9, type: 3}
+  - _terrainName: "Bunker\v"
+    _description: "La premi\xE8re unit\xE9 \xE0  atteindre un bunker r\xE9cup\xE8re
+      2 Ressources. Une unit\xE9 dans un bunker subit 1 point de d\xE9g\xE2t de moins
+      par attaque."
+    _eventType: 1d000000
+    render: {fileID: 21300000, guid: 6c8d62e1836cc554aa28948a8fc8ce32, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 2443697204554867568, guid: c7d54ebbb84c4cb47a480d8d45721c1b, type: 3}
+  - _terrainName: Cabane Isatabu
+    _description: "Si une Jauge d'Orgone explose d\xFBe \xE0 l'action d'un des 2
+      joueurs, alors l'ennemi obtient une unit\xE9 Isatabu, qu'il peut faire appara\xEEtre
+      sur n'importe quelle case Cabanes Isatabu de la carte."
+    _eventType: 1e000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Colline
+    _description: "Augmente de 1 la port\xE9e d'attaque des unit\xE9s pr\xE9sents
+      sur cette case."
+    _eventType: 04000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 2443697204554867568, guid: 3810c69fe029dac4f8105e697df4d1bd, type: 3}
+  - _terrainName: Eau
+    _description: Case inaccessible en temps normal.
+    _eventType: 08000000
+    render: {fileID: 21300000, guid: 2e3bfd1b04c7e4648abeeca45b80b16f, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Fleuve
+    _description: "Cours d'eau plac\xE9 en bordure de case. Emp\xEAche les unit\xE9s
+      de passer en temps normal. Emp\xEAche les unit\xE9s attaquant \xE0 1 de port\xE9e
+      d'attaquer au travers."
+    _eventType: 0e000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "For\xEAt"
+    _description: "Consomme 2 D\xE9placements pour se d\xE9placer sur cette case."
+    _eventType: 01000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "Gare\v"
+    _description: "Poss\xE8de les propri\xE9t\xE9s d'un Point de Ressource, et lorsqu'une
+      unit\xE9 alli\xE9e est dessus, celles d'une Usine."
+    _eventType: 1c000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Habitation
+    _description: "R\xE9duit d'1 Point les d\xE9g\xE2ts subis par la premi\xE8re
+      attaque subie et immunise au froid. Lorsque consomm\xE9, fait appara\xEEtre
+      des Ruines."
+    _eventType: 16000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "Haute-Colline\v"
+    _description: "Colline accessible et quittable uniquement d'une Colline ou Haute-Colline.
+      R\xE9duit de 2 les bornes des attaques lanc\xE9es contre cette case lorsque
+      venant pas d'une Colline."
+    _eventType: 05000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 2443697204554867568, guid: 9a2efa2acc2c76c4b9715ba4eaedb8a6, type: 3}
+  - _terrainName: Mont
+    _description: "Consomme 2 D\xE9placements pour se d\xE9placer sur cette case."
+    _eventType: 06000000
+    render: {fileID: 21300000, guid: 9602a938cc4b7a444b37fa1f726a774f, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "Plage\v"
+    _description: "R\xE9duit de 1 les bornes d'attaques des unit\xE9s attaquant une
+      unit\xE9 dans cette case."
+    _eventType: 03000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 2443697204554867568, guid: dbbdd6f96feb272419d508542631e5e0, type: 3}
+  - _terrainName: "Ravin\v"
+    _description: "Case inaccessible de base, mais des unit\xE9s subissant un Recul
+      Forc\xE9 peuvent y aller, \xE9tant tu\xE9 instantan\xE9ment."
+    _eventType: 07000000
+    render: {fileID: 21300000, guid: eb0db4c372fc66449b945c2bc2433dd6, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: "Rivi\xE8re"
+    _description: "Cours d'eau plac\xE9 en bordure de case. Emp\xEAche les unit\xE9s
+      de passer en temps normal."
+    _eventType: 0a0000000b0000000c0000000d000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Orgone
+    _description: "Subir des d\xE9g\xE2ts ou tuer des unit\xE9s dans cette zone permet
+      d'augmenter la jauge d'orgone"
+    _eventType: 20000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Pt. Ressource
+    _description: "A chaque Phase Strat\xE9gique, les unit\xE9s sur cette case r\xE9coltent
+      1 Ressource pour leur propri\xE9taire."
+    _eventType: 1b000000
+    render: {fileID: 21300000, guid: 278a21af4c1436446a7f445a031d5bcb, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4352697046244975141, guid: 2adb593949e96894b812049505a55b73, type: 3}
+  - _terrainName: Pt. Objectif
+    _description: "Objectif de carte, ils sont pris par une unit\xE9 \xE0 la fin
+      du prochain tour de l'adversaire suivant celui de l'arriv\xE9e de l'unit\xE9."
+    _eventType: 1f000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Pont
+    _description: "El\xE9ment plac\xE9 en bordure de case au-dessus d'un cours d'eau,
+      permettant aux unit\xE9s de passer au travers."
+    _eventType: 10000000110000001200000013000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Rails
+    _description: "Permet de le d\xE9placement restreint de certaines unit\xE9s,
+      qui sont immunis\xE9es \xE0 boue et route."
+    _eventType: 15000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Route
+    _description: "Tant qu'une unit\xE9 est sur une suite de route, elle gagne 1
+      Mouvement. Ce bonus est perdu d\xE8s la sortie de route."
+    _eventType: 14000000
+    render: {fileID: 0}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Ruines
+    _description: "Case sans effet, g\xE9n\xE9ralement r\xE9sultat de la destruction
+      d'Habitations ou d'un Village Fortifi\xE9."
+    _eventType: 18000000
+    render: {fileID: 21300000, guid: ba025916471d63f48be3fe5d880752b3, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 7295470563782542346, guid: a3510d7a12c1ba54e8594430f6db3e28, type: 3}
+  - _terrainName: Ruisseau
+    _description: "Cours d'eau plac\xE9 en bordure de case. Consomme 2 mouvements
+      pour se d\xE9placer au travers."
+    _eventType: 0f000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Sol
+    _description: Case de base, sans effet.
+    _eventType: 00000000
+    render: {fileID: 21300000, guid: a531c2dcea5afdd48ab571f53366bb9e, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: Usine
+    _description: "Permet la cr\xE9ation d'unit\xE9 sur sa case ou celles adjacentes.
+      clic droit dessus permet l\u2019ouverture du Menu Renfort."
+    _eventType: 190000001a000000
+    render: {fileID: 21300000, guid: a5507aa193c797b4a99f24ba9ce22fa9, type: 3}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: "Village Fortifi\xE9"
+    _description: "R\xE9duit \xE0 0 les d\xE9g\xE2ts de la premi\xE8re attaque subie.
+      Lorsque consomm\xE9, fait appara\xEEtre des Ruines."
+    _eventType: 17000000
+    render: {fileID: 0}
+    MustBeInstantiate: 0
+    Child: {fileID: 0}
+  - _terrainName: "Pt. \xC9puis\xE9"
+    _description: "Point de ressource \xE9puis\xE9"
+    _eventType: 21000000
+    render: {fileID: 21300000, guid: ba025916471d63f48be3fe5d880752b3, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 7295470563782542346, guid: a3510d7a12c1ba54e8594430f6db3e28, type: 3}
+  - _terrainName: Brasier
+    _description: "Case embras\xE9e."
+    _eventType: 22000000
+    render: {fileID: 21300000, guid: 3d22f4fa890fc2d4fb056354c5dccaba, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4840181140325066073, guid: 2c4bce46ac3d9114db40c4aa43f9fd1f, type: 3}
+  - _terrainName: Feu
+    _description: "Case emflamm\xE9e."
+    _eventType: 23000000
+    render: {fileID: 21300000, guid: f9dd8bef7361d5c489fd683fc644e5b8, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4840181140325066073, guid: 2c4bce46ac3d9114db40c4aa43f9fd1f, type: 3}
+  - _terrainName: "Barbel\xE9"
+    _description: "Inflige 2 points de d\xE9g\xE2ts."
+    _eventType: 25000000260000002700000024000000
+    render: {fileID: 21300000, guid: 9b9ce38bfad3a734ab5935779bb47782, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 2443697204554867568, guid: 6121b405301c5ea44bedafd9513f86f0, type: 3}
+  - _terrainName: "D\xE9tonation"
+    _description: "Inflige 2 points de d\xE9g\xE2ts \xE0 la fin du tour de l'adversaire."
+    _eventType: 28000000
+    render: {fileID: 21300000, guid: ce82b59a0f7b12e418fca4dbfe39b997, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 4352697046244975141, guid: 61e52e18ad8013e4dbf10f00bb923c4e, type: 3}
+  - _terrainName: Objectif Rouge
+    _description: "Case \xE0 capturer pour faire gagner l'\xE9quipe Rouge"
+    _eventType: 29000000
+    render: {fileID: 21300000, guid: 815aa84be316d0e44a67b1dfae12c377, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}
+  - _terrainName: Objectif Bleu
+    _description: "Case \xE0 capturer pour faire gagner l'\xE9quipe Bleu"
+    _eventType: 2a000000
+    render: {fileID: 21300000, guid: b2bb333321c60744395be47760b64e4e, type: 3}
+    MustBeInstantiate: 1
+    Child: {fileID: 0}

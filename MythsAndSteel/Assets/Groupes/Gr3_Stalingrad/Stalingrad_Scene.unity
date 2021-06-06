@@ -23535,12 +23535,12 @@ MonoBehaviour:
     ArmyNameNomFem: "arm\xE9e rouge"
     ActivationLeft: 0
     ActivationCardValue: 0
-    _OrgoneValue: 5
+    _OrgoneValue: 0
     OrgoneExploseCancel: 0
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0
     TileCentreZoneOrgone: {fileID: 557173029}
-    _Ressource: 3
+    _Ressource: 0
     GoalCapturePointsNumber: 0
     HasCreateUnit: 0
     dontTouchThis: 0

@@ -327,12 +327,13 @@ namespace MythsAndSteel.Orgone{
             bool canUse = false;
           
             if(GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ1 || GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ2){
-                if(GameManager.Instance.IsPlayerRedTurn == (player == 1? true : false)){
               
+                if(GameManager.Instance.IsPlayerRedTurn == (player == 1? true : false)){
+           
                     if (player == 1){
                        
                         if (PlayerScript.Instance.RedPlayerInfos.OrgonePowerLeft > 0 && PlayerScript.Instance.RedPlayerInfos.OrgoneValue >= cost){
-                           
+
                             canUse = true;
                         }
                     }
@@ -340,7 +341,7 @@ namespace MythsAndSteel.Orgone{
                         
                         if (PlayerScript.Instance.BluePlayerInfos.OrgonePowerLeft > 0 && PlayerScript.Instance.BluePlayerInfos.OrgoneValue >= cost){
                             canUse = true;
-                        
+                            
                         }
                     }
                 }
