@@ -37,7 +37,7 @@ MonoBehaviour:
   SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
   SonMort: {fileID: 8300000, guid: b648e8f3ded2926459598925377ae99f, type: 3}
   VoiceLine: {fileID: 8300000, guid: f632557a11d5bab4fb565128dae459a3, type: 3}
-  Sprite: {fileID: 21300000, guid: 216b9dfc68c2da64288ced2da9fac74a, type: 3}
+  Sprite: {fileID: 21300000, guid: c66a8a9b9aef39e4983b3befebbf3a93, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
   IsInRedArmy: 1
