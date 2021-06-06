@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: "Semi-chenill\xE9"
+  m_EditorClassIdentifier: 
+  UnitName: "Semi-chenill\xE9 Citro\xEBn"
+  Description: "\xC9quip\xE9 de roues et de chenilles , ce v\xE9hicule fran\xE7ais
+    est tr\xE8s rapide. Il s\u2019agit d\u2019un camion de ravitaillement qui apportera
+    de l\u2019aide au soldat tout au long de la bataille. Gr\xE2ce aux infirmiers
+    et aux avanc\xE9s technologiques qui se trouvent \xE0 l\u2019int\xE9rieur, les
+    unit\xE9s pourront se faire soigner. Jamais trop prudents, les ing\xE9nieurs
+    fran\xE7ais ont install\xE9 une mitrailleuse au-dessus du v\xE9hicule."
+  typeUnite: 1
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 0
+  numberOfUnitToAttack: 0
+  DamageMinimum: 1
+  NumberRangeMin: {x: 7, y: 10}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 15564331c7783924e98f699b6e67fddc, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 
