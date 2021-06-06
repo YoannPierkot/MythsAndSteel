@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 7 Douglas Haig
+  m_EditorClassIdentifier: 
+  UnitName: Douglas Haig
+  Description: "L\u2019\xE9volution des moyens m\xE9dicaux permit de sauver la vie
+    de Douglas Haig en 1928. Il fut rappel\xE9 de sa retraite pour commander une
+    division de l\u2019arm\xE9e britannique, notamment lors de l\u2019op\xE9ration
+    Husky."
+  typeUnite: 4
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 7, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 802a02cadd0b4894c85b514232b1cde1, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: bcad2874337381047a058db78efd46ef, type: 3}
+  SonMort: {fileID: 8300000, guid: aaa9170c3ed02d643b51923ce94af698, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 795adbe4cdaaebb4e90b9a4c47e82129, type: 3}
+  Sprite: {fileID: 21300000, guid: 3623871e33432e9438dace3e37c7f13e, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

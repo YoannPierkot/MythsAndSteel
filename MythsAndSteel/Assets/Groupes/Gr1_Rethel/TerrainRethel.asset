@@ -84,7 +84,7 @@ MonoBehaviour:
     _eventType: 16000000
     render: {fileID: 21300000, guid: dedd0a770b80d5f4ab98255f10e28f63, type: 3}
     MustBeInstantiate: 1
-    Child: {fileID: 0}
+    Child: {fileID: 4283812825017874969, guid: 823952d4163399d429b66ce7021dea89, type: 3}
   - _terrainName: "Haute-Colline\v"
     _description: "Colline accessible et quittable uniquement d'une Colline ou Haute-Colline.
       R\xE9duit de 2 les bornes des attaques lanc\xE9es contre cette case lorsque

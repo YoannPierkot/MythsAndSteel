@@ -29717,7 +29717,7 @@ MonoBehaviour:
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0
     TileCentreZoneOrgone: {fileID: 1036877431}
-    _Ressource: 8
+    _Ressource: 0
     GoalCapturePointsNumber: 0
     HasCreateUnit: 0
     dontTouchThis: 0

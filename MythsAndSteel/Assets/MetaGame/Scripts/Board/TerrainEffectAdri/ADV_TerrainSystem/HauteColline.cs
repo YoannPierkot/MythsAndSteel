@@ -20,7 +20,7 @@ public class HauteColline : TerrainParent
             if (!TilesManager.Instance.TileList[Mouvement.Instance._selectedTileId[Mouvement.Instance._selectedTileId.Count - 1]].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Haute_colline) && !TilesManager.Instance.TileList[Mouvement.Instance._selectedTileId[Mouvement.Instance._selectedTileId.Count - 1]].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Colline))
             {
                 cibled = true;
-                AttackerUnit.DiceBonus += -1;
+                AttackerUnit.DiceBonus += -3;
                 Attaque.Instance._JaugeAttack.SynchAttackBorne(AttackerUnit);
             }
         }
