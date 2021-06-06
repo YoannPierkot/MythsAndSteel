@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Sturmtruppen
+  m_EditorClassIdentifier: 
+  UnitName: Sturmtruppen
+  Description: "Les Sturmtruppen (soldats d\u2019assaut en fran\xE7ais) furent tout
+    d\u2019abord introduits durant la Premi\xE8re guerre mondiale, comme un moyen
+    de briser la dynamique de guerre des tranch\xE9es. Ces unit\xE9s d\u2019assaut
+    d\u2019\xE9lite infiltrent le no-man \u2019s-land afin d\u2019effectuer des attaques
+    surprise dans les tranch\xE9es ennemies. Les Sturmtruppen \xE0 l\u2019avant-garde
+    de l\u2019avanc\xE9e allemande de 1940 sont des soldats surentra\xEEn\xE9s, bien
+    \xE9quip\xE9s et cybern\xE9tiquement augment\xE9s afin d\u2019am\xE9liorer leurs
+    capacit\xE9s au combat. Les Sturmtruppen sont plus efficaces au combat lorsqu\u2019ils
+    se d\xE9placent."
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: c0abc9c51bddf5c479c3737e8c99b7fe, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 

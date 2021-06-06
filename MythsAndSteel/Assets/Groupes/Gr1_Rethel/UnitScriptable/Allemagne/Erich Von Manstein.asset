@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Erich Von Manstein
+  m_EditorClassIdentifier: 
+  UnitName: Erich Von Manstein
+  Description: "N\xE9 en 1887 \xE0 Berlin , Erich Von Manstein est un militaire allemand
+    , connu pour \xEAtre l\u2019un des plus brillants g\xE9n\xE9raux de la Seconde
+    Guerre mondiale. R\xE9compens\xE9 par Hitler pour ses nombreux plans de guerre
+    , Erich se voit \xEAtre d\xE9cor\xE9 de la Croix de Fer. Reconnu par toute l\u2019arm\xE9e
+    allemande et les autres g\xE9n\xE9raux , il propose \xE0 des scientifiques de
+    faire des exp\xE9riences sur certaines de ses troupes pour am\xE9liorer leurs
+    capacit\xE9s au combat. Au bout de plusieurs mois de recherches , ils parviennent
+    \xE0 cr\xE9er un s\xE9rum diminuant l\u2019\xE9nergie vitale d\u2019un \xEAtre
+    vivant pour en am\xE9liorer la force. N\u2019\xE9tant pas assez fier de son \u0153uvre
+    , il d\xE9cide  d\u2019adapter le s\xE9rum aux machines allemandes , ce qui fut
+    une r\xE9ussite. Les am\xE9liorations propos\xE9es par Erich ont permis \xE0
+    l\u2019arm\xE9e allemande de conqu\xE9rir une grande partie de la France. "
+  typeUnite: 4
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 7, y: 10}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 850059d4d397f244b97b116830397891, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
+  SonMort: {fileID: 8300000, guid: 916c083537f94cf4baaaedccfa740460, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 080f9fd26f68612419d67337f40d2635, type: 3}
+  Sprite: {fileID: 21300000, guid: 42f7889b3a96ecd4381963f2cdeb1657, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 

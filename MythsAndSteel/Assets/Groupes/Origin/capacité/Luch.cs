@@ -82,6 +82,8 @@ public class Luch : Capacity
     public void Deplacementcapacity()
     {
         GameManager.Instance._eventCall = null;
+        if(GameManager.Instance.UnitChooseList.Count !=0 && finaltile != null)
+        {
 
         while (GameManager.Instance.UnitChooseList[0].transform.position != finaltile.transform.position)
         {
@@ -99,4 +101,5 @@ public class Luch : Capacity
         GameManager.Instance.TileChooseList.Clear();
         GameManager.Instance.UnitChooseList.Clear();
     } 
+        }
 } 

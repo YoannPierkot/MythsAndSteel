@@ -34,7 +34,9 @@ public class Bunker : TerrainParent
         {
             i--;
         }
+
         Debug.Log("attack low");
+
         return base.AttackApply(i);
     }
 }

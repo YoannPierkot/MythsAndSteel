@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Tarasque
+  m_EditorClassIdentifier: 
+  UnitName: Tarasque
+  Description: "Jadis, pr\xE8s de Tarascon, une b\xEAte mythique d\xE9fendait son
+    territoire. Elle avait l\u2019apparence d\u2019une chim\xE8re, poss\xE9dant un
+    corps de b\u0153uf, une t\xEAte de lion avec un visage d\u2019homme \xE2g\xE9,
+    le tout avec une carapace de tortue surmont\xE9e d'\xE9pines. La Tarasque guettait
+    les voyageurs voulant traverser le Rh\xF4ne et les d\xE9vorait. Lors de l\u2019\xE9vang\xE9lisation,
+    Sainte Marthe se rendit \xE0 Tarascon et dompta la b\xEAte. La l\xE9gende dit
+    que la cr\xE9ature serait morte, tu\xE9e par les villageois en qu\xEAte de vengeance.
+    Cependant il n\u2019en est rien. Apr\xE8s s\u2019\xEAtre r\xE9fugi\xE9e dans
+    une grotte avec Sainte Marthe, la Tarasque s'emmure avec cette derni\xE8re dans
+    la pierre, les plongeant toutes les deux dans une profonde transe."
+  typeUnite: 3
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 6, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 48d905388e42a064aa8928c1bb401f19, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 515b81911e228124cab0ccf93a0ba6a4, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: e8fa7ee831c12ed44b5fccf0ba8cd27b, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 03000000

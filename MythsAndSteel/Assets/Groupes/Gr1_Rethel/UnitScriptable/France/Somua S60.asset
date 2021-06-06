@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Somua S60
+  m_EditorClassIdentifier: 
+  UnitName: Somua S60
+  Description: "Le Somua S60 est le nouveau mod\xE8le qui remplace le S35 qui fut
+    mis \xE0 rude \xE9preuve durant la deuxi\xE8me moiti\xE9 de la Premi\xE8re Guerre.
+    Les ing\xE9nieurs fran\xE7ais ont am\xE9lior\xE9 leurs techniques de moulage
+    qui font la marque de fabrique des blind\xE9s fran\xE7ais, permettant au S60
+    de r\xE9sister aux armes de nouvelles g\xE9n\xE9rations. De plus, le S60 profite
+    aussi des nouvelles avanc\xE9es balistiques au profit d\u2019un canon capable
+    de tirer des obus a bien plus haute v\xE9locit\xE9 qu\u2019auparavant."
+  typeUnite: 1
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 5, y: 10}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 02a2f720eec5109428c4b81f9a6bd077, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Blitzonderkraft
+  m_EditorClassIdentifier: 
+  UnitName: Blitzonderkraft
+  Description: "La doctrine allemande d\u2019attaque \xE9clair n\xE9cessite que l\u2019infanterie
+    puisse suivre les chars qui forment le fer de lance de l\u2019attaque. Le Blitzsondercraft
+    est un v\xE9hicule de transport de troupes rapide et l\xE9g\xE8rement blind\xE9
+    qui \xE9tend la flexibilit\xE9 et la mobilit\xE9 de l\u2019infanterie allemande,
+    permettant des attaques \xE9clairs de l\u2019arme blind\xE9e allemande sans qu\u2019elle
+    se retrouve sans s\xE9curit\xE9."
+  typeUnite: 1
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 6, y: 10}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e909c0d798388184293656b9a8942cf5, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 073f557ecb29d5f4e85a8050afbb6918, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 

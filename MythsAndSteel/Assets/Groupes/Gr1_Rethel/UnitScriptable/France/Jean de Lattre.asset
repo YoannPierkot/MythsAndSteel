@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Jean de Lattre
+  m_EditorClassIdentifier: 
+  UnitName: Jean de Lattre de Tassigny
+  Description: "Jean de Lattre de Tassigny \xE9tait un h\xE9ros de la premi\xE8re
+    guerre mondiale. Il a particip\xE9 \xE0 celle-ci en tant qu\u2019officier et
+    a \xE9t\xE9 bless\xE9 \xE0 5 reprises durant cette derni\xE8re sur diff\xE9rents
+    fronts notamment Verdun et a obtenu la l\xE9gion d\u2019Honneur \xE0 la suite
+    de celle-ci.  Entre les deux guerres, il est promu Lieutenant Colonel et est
+    envoy\xE9 au bureau de l'\xC9tat Major de l\u2019arm\xE9e, et par la suite devient
+    vice-pr\xE9sident du Conseil sup\xE9rieur de la guerre. Et enfin devient colonel
+    en 1950.  \xC0 ce poste il va d\xE9cid\xE9 avec l\u2019accord de ses sup\xE9rieurs
+    d\u2019aller faire des recherches pr\xE8s de Tarascon. Il y trouve endormis,
+    Sainte Marthe et son compagnon la Tarasque et les convainc d\u2019aller combattre
+    toute personne tentant d'agresser la France en vue de la guerre qui se rapproche.
+    Elles l\u2019accompagneront notamment lors de la Bataille de Rethel ou elle combattra
+    la terrible arm\xE9e allemande command\xE9e par Erich von Manstein."
+  typeUnite: 4
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 6465c61dd228dbf4bac28a9b757e6d13, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
+  SonMort: {fileID: 8300000, guid: a8eb69e6a02dc7f4e87ff9de4fe71233, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 10a60cbf8fb58084d8238eaa90f7bff7, type: 3}
+  Sprite: {fileID: 21300000, guid: b98085ec8160a044aaca3e1c48bd2378, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 
