@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 8 Alfredo Guzzoni
+  m_EditorClassIdentifier: 
+  UnitName: Alfredo Guzzoni
+  Description: "Charg\xE9 du front Sud-Est lors de l\u2019op\xE9ration Husky, Alfredo
+    Guzzoni utilise son aigle m\xE9canique pour rep\xE9rer les positions ennemies
+    et les transmettre \xE0 ses unit\xE9s d\u2019artilleries. Cet aigle est l\u2019un
+    des premiers animaux m\xE9caniques fonctionnels qui existent."
+  typeUnite: 4
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 7}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 8, y: 12}
+  SonAttaque: {fileID: 8300000, guid: f66f6c5fa27f435448e28bcedcd2bf64, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: bcad2874337381047a058db78efd46ef, type: 3}
+  SonMort: {fileID: 8300000, guid: df58f37ff2a44934f83d5226de1b7e67, type: 3}
+  VoiceLine: {fileID: 8300000, guid: 994f4a39c7f8b0d48ba62c6e4856290b, type: 3}
+  Sprite: {fileID: 21300000, guid: 9331f8e4770db1b40b5fbce6ce210d20, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

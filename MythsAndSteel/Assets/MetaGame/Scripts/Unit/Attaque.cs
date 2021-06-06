@@ -153,48 +153,8 @@ public class Attaque : MonoSingleton<Attaque>
         {
             ChangeStat();  
             AnimationUpdate();
-            int AttackVariation = 0;
-            TileScript T = TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>();
-            foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
-            {
-                foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
-                {
-                    foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
-                    {
-                        if (T1 == T2)
-                        {
-                            if (Type.Child != null)
-                            {
-                                if (Type.MustBeInstantiate)
-                                {
-                                    foreach (GameObject G in T._Child)
-                                    {
-                                        if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
-                                        {
-                                            if (Try2.Type == T1)
-                                            {
-                                                if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
-                                                {
-                                                    AttackVariation += Try3.AttackApply(_damageMinimum);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                else
-                                {
-                                    if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
-                                    {
-                                        AttackVariation += Try.AttackApply(_damageMinimum);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMinimum + AttackVariation);
+     
+            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMinimum);
             SoundController.Instance.PlaySound(_selectedUnit.GetComponent<UnitScript>().SonAttaque);
             Debug.Log("Damage : " + _damageMinimum);
             StopAttack();
@@ -211,48 +171,8 @@ public class Attaque : MonoSingleton<Attaque>
             else
             {
                 ChangeStat();
-                int AttackVariation = 0;
-                TileScript T = TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>();
-                foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
-                {
-                    foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
-                    {
-                        foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
-                        {
-                            if (T1 == T2)
-                            {
-                                if (Type.Child != null)
-                                {
-                                    if (Type.MustBeInstantiate)
-                                    {
-                                        foreach (GameObject G in T._Child)
-                                        {
-                                            if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
-                                            {
-                                                if (Try2.Type == T1)
-                                                {
-                                                    if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
-                                                    {
-                                                        AttackVariation += Try3.AttackApply(0);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    else
-                                    {
-                                        if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
-                                        {
-                                            AttackVariation += Try.AttackApply(0);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(0 + AttackVariation);
+               
+                selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(0);
                 SoundController.Instance.PlaySound(_selectedUnit.GetComponent<UnitScript>().SonAttaque);
                 Debug.Log("Damage : " + null);
                 StopAttack();
@@ -276,48 +196,8 @@ public class Attaque : MonoSingleton<Attaque>
             _damageMinimum = this._damageMinimum;
             _damageMaximum = this._damageMaximum;
             AnimationUpdate();
-            int AttackVariation = 0;
-            TileScript T = TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>();
-            foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
-            {
-                foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
-                {
-                    foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
-                    {
-                        if (T1 == T2)
-                        {
-                            if (Type.Child != null)
-                            {
-                                if (Type.MustBeInstantiate)
-                                {
-                                    foreach (GameObject G in T._Child)
-                                    {
-                                        if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
-                                        {
-                                            if (Try2.Type == T1)
-                                            {
-                                                if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
-                                                {
-                                                    AttackVariation += Try3.AttackApply(_damageMinimum);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                else
-                                {
-                                    if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
-                                    {
-                                        AttackVariation += Try.AttackApply(_damageMinimum);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMinimum + AttackVariation);
+           
+            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMinimum);
             SoundController.Instance.PlaySound(_selectedUnit.GetComponent<UnitScript>().SonAttaque);
             Debug.Log("Damage : " + _damageMinimum);
             StopAttack();
@@ -328,48 +208,8 @@ public class Attaque : MonoSingleton<Attaque>
           
             _damageMaximum = this._damageMaximum;
             AnimationUpdate();
-            int AttackVariation = 0;
-            TileScript T = TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>();
-            foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
-            {
-                foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
-                {
-                    foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
-                    {
-                        if (T1 == T2)
-                        {
-                            if (Type.Child != null)
-                            {
-                                if (Type.MustBeInstantiate)
-                                {
-                                    foreach (GameObject G in T._Child)
-                                    {
-                                        if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
-                                        {
-                                            if (Try2.Type == T1)
-                                            {
-                                                if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
-                                                {
-                                                    AttackVariation += Try3.AttackApply(_damageMinimum);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                else
-                                {
-                                    if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
-                                    {
-                                        AttackVariation += Try.AttackApply(_damageMinimum);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMaximum + AttackVariation);
+          
+            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMaximum);
         
             if (_selectedUnit.GetComponent<UnitScript>().VoiceLine != null)
             {
@@ -398,48 +238,8 @@ public class Attaque : MonoSingleton<Attaque>
             else
             {
                 ChangeStat();
-                int AttackVariation = 0;
-                TileScript T = TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>();
-                foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
-                {
-                    foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
-                    {
-                        foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
-                        {
-                            if (T1 == T2)
-                            {
-                                if (Type.Child != null)
-                                {
-                                    if (Type.MustBeInstantiate)
-                                    {
-                                        foreach (GameObject G in T._Child)
-                                        {
-                                            if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
-                                            {
-                                                if (Try2.Type == T1)
-                                                {
-                                                    if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
-                                                    {
-                                                        AttackVariation += Try3.AttackApply(0);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    else
-                                    {
-                                        if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
-                                        {
-                                            AttackVariation += Try.AttackApply(0);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(0 + AttackVariation);
+           
+                selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(0);
                 SoundController.Instance.PlaySound(_selectedUnit.GetComponent<UnitScript>().SonAttaque);
                 Debug.Log("Damage : " + null);
                 StopAttack();
@@ -1096,27 +896,7 @@ public class Attaque : MonoSingleton<Attaque>
             }
         }
 
-        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Maison, selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId)) // Maison
-        {
-            _damageMinimum -= 1;
-            _damageMaximum -= 1;
-            Debug.Log("Dégats Reduits");
-            TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().RemoveEffect(MYthsAndSteel_Enum.TerrainType.Maison);
 
-            Debug.Log("IkeaEffectApplyed");
-        }
-
-        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Immeuble, selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId)) // Immeubles
-        {
-            _damageMinimum = 0;
-            _damageMaximum = 0;
-            Debug.Log("Annulés");
-
-            TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().RemoveEffect(MYthsAndSteel_Enum.TerrainType.Immeuble);
- 
-            Debug.Log("BigBoumIkeaEffectApplyed");
-
-        }
     }
 
     /// <summary>
@@ -1258,49 +1038,8 @@ public class Attaque : MonoSingleton<Attaque>
         }
         else
         {
-            int AttackVariation = 0;
-            TileScript T = TilesManager.Instance.TileList[selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>();
-            foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
-            {
-                foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
-                {
-                    foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
-                    {
-                        if (T1 == T2)
-                        {
-                            if (Type.Child != null)
-                            {
-                                if (Type.MustBeInstantiate)
-                                {
-                                    foreach (GameObject G in T._Child)
-                                    {
-                                        if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
-                                        {
-                                            if (Try2.Type == T1)
-                                            {
-                                                if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
-                                                {
-                                                    AttackVariation += Try3.AttackApply(_damageMinimum);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                else
-                                {
-                                    if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
-                                    {
-                                        AttackVariation += Try.AttackApply(_damageMinimum);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            Debug.Log(AttackVariation);
-            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMinimum + AttackVariation);
+         
+            selectedUnitEnnemy.GetComponent<UnitScript>().TakeDamage(_damageMinimum);
             SoundController.Instance.PlaySound(_selectedUnit.GetComponent<UnitScript>().SonAttaque);
             Debug.Log("Damage : " + _damageMinimum);
             StopAttack();

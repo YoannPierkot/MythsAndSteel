@@ -446,145 +446,231 @@ public bool MélodieSinistre = false;
     /// Fait perdre de la vie au joueur
     /// </summary>
     /// <param name="Damage"></param>
-    public virtual void TakeDamage(int Damage, bool IsOrgoneDamage = false)
+    public void TakeDamage(int Damage, bool IsOrgoneDamage = false, bool terrain = true)
     {
-        if(!_unitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.Invincible))
-            {
-
-        if (_shield > 0)
+        Debug.Log("jfkdms");
+        Debug.Log(terrain);
+        if (terrain)
         {
-            _shield -= Damage;
 
-            if (_shield < 0)
+
+            Debug.Log("je suis lancé");
+            int AttackVariation = 0;
+            TileScript T = TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>();
+
+            foreach (MYthsAndSteel_Enum.TerrainType T1 in T.TerrainEffectList)
             {
-                _life += _shield;
+                if (T1 == MYthsAndSteel_Enum.TerrainType.Immeuble || T1 == MYthsAndSteel_Enum.TerrainType.Maison || T1 == MYthsAndSteel_Enum.TerrainType.Bunker)
+                {
+
+                    foreach (TerrainType Type in GameManager.Instance.Terrain.EffetDeTerrain)
+                    {
+                        foreach (MYthsAndSteel_Enum.TerrainType T2 in Type._eventType)
+                        {
+                            if (T1 == T2)
+                            {
+                                if (Type.Child != null)
+                                {
+                                    if (Type.MustBeInstantiate)
+                                    {
+                                        foreach (GameObject G in T._Child)
+                                        {
+                                            if (G.TryGetComponent<ChildEffect>(out ChildEffect Try2))
+                                            {
+                                                if (Try2.Type == T1)
+                                                {
+                                                    if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
+                                                    {
+                                                        AttackVariation += Try3.AttackApply(Damage);
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    else
+                                    {
+                                        if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
+                                        {
+                                            AttackVariation += Try.AttackApply(Damage);
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            Debug.Log(AttackVariation);
+
+
+            if (T.TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Maison))
+            {
+                T.RemoveEffect(MYthsAndSteel_Enum.TerrainType.Maison);
+                T.TerrainEffectList.Remove(MYthsAndSteel_Enum.TerrainType.Maison);
+                T.TerrainEffectList.Add(MYthsAndSteel_Enum.TerrainType.Ruines);
+            }
+            if (T.TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Immeuble))
+            {
+                T.RemoveEffect(MYthsAndSteel_Enum.TerrainType.Immeuble);
+                T.TerrainEffectList.Remove(MYthsAndSteel_Enum.TerrainType.Immeuble);
+                T.TerrainEffectList.Add(MYthsAndSteel_Enum.TerrainType.Ruines);
+            }
+            if (AttackVariation > 0)
+            {
+
+                GiveLife(-AttackVariation);
+                Debug.Log(AttackVariation + gameObject.name);
             }
 
-            if (_shield > 0)
+            else if (AttackVariation < 0)
             {
-                if (UnitSO.IsInRedArmy)
-                {
-                    UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartShieldSprite, _life + _shield);
-                        Renderer.material.SetFloat("_HitTime", Time.time);
-                       
-                    }
-                else
-                {
-                    UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartShieldSprite, _life + _shield);
-                        Renderer.material.SetFloat("_HitTime", Time.time);
-                       
-                    }
+                TakeDamage(AttackVariation, true, false);
+                Debug.Log(AttackVariation + gameObject.name);
+
             }
-            else
-            {
-                if (UnitSO.IsInRedArmy)
-                {
-                    UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartSprite, _life);
-                        Renderer.material.SetFloat("_HitTime", Time.time);
-                     
-                    }
-                else
-                {
-                    UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartSprite, _life);
-                        Renderer.material.SetFloat("_HitTime", Time.time);
-                 
-                    }
-            }
+
         }
-        else
+        if (!_unitStatuts.Contains(MYthsAndSteel_Enum.UnitStatut.Invincible))
         {
-            _life -= Damage;
+
             if (_shield > 0)
             {
-                if (UnitSO.IsInRedArmy)
+                _shield -= Damage;
+
+                if (_shield < 0)
                 {
-                    UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartShieldSprite, _life + _shield);
+                    _life += _shield;
+                }
+
+                if (_shield > 0)
+                {
+                    if (UnitSO.IsInRedArmy)
+                    {
+                        UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartShieldSprite, _life + _shield);
                         Renderer.material.SetFloat("_HitTime", Time.time);
-                        Debug.Log("je ne fonctionne pas ");
+
                     }
+                    else
+                    {
+                        UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartShieldSprite, _life + _shield);
+                        Renderer.material.SetFloat("_HitTime", Time.time);
+
+                    }
+                }
                 else
-                {
-                    UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartShieldSprite, _life + _shield);
-                        Renderer.material.SetFloat("_HitTime", Time.time);
-                   
-                    }
-            }
-            else
-            {
-                if (_life > 0)
                 {
                     if (UnitSO.IsInRedArmy)
                     {
                         UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartSprite, _life);
-                            Renderer.material.SetFloat("_HitTime", Time.time);
-                           
-                        }
+                        Renderer.material.SetFloat("_HitTime", Time.time);
+
+                    }
                     else
                     {
                         UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartSprite, _life);
-                            Renderer.material.SetFloat("_HitTime", Time.time);
-                        
-                        }
+                        Renderer.material.SetFloat("_HitTime", Time.time);
+
+                    }
                 }
             }
-        }
-      
-            CheckLife();
-
-        //Ajout de l'orgone
-        
-        if (Damage > 0)
-        {
-             
-            if (TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.OrgoneRed))
+            else
             {
-                if (!GameManager.Instance.IsCheckingOrgone)
+                _life -= Damage;
+                if (_shield > 0)
                 {
+                    if (UnitSO.IsInRedArmy)
+                    {
+                        UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartShieldSprite, _life + _shield);
+                        Renderer.material.SetFloat("_HitTime", Time.time);
+                        Debug.Log("je ne fonctionne pas ");
+                    }
+                    else
+                    {
+                        UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartShieldSprite, _life + _shield);
+                        Renderer.material.SetFloat("_HitTime", Time.time);
 
-                    PlayerScript.Instance.AddOrgone(1, 1);
-                        FxOrgoneSpawn(true);
-                        PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
+                    }
                 }
                 else
                 {
-                    if (!IsOrgoneDamage)
+                    if (_life > 0)
                     {
-                        PlayerScript.Instance.AddOrgone(1, 1);
-                            FxOrgoneSpawn(true);
+                        if (UnitSO.IsInRedArmy)
+                        {
+                            UpdateLifeHeartShieldUI(UIInstance.Instance.RedHeartSprite, _life);
+                            Renderer.material.SetFloat("_HitTime", Time.time);
 
-                            Debug.Log("Ca buuuuuug");
+                        }
+                        else
+                        {
+                            UpdateLifeHeartShieldUI(UIInstance.Instance.BlueHeartSprite, _life);
+                            Renderer.material.SetFloat("_HitTime", Time.time);
+
+                        }
                     }
-                    if (GameManager.Instance._waitToCheckOrgone != null) GameManager.Instance._waitToCheckOrgone += AddOrgoneToPlayer;
                 }
             }
 
-            if (TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.OrgoneBlue))
+            CheckLife();
+
+            //Ajout de l'orgone
+
+            if (Damage > 0)
             {
-                if (!GameManager.Instance.IsCheckingOrgone)
+
+                if (TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.OrgoneRed))
                 {
-                    PlayerScript.Instance.AddOrgone(1, 2);
+                    if (!GameManager.Instance.IsCheckingOrgone)
+                    {
+
+                        PlayerScript.Instance.AddOrgone(1, 1);
+                        FxOrgoneSpawn(true);
+                        PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
+                    }
+                    else
+                    {
+                        if (!IsOrgoneDamage)
+                        {
+                            PlayerScript.Instance.AddOrgone(1, 1);
+                            FxOrgoneSpawn(true);
+
+                            Debug.Log("Ca buuuuuug");
+                        }
+                        if (GameManager.Instance._waitToCheckOrgone != null) GameManager.Instance._waitToCheckOrgone += AddOrgoneToPlayer;
+                    }
+                }
+
+                if (TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.OrgoneBlue))
+                {
+                    if (!GameManager.Instance.IsCheckingOrgone)
+                    {
+                        PlayerScript.Instance.AddOrgone(1, 2);
                         FxOrgoneSpawn(false);
 
 
 
 
                         PlayerScript.Instance.BluePlayerInfos.CheckOrgone(2);
-                }
-                else
-                {
-                    if (!IsOrgoneDamage)
+                    }
+                    else
                     {
-                        PlayerScript.Instance.AddOrgone(1, 2);
+                        if (!IsOrgoneDamage)
+                        {
+                            PlayerScript.Instance.AddOrgone(1, 2);
 
                             FxOrgoneSpawn(false);
                             Debug.Log("Ca buuuuuug");
+                        }
+                        if (GameManager.Instance._waitToCheckOrgone != null) GameManager.Instance._waitToCheckOrgone += AddOrgoneToPlayer;
                     }
-                    if (GameManager.Instance._waitToCheckOrgone != null) GameManager.Instance._waitToCheckOrgone += AddOrgoneToPlayer;
                 }
             }
         }
     }
-        }
 
     /// <summary>
     /// Check si l'orgone a redépassé le joueur

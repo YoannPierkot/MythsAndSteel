@@ -99,7 +99,7 @@ public class Fire : TerrainParent
     {
         if (TurnLeft == 2)
         {
-            Unit.TakeDamage(2);
+            Unit.TakeDamage(2, false, true);
         }
         if (TurnLeft == 1)
         {

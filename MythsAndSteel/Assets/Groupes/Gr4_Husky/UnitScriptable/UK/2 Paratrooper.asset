@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 2 Paratrooper
+  m_EditorClassIdentifier: 
+  UnitName: Paratrooper
+  Description: "\xC9quip\xE9s de masques respiratoires, les paratroopers sont capables
+    de se d\xE9placer efficacement malgr\xE9 la fum\xE9e produite par les nombreuses
+    attaques italiennes. "
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 4
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 10}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 1d270e606dbd92f49a91e981f67daf64, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: bcad2874337381047a058db78efd46ef, type: 3}
+  SonMort: {fileID: 8300000, guid: ceb8a8d834b352a4c8486b7d2d24599c, type: 3}
+  VoiceLine: {fileID: 8300000, guid: ec0266da8cd7de445bf949caeaeac962, type: 3}
+  Sprite: {fileID: 21300000, guid: fd0e7363b136c7347ad83d73a3a0e656, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 040000000000000000000000

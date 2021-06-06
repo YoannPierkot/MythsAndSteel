@@ -482,9 +482,10 @@ public class TileScript : MonoBehaviour
                     {
                         Debug.Log("bonsoirrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
                             if((T.Type == MYthsAndSteel_Enum.TerrainType.Ruines))
-                            {
-                            Debug.Log("fdkjsl");
-                                C.GetComponent<SpriteRenderer>().enabled = true;
+                        {
+                            Debug.Log("djfkqlmsdjlfdqsl:kjfqmze:jlskjfqeislldfjqozieljfoqmze");
+                            C.GetComponent<SpriteRenderer>().enabled = true;
+
                             }
 
 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: 6 Etna
+  m_EditorClassIdentifier: 
+  UnitName: Etna
+  Description: "Forg\xE9 par St\xE9rop\xE8s, ce m\xE9cha est fait pour pouvoir se
+    d\xE9placer sans avoir \xE0 s\u2019inqui\xE9ter des inconv\xE9nients li\xE9s
+    au terrain. Le r\xE9servoir de lave situ\xE9 dans la sph\xE8re sup\xE9rieure
+    constitue une r\xE9serve utilis\xE9e entre autres pour obliger les ennemis \xE0
+    changer d\u2019itin\xE9raire. Pour faire bonne mesure, deux circuits de  refroidissement
+    simples ont \xE9t\xE9 plac\xE9s sur la sph\xE8re. "
+  typeUnite: 5
+  LifeMax: 5
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 6, y: 10}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: a1f52c844f3377044a205afabc485909, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: c7bebe3dafdee064698938186404da0e, type: 3}
+  SonMort: {fileID: 8300000, guid: bea5b243000e36f4a93808df7b56727b, type: 3}
+  VoiceLine: {fileID: 8300000, guid: a1f52c844f3377044a205afabc485909, type: 3}
+  Sprite: {fileID: 21300000, guid: 2456815f97b336b45bf2d9ab0de61084, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 050000000000000000000000
