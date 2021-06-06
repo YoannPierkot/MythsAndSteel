@@ -199,7 +199,7 @@ MonoBehaviour:
   - _terrainName: "Pt. \xC9puis\xE9"
     _description: "Point de ressource \xE9puis\xE9"
     _eventType: 21000000
-    render: {fileID: 21300000, guid: ba025916471d63f48be3fe5d880752b3, type: 3}
+    render: {fileID: 21300000, guid: a5866be3ebbd26545a49da25068bc313, type: 3}
     MustBeInstantiate: 1
     Child: {fileID: 7295470563782542346, guid: a3510d7a12c1ba54e8594430f6db3e28, type: 3}
   - _terrainName: Brasier
