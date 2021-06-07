@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: MechaCH
+  m_EditorClassIdentifier: 
+  UnitName: Di Jiu Drachen
+  Description: "Alors que la course \xE0 l\u2019armement explose dans le monde entier
+    d\xE8s les ann\xE9es 20, les forces nationalistes chinoises d\xE9cident de la
+    rejoindre, poussant tous leurs efforts dans l\u2019\xE9laboration de technologies
+    toujours plus prototypiques. Est alors n\xE9 en 1935 le Di Jiu Drachen (en r\xE9f\xE9rence
+    au Nombre du Dragon, mais aussi du nombre de concepteurs), un assemblage m\xE9canique
+    inspir\xE9 des dragons orientaux propuls\xE9 par une batterie de petits jetpacks,
+    devant leur effificacit\xE9 aux recherches hyperchimiques chinoises."
+  typeUnite: 5
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 3
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e8225fe54bcf46d4fa7d8de053364773, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f0871f99ff2f3614989bf27c93b261d6, type: 3}
+  SonMort: {fileID: 8300000, guid: d7670bed0d3f1e64eb67a3f34602a2e4, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 1619642899916259005, guid: cc3008f1295c49f4fbc06f0406ee55c0, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 050000000000000000000000

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: MytheCH2
+  m_EditorClassIdentifier: 
+  UnitName: Ao Guang
+  Description: "Dans les temps anciens, le dragon azur de la mer de l\u2019Est est
+    apparu en tant que divinit\xE9 protectrice. Devenant le conseiller d\xE9sign\xE9
+    de l\u2019Empereur Qin Shi Huang, il utilisa sa sagesse et son immortalit\xE9
+    pour guider la Qin antique qui deviendra la Chine. Au d\xE9but de la guerre,
+    il ne souhaite pas intervenir. Cependant, lorsque Ao Shun, est impliqu\xE9 dans
+    la bataille, Ao Guang n\u2019y tint plus. Son temp\xE9rament violent se r\xE9veille
+    et il se dirigea \xE0 toute vitesse sur le front.pour soutenir le peuple qu\u2019il
+    prot\xE8ge depuis des mill\xE9naires."
+  typeUnite: 3
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 4
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: e8225fe54bcf46d4fa7d8de053364773, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: fc526ce957fc93f43963d3e57527995e, type: 3}
+  VoiceLine: {fileID: 8300000, guid: e7972f3c45def7e40b59e3c31a2f582a, type: 3}
+  Sprite: {fileID: 4723107735738678597, guid: addee2edf366a214d9f12b4234bfa30f, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

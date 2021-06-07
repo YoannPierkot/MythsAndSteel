@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: LeaderJA
+  m_EditorClassIdentifier: 
+  UnitName: Hideki Tojo
+  Description: "G\xE9n\xE9ral inv\xE9t\xE9r\xE9 par les champs de bataille, Hideki
+    Tojo est connu pour son pass\xE9 dans les milieux de l\u2019information et de
+    la reconnaissance. il est le premier \xE0 se procurer un prototype militaire
+    d\u2019antenne portative, lui permettant d\u2019ordonner des manoeoeuvres \xE0
+    ses troupes en un \xE9clair. Sa radio lui octroie \xE9galement la capacit\xE9
+    de brouiller temporairement les lignes de communication ennemies, offrant l\u2019initiative
+    strat\xE9gique \xE0 son camp."
+  typeUnite: 4
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 5, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 7a3b62499b156d24f90094954f6603fc, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: fa402c83b36e9bc4191b716164a60b54, type: 3}
+  SonMort: {fileID: 8300000, guid: 2c7cd13b10b5165489e1209b519b23a8, type: 3}
+  VoiceLine: {fileID: 8300000, guid: f207ab65f5f47f74c92072e694853d5a, type: 3}
+  Sprite: {fileID: 4879821243204330288, guid: e7ebf3c2bf1e369469d27c42c05a940e, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

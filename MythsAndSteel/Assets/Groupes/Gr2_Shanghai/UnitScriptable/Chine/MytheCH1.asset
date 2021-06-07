@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: MytheCH1
+  m_EditorClassIdentifier: 
+  UnitName: "Arm\xE9e de terre cuite"
+  Description: "Dans sa qu\xEAte de l\u2019\xC9lixir d\u2019Immortalit\xE9, l\u2019Empereur
+    Qin Shi Huang ordonna sans le savoir \xE0 Xu Fu, alchimiste et sorcier, d\u2019utiliser
+    lors de ses plus fifines exp\xE9rimentations l\u2019Orgone de centaines de milliers
+    de morts sur ses chantiers. Lors de fouilles au d\xE9but de la guerre, les nationalistes
+    remirent \xE0 jour une arm\xE9e de terre cuite suppos\xE9e d\xE9fendre le mausol\xE9e
+    de l\u2019empereur pour l\u2019\xE9ternit\xE9. Toujours impr\xE9gn\xE9e d\u2019Orgone,
+    elle se remet en marche, prouvant son all\xE9geance au nouvel Empereur."
+  typeUnite: 3
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 556e418a72bf29d4b850ed179d737fab, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: 515b81911e228124cab0ccf93a0ba6a4, type: 3}
+  SonMort: {fileID: 8300000, guid: ee370d463985e914a86e6c7f05f89ae1, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 5354296624555974289, guid: 3b512e296914093469f8121030a6ce33, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000
