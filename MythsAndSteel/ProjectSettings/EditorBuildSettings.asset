@@ -5,19 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/MetaGame/_Scenes/Menu/SplashScreen.unity
     guid: 84cd2eefd4d65d14ba41f093adcce275
-  - enabled: 1
+  - enabled: 0
     path: Assets/MetaGame/_Scenes/Menu/TitleScreen.unity
     guid: 339b8e121f7ef1d418fa79da564b48f9
-  - enabled: 1
+  - enabled: 0
     path: Assets/MetaGame/_Scenes/Menu/SettingsMenu.unity
     guid: 599d1ca80636d9f4fa296210cdd1163b
-  - enabled: 1
+  - enabled: 0
     path: Assets/MetaGame/_Scenes/MainScene.unity
     guid: bb20a40773a3c234faa552e1c4402c74
-  - enabled: 1
+  - enabled: 0
     path: "Assets/MetaGame/_Scenes/Menu/Encyclop\xE9die.unity"
     guid: 36026f23f5691484dac633989c61f187
+  - enabled: 0
+    path: Assets/Groupes/Gr6_ElAlamein/_Scenes/ElAlamein_Scene.unity
+    guid: 2791a484a5b8fe945a2981e4ab1959db
+  - enabled: 0
+    path: Assets/Groupes/Gr1_Rethel/_Scenes/Rethel_Scene.unity
+    guid: 562c75cdb1bf53c4c9d4e2c878cd9c37
+  - enabled: 0
+    path: Assets/Groupes/Gr2_Shanghai/_Scenes/ShanghaiScene.unity
+    guid: 9ab75ca53cad01d4a901d4f1b6904a3a
+  - enabled: 0
+    path: Assets/Groupes/Gr3_Stalingrad/Stalingrad_Scene.unity
+    guid: 7445725d3d767b04dacefc69b892a8c6
+  - enabled: 0
+    path: "Assets/Groupes/Gr4_Husky/_Scenes/Husky_Sc\xE8ne.unity"
+    guid: 94465f65aa6e8604aaf7a16b77b0cf57
+  - enabled: 0
+    path: Assets/Groupes/Gr5_Guadalcanal/_Scenes/Guadalcanal.unity
+    guid: bcdc9a5d5f549354fbfc7489376bd0c2
+  - enabled: 0
+    path: Assets/Groupes/Gr7_Elsenborn/Elsenborn_Scene.unity
+    guid: eecf5c2683d050d41ac2777883de427a
   m_configObjects: {}

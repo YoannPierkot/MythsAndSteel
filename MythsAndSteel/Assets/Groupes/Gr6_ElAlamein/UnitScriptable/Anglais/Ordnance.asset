@@ -26,14 +26,14 @@ MonoBehaviour:
   MoveSpeed: 2
   CreationCost: 4
   numberOfUnitToAttack: 1
-  DamageMinimum: 2
-  NumberRangeMin: {x: 5, y: 12}
-  DamageMaximum: 0
-  NumberRangeMax: {x: 0, y: 0}
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 5, y: 12}
   SonAttaque: {fileID: 8300000, guid: ccc875c9e7211c54aa3567ac8e41fa8c, type: 3}
   SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
   SonMort: {fileID: 8300000, guid: de2caf5e444715b4bb4b1e5442723be2, type: 3}
-  VoiceLine: {fileID: 0}
+  VoiceLine: {fileID: 8300000, guid: ccc875c9e7211c54aa3567ac8e41fa8c, type: 3}
   Sprite: {fileID: -6498348081397341315, guid: 684d96ff21b97cb48af1488bc49ef399, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0

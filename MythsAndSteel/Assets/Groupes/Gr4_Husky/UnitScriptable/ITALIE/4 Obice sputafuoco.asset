@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitName: Obice sputafuoco
   Description: "Cette artillerie a \xE9t\xE9 renforc\xE9e par St\xE9rop\xE8s pour
-    qu\u2019elle puisse tirer des obus de lave. Le recul du canon d\xFBt \xE0 sa
-    puissance oblige l\u2019artillerie \xE0 \xEAtre bien ancr\xE9e dans le sol pour
-    \xE9viter qu\u2019elle ne se d\xE9place.  "
+    qu\u2019elle puisse tirer des obus de lave. Le recul du canon, \xE0 cause de
+    sa puissance oblige l\u2019artillerie \xE0 \xEAtre bien ancr\xE9e dans le sol
+    pour \xE9viter qu\u2019elle ne se d\xE9place.  "
   typeUnite: 2
   LifeMax: 3
   ShieldMax: 0
