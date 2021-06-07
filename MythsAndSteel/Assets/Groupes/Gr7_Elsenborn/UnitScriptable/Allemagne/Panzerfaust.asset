@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Panzerfaust
+  m_EditorClassIdentifier: 
+  UnitName: Panzerfaust
+  Description: "Le Panzerfaust propulse sa grenade unique \xE0 charge creuse r\xE9duisant
+    \xE0 n\xE9ant la plupart des chars. Cet exploit est possible \xE0 la synth\xE9tisation
+    passant par l\u2019Hyperchimie."
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: 4f98db35ad521be46901a8b40777859f, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -4177490497509133815, guid: 3f5241bf1404730409d09d15eccdab33, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

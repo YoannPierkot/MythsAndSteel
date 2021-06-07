@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: M18 Hellcat
+  m_EditorClassIdentifier: 
+  UnitName: M18 Hellcat
+  Description: "Le M18 Hellcat est un chasseur de chars et est l\u2019engin chenill\xE9
+    le plus rapide jamais cr\xE9\xE9. La raison de sa vitesse est son moteur hydride
+    unique. Pour des trajets normaux, il utilisera son moteur \xE9lectrique avec
+    notamment des batteries Mesali, mais s\u2019il a besoin de passer au maximum
+    de sa vitesse, alors il acc\xE9l\xE8rera avec son moteur explosif de p\xE9trole
+    coupl\xE9 au Narc\xE9on. De ce fait, il rattrapera toujours n\u2019importe quelle
+    proie qui oserait s\u2019en prendre aux Etats-Unis."
+  typeUnite: 1
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 8}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 2347116962927464642, guid: c862cf15167020a4788d2da244b60068, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

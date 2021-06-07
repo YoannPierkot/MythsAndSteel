@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Bazooka
+  m_EditorClassIdentifier: 
+  UnitName: Bazooka
+  Description: "A cause du bruit et du nuage de poussi\xE8re soulev\xE9 provoqu\xE9
+    par le tir du bazooka, Les Etats-Unis ont d\xE9velopp\xE9 un syst\xE8me de propulsion
+    ainsi qu\u2019une unit\xE9 d\u2019\xE9lite sp\xE9cialement entrain\xE9e \xE0
+    cette technologie. Cette unit\xE9 d\xE9sormais tr\xE8s mobile transforme la visibilit\xE9
+    de tir du bazooka en leurre pour tromper ses ennemis."
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 6, y: 12}
+  DamageMaximum: 0
+  NumberRangeMax: {x: 0, y: 0}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: 4f98db35ad521be46901a8b40777859f, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -1805490664289700549, guid: 64156f9daa746f54eb8ced08f01720c8, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

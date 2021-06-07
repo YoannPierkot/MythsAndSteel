@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Asa Noah
+  m_EditorClassIdentifier: 
+  UnitName: Asa Noah
+  Description: "Asa Noah est une fusion de l\u2019Orgone concentr\xE9e de plusieurs
+    mythes am\xE9rindiens faisant d\u2019elle une sorte d\u2019\xE9l\xE9mentaire
+    d\u2019Orgone brute. Pour asservir et contr\xF4ler cet amas d\u2019\xE9nergie,
+    les Am\xE9ricains l\u2019ont \xE9quip\xE9 d\u2019une armure compl\xE8te. Cette
+    armure contiendrait son \xE9nergie et la chaleur provoqu\xE9 par l\u2019Orgone
+    concentr\xE9e. Elle est repr\xE9sent\xE9 comme le Soleil qui b\xE9nit l\u2019Am\xE9rique
+    et la sauveuse des Am\xE9ricains. Cette arme ultime peut se consumer pour annihiler
+    ses ennemis, \xE0 l\u2019aide de projections d\u2019Orgone concentr\xE9e.  "
+  typeUnite: 3
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 3
+  NumberRangeMin: {x: 4, y: 10}
+  DamageMaximum: 4
+  NumberRangeMax: {x: 11, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 29287153e5aec97449a9895cd955e088, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: eab7bf2c7a39e4c478e16cad7acc2d2c, type: 3}
+  SonMort: {fileID: 8300000, guid: 4f98db35ad521be46901a8b40777859f, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -8238649978054244826, guid: d88e673b4428ebe45bad9dccc8a603d3, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000
