@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Panzer IV
+  m_EditorClassIdentifier: 
+  UnitName: Panzer IV
+  Description: "Ce tank est la base de l\u2019arm\xE9e blind\xE9e allemande et tout
+    particuli\xE8rement lors de la bataille d\u2019Elsenborn, o\xF9 il faisait partie
+    du corps de la charge de la Cr\xE8te, m\xEAme si cela le dirigeait vers une mort
+    certaine. Son canon est un canon Gauss, permettant de lancer ses projectiles
+    \xE0 haute v\xE9locit\xE9."
+  typeUnite: 1
+  LifeMax: 3
+  ShieldMax: 0
+  AttackRange: 2
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 8}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 9, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -3209959577689910938, guid: 5dd18c2c2dbf84b4fb8dcd81e2b34e9f, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

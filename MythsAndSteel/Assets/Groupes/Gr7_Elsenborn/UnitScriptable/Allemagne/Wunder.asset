@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Wunder
+  m_EditorClassIdentifier: 
+  UnitName: Wunder
+  Description: "Ce Mecha est contr\xF4l\xE9e par ondes radio et est capable de passer
+    d\u2019une phase mobile \xE0 une phase de protection. Ainsi, \xE0 l\u2019aide
+    d\u2019un alliage hyperchimique unique, Wunder peut encaisser plusieurs obus
+    sans broncher. Wunder est con\xE7u \xE0 la base pour d\xE9fendre l\u2019arm\xE9e
+    de Berlin, en vue d\u2019une derni\xE8re bataille qui s\u2019y profilait. Mais
+    gr\xE2ce aux messages intercept\xE9s, les Allemands l\u2019envoy\xE8rent \xE0
+    la cr\xE8te d\u2019Elsenborn pour prot\xE9ger leur derni\xE8re chance.  "
+  typeUnite: 5
+  LifeMax: 5
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 4, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: ccc875c9e7211c54aa3567ac8e41fa8c, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
+  SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 6018914871139964027, guid: acac88fdff8ef7f4690f32f0f90fd25b, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 0
+  UnitAttributs: 000000000000000000000000

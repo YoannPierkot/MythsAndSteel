@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Omar Bradley
+  m_EditorClassIdentifier: 
+  UnitName: Omar Bradley
+  Description: "Omar Bradley est un grand g\xE9n\xE9ral de guerre qui fut gri\xE8vement
+    bless\xE9 et exfiltr\xE9 d\u2019urgence. Alors qu\u2019il tendait vers une mort
+    certaine, les m\xE9decins britanniques ont tent\xE9 de lui injecter un prototype
+    de traitement \xE0 base d\u2019Orgone liquide de mythe. Cela fut un succ\xE8s
+    total, Omar Bradley \xE9tait vivant, tant qu\u2019il \xE9tait constamment sous
+    ce traitement orgonal. Il d\xE9cida de faire de son art ce traitement afin de
+    soutenir pleinement les troupes.  "
+  typeUnite: 4
+  LifeMax: 5
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 1
+  NumberRangeMin: {x: 5, y: 9}
+  DamageMaximum: 2
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 850059d4d397f244b97b116830397891, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: 905e623eefec9364f8dcc9f98ae6168a, type: 3}
+  VoiceLine: {fileID: 8300000, guid: e64c3bcdb1a1e584b99a997f4ca1ec8a, type: 3}
+  Sprite: {fileID: -1090427021344949395, guid: e31ab6252dbafdf48ab64d0c1a2353c2, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

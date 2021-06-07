@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: Bubblebop
+  m_EditorClassIdentifier: 
+  UnitName: Bublebop
+  Description: "En 1940, alors que les Alli\xE9s lib\xE8rent la France, Les Am\xE9ricains
+    d\xE9couvrent non-loin des Ardennes belges un bunker allemand contenant le m\xE9cha
+    Aufladen faisant parti d\u2019un des puissants m\xE9chas au c\u0153ur de la Blitzkrieg.
+    Il permet notamment de gagner la bataille des Ardennes de 1940. Les Etats-Unis
+    l\u2019ont r\xE9cup\xE9r\xE9 et am\xE9lior\xE9 pour en faire Bubblebop, le maitre
+    des Ardennes belges, notamment gr\xE2ce \xE0 son syst\xE8me de mobilit\xE9 et
+    d\u2019attaque qui lui permet d\u2019ignorer le relief tout en r\xE9duisant \xE0
+    n\xE9ant ses ennemis sur son passage.."
+  typeUnite: 5
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 4
+  numberOfUnitToAttack: 1
+  DamageMinimum: 2
+  NumberRangeMin: {x: 4, y: 9}
+  DamageMaximum: 3
+  NumberRangeMax: {x: 10, y: 12}
+  SonAttaque: {fileID: 8300000, guid: b50894d6977986f468ca4a1f454d936e, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: e1548c880838536439941e26d3e076a3, type: 3}
+  SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 3307787230029974946, guid: 9660f8e78db11ff47ae2535ec31476da, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 050000000000000000000000

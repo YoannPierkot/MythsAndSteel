@@ -528,6 +528,7 @@ public bool MélodieSinistre = false;
 
             else if (AttackVariation < 0)
             {
+                IsOrgoneDamage = true;
                 TakeDamage(AttackVariation, true, false);
                 Debug.Log(AttackVariation + gameObject.name);
 
@@ -619,7 +620,7 @@ public bool MélodieSinistre = false;
 
             //Ajout de l'orgone
 
-            if (Damage > 0)
+            if (Damage > 0 && !IsOrgoneDamage)
             {
 
                 if (TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.OrgoneRed))
