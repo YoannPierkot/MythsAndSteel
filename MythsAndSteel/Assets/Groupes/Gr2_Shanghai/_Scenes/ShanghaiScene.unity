@@ -2534,15 +2534,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.data[0]
-      value: 0
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.data[1]
-      value: 42
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.data[2]
@@ -24756,8 +24756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b99b6264306c6c4984ffaaae3c8ab8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedObjCount: 1
-  BlueObjCount: 1
+  RedObjCount: 0
+  BlueObjCount: 2
   RedgoalTileList: []
   BluegoalTileList: []
   AnimResourcesRed: {fileID: 1074390070}
@@ -32257,19 +32257,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
-      propertyPath: _terrainEffectList.Array.data[1]
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
-      propertyPath: _terrainEffectList.Array.data[2]
+      propertyPath: _terrainEffectList.Array.data[1]
       value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
+      propertyPath: _terrainEffectList.Array.data[2]
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 5729802673627382403, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: m_Name

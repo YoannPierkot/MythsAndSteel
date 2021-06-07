@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Groupes/Gr5_Guadalcanal/_Scenes/Guadalcanal.unity
     guid: bcdc9a5d5f549354fbfc7489376bd0c2
   - enabled: 1
-    path: Assets/Groupes/Gr7_Elsenborn/Elsenborn_Scene.unity
+    path: Assets/Groupes/Gr7_Elsenborn/_Scenes/Elsenborn_Scene.unity
     guid: eecf5c2683d050d41ac2777883de427a
   - enabled: 1
     path: Assets/Groupes/Gr6_ElAlamein/_Scenes/ElAlamein_Scene.unity

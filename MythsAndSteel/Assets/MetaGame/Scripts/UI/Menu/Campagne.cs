@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Campagne : MonoBehaviour
 {
-    public MYthsAndSteel_Enum.Scenario _Scenario; //Scénario Séléctionné et affiché
-    [SerializeField] int ScenarioVal = 0;
+    public MYthsAndSteel_Enum.Scenario _Scenario; // Scénario Séléctionné et affiché
+    [SerializeField] int ScenarioVal = 0; // Scénario affiché à l'écran
     [SerializeField] int spaceBetweenScenario = 0;
 
-    [SerializeField] int Unlocked;//Nombre actuelle de niveau débloqué
+    [SerializeField] int Unlocked; //Nombre actuelle de niveau débloqué
 
     [Header("Assignations")]
 
@@ -32,16 +32,6 @@ public class Campagne : MonoBehaviour
 
     [SerializeField] GameObject SoundController;
 
-    private void Start()
-    {
-        PlayerPrefs.SetInt("RethelDone", 0);
-        PlayerPrefs.SetInt("ShanghaiDone", 0);
-        PlayerPrefs.SetInt("StalingradDone", 0);
-        PlayerPrefs.SetInt("HuskyDone", 0);
-        PlayerPrefs.SetInt("GuadalcanalDone", 0);
-        PlayerPrefs.SetInt("ElAlameinDone", 0);
-        PlayerPrefs.SetInt("ElsenbornDone", 0);
-    }
     private void Awake()
     {
         Time.timeScale = 1;
@@ -130,6 +120,7 @@ public class Campagne : MonoBehaviour
                 Jauge7.SetActive(true);
                 break;
 
+                
         }
 
         if (Unlocked == 0)
@@ -141,70 +132,14 @@ public class Campagne : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(ScenarioVal);
+        Debug.Log(PlayerPrefs.GetInt("ShanghaiDone"));
+
         _mapTransform.GetComponent<RectTransform>().localPosition = Vector2.MoveTowards(_mapTransform.GetComponent<RectTransform>().localPosition, new Vector2(-spaceBetweenScenario * (Screen.width / 1920f) * ScenarioVal, _mapTransform.GetComponent<RectTransform>().localPosition.y), Time.deltaTime * _mapSpeed);
         redPlayerVictories = saveData.redPlayerVictories;
         bluePlayerVictories = saveData.bluePlayerVictories;
         RedPlayerVictories.text = redPlayerVictories.ToString();
         BluePlayerVictories.text = bluePlayerVictories.ToString();
-       
-        // CODE A DÉ-COMMENTER SI UN PLATEAU PAR SCENE (+ Réassigner le switch dans le bouton des batailles) 
-        if (ScenarioVal == 0 && PlayerPrefs.GetInt("ShanghaiDone") == 1) 
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        if (ScenarioVal == 1 && PlayerPrefs.GetInt("RethelDone") == 1)
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        if (ScenarioVal == 2 && PlayerPrefs.GetInt("StalingradDone") == 1)
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        if (ScenarioVal == 3 && PlayerPrefs.GetInt("GuadalcanalDone") == 1) 
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        if (ScenarioVal == 4 && PlayerPrefs.GetInt("ElAlameinDone") == 1) 
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        if (ScenarioVal == 5 && PlayerPrefs.GetInt("HuskyDone") == 1)
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        if (ScenarioVal == 6 && PlayerPrefs.GetInt("ElsenbornDone") == 1)
-        {
-            _buttonRight.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            _buttonRight.GetComponent<Button>().interactable = false;
-        }
-        
     }
 
     /// <summary>
@@ -220,8 +155,7 @@ public class Campagne : MonoBehaviour
             Destroy(GameObject.Find("SplashController"));
 
         }
-
-        SceneManager.LoadScene(sceneID);
+        
         switch (sceneID)
         {
 
@@ -245,11 +179,11 @@ public class Campagne : MonoBehaviour
                 PlayerPrefs.SetInt("GuadalcanalDone", 1);
                 PlayerPrefs.SetInt("Bataille", 4);
                 break;
-            case 10:
+            case 11:
                 PlayerPrefs.SetInt("ElAlameinDone", 1);
                 PlayerPrefs.SetInt("Bataille", 5);
                 break;
-            case 11:
+            case 10:
                 PlayerPrefs.SetInt("ElsenbornDone", 1);
                 PlayerPrefs.SetInt("Bataille", 7);
                 break;
@@ -257,6 +191,7 @@ public class Campagne : MonoBehaviour
                 break;
         }
 
+        SceneManager.LoadScene(sceneID);
     }
 
     /// <summary>
@@ -293,14 +228,13 @@ public class Campagne : MonoBehaviour
         if (targetValue > 0 && targetValue < 6)
         {
             _buttonLeft.GetComponent<Button>().interactable = true;
-            _buttonRight.GetComponent<Button>().interactable = true; // Enlever la ligne quand décommentez la ligne 148 aka CODE A DÉ-COMMENTER SI UN PLATEAU PAR SCENE (+ Réassigner le switch dans le bouton des batailles)
             _Scenario++;
             ScenarioVal++;
         }
         else if (targetValue == 6)
         {
-            _buttonRight.GetComponent<Button>().interactable = false;
             _buttonLeft.GetComponent<Button>().interactable = true;
+            _buttonRight.GetComponent<Button>().interactable = false;
             _Scenario++;
             ScenarioVal++;
         }
