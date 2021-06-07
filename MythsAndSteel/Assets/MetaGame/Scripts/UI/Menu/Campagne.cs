@@ -147,9 +147,8 @@ public class Campagne : MonoBehaviour
         RedPlayerVictories.text = redPlayerVictories.ToString();
         BluePlayerVictories.text = bluePlayerVictories.ToString();
        
-        // CODE A DÉ-COMMENTER SI UN PLATEAU PAR SCENE (+ Réassigner le switch dans le bouton des batailles)
-        /* 
-        if (ScenarioVal == 0 && PlayerPrefs.GetInt("RethelDone") == 1)
+        // CODE A DÉ-COMMENTER SI UN PLATEAU PAR SCENE (+ Réassigner le switch dans le bouton des batailles) 
+        if (ScenarioVal == 0 && PlayerPrefs.GetInt("ShanghaiDone") == 1) 
         {
             _buttonRight.GetComponent<Button>().interactable = true;
         }
@@ -157,7 +156,7 @@ public class Campagne : MonoBehaviour
         {
             _buttonRight.GetComponent<Button>().interactable = false;
         }
-        if (ScenarioVal == 1 && PlayerPrefs.GetInt("ShanghaiDone") == 1)
+        if (ScenarioVal == 1 && PlayerPrefs.GetInt("RethelDone") == 1)
         {
             _buttonRight.GetComponent<Button>().interactable = true;
         }
@@ -173,7 +172,7 @@ public class Campagne : MonoBehaviour
         {
             _buttonRight.GetComponent<Button>().interactable = false;
         }
-        if (ScenarioVal == 3 && PlayerPrefs.GetInt("HuskyDone") == 1)
+        if (ScenarioVal == 3 && PlayerPrefs.GetInt("GuadalcanalDone") == 1) 
         {
             _buttonRight.GetComponent<Button>().interactable = true;
         }
@@ -181,7 +180,7 @@ public class Campagne : MonoBehaviour
         {
             _buttonRight.GetComponent<Button>().interactable = false;
         }
-        if (ScenarioVal == 4 && PlayerPrefs.GetInt("GuadalcanalDone") == 1)
+        if (ScenarioVal == 4 && PlayerPrefs.GetInt("ElAlameinDone") == 1) 
         {
             _buttonRight.GetComponent<Button>().interactable = true;
         }
@@ -189,7 +188,7 @@ public class Campagne : MonoBehaviour
         {
             _buttonRight.GetComponent<Button>().interactable = false;
         }
-        if (ScenarioVal == 5 && PlayerPrefs.GetInt("ElAlameinDone") == 1)
+        if (ScenarioVal == 5 && PlayerPrefs.GetInt("HuskyDone") == 1)
         {
             _buttonRight.GetComponent<Button>().interactable = true;
         }
@@ -205,7 +204,7 @@ public class Campagne : MonoBehaviour
         {
             _buttonRight.GetComponent<Button>().interactable = false;
         }
-        */
+        
     }
 
     /// <summary>
@@ -221,35 +220,36 @@ public class Campagne : MonoBehaviour
             Destroy(GameObject.Find("SplashController"));
 
         }
+
         SceneManager.LoadScene(sceneID);
         switch (sceneID)
         {
 
-            case 1:
+            case 5:
                 PlayerPrefs.SetInt("RethelDone", 1);
-                PlayerPrefs.SetInt("Bataille", 1);
-                break;
-            case 2:
-                PlayerPrefs.SetInt("ShanghaiDone", 1);
                 PlayerPrefs.SetInt("Bataille", 2);
                 break;
-            case 3:
+            case 6:
+                PlayerPrefs.SetInt("ShanghaiDone", 1);
+                PlayerPrefs.SetInt("Bataille", 1);
+                break;
+            case 7:
                 PlayerPrefs.SetInt("StalingradDone", 1);
                 PlayerPrefs.SetInt("Bataille", 3);
                 break;
-            case 4:
+            case 8:
                 PlayerPrefs.SetInt("HuskyDone", 1);
-                PlayerPrefs.SetInt("Bataille", 4);
-                break;
-            case 5:
-                PlayerPrefs.SetInt("GuadalcanalDone", 1);
-                PlayerPrefs.SetInt("Bataille", 5);
-                break;
-            case 6:
-                PlayerPrefs.SetInt("ElAlameinDone", 1);
                 PlayerPrefs.SetInt("Bataille", 6);
                 break;
-            case 7:
+            case 9:
+                PlayerPrefs.SetInt("GuadalcanalDone", 1);
+                PlayerPrefs.SetInt("Bataille", 4);
+                break;
+            case 10:
+                PlayerPrefs.SetInt("ElAlameinDone", 1);
+                PlayerPrefs.SetInt("Bataille", 5);
+                break;
+            case 11:
                 PlayerPrefs.SetInt("ElsenbornDone", 1);
                 PlayerPrefs.SetInt("Bataille", 7);
                 break;

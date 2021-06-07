@@ -20,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/MetaGame/_Scenes/Menu/Encyclop\xE9die.unity"
     guid: 36026f23f5691484dac633989c61f187
+  - enabled: 1
+    path: Assets/Groupes/Gr1_Rethel/_Scenes/Rethel_Scene.unity
+    guid: 562c75cdb1bf53c4c9d4e2c878cd9c37
+  - enabled: 1
+    path: Assets/Groupes/Gr2_Shanghai/_Scenes/ShanghaiScene.unity
+    guid: 9ab75ca53cad01d4a901d4f1b6904a3a
+  - enabled: 1
+    path: Assets/Groupes/Gr3_Stalingrad/Stalingrad_Scene.unity
+    guid: 7445725d3d767b04dacefc69b892a8c6
+  - enabled: 1
+    path: "Assets/Groupes/Gr4_Husky/_Scenes/Husky_Sc\xE8ne.unity"
+    guid: 94465f65aa6e8604aaf7a16b77b0cf57
+  - enabled: 1
+    path: Assets/Groupes/Gr5_Guadalcanal/_Scenes/Guadalcanal.unity
+    guid: bcdc9a5d5f549354fbfc7489376bd0c2
+  - enabled: 1
+    path: Assets/Groupes/Gr7_Elsenborn/Elsenborn_Scene.unity
+    guid: eecf5c2683d050d41ac2777883de427a
+  - enabled: 1
+    path: Assets/Groupes/Gr6_ElAlamein/_Scenes/ElAlamein_Scene.unity
+    guid: 2791a484a5b8fe945a2981e4ab1959db
   m_configObjects: {}
