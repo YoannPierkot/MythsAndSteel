@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: LeaderCH
+  m_EditorClassIdentifier: 
+  UnitName: "Tchang Ka\xEF-Chek"
+  Description: "Depuis ses \xE9tudes dans le monde militaire, Tchang s\u2019est tr\xE8s
+    rapidement dirig\xE9 dans la politique. Inflfluenc\xE9 par le monde r\xE9volutionnaire
+    et ayant d\xE9j\xE0 particip\xE9 aux conflflits de Shanghai, il put alors progresser
+    grandement dans la hi\xE9rarchie, faisant de lui un g\xE9n\xE9ral puissant et
+    habile. Utilisant ses connaissances tr\xE8s impressionnantes sur les mythes,
+    l\u2019Orgone et l\u2019Hyperchimie sur le champ de bataille, il est un savant
+    \xE0 ne surtout pas sous-estimer."
+  typeUnite: 4
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 0
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 5, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 850059d4d397f244b97b116830397891, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: 2c7cd13b10b5165489e1209b519b23a8, type: 3}
+  VoiceLine: {fileID: 8300000, guid: f207ab65f5f47f74c92072e694853d5a, type: 3}
+  Sprite: {fileID: 2130629803911503357, guid: d2daa56cdba7e544b94208397d6d807c, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

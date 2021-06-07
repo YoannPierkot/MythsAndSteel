@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: InfanterieCH
+  m_EditorClassIdentifier: 
+  UnitName: Zhan Shi
+  Description: "Le Zh\xE0n Sh\xEC (Soldat, Militaire en Mandarin) est la repr\xE9sentation
+    typique de l\u2019infanterie chinoise, nombreuse et form\xE9e au plus vite. Ils
+    utilisent des armes en tout genre, souvent arrang\xE9es sur le front notamment,
+    ce qui peut permettre de gagner rapidement des batailles en vis-\xE0-vis, d\u2019o\xF9
+    la pr\xE9dominance d\u2019armes \xE0 courte port\xE9e mais explosant en de nombreux
+    projectiles. Tout ceci combin\xE9 \xE0 l\u2019utilisation du narc\xE9on fait
+    de lui une puissante unit\xE9."
+  typeUnite: 0
+  LifeMax: 2
+  ShieldMax: 0
+  AttackRange: 1
+  MoveSpeed: 2
+  CreationCost: 2
+  numberOfUnitToAttack: 1
+  DamageMinimum: 0
+  NumberRangeMin: {x: 1, y: 4}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 5, y: 12}
+  SonAttaque: {fileID: 8300000, guid: 672ed031b3907f14a9b1d2f3e52f71b8, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
+  SonMort: {fileID: 8300000, guid: ee370d463985e914a86e6c7f05f89ae1, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: -8918223505986614383, guid: 0258b621cac0ccf448ec7405b07e1973, type: 3}
+  CanAttackEmptyTile: 1
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000

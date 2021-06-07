@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c815bdbd83982254eb2da5fbe95df910, type: 3}
+  m_Name: VehiculeCH
+  m_EditorClassIdentifier: 
+  UnitName: FAMO
+  Description: "Le FAMO est un v\xE9hicule durable d\xE9riv\xE9 des v\xE9hicules
+    de transports allemands, ayant pu profifiter de leurs recherches pr\xE9-guerre
+    sur ce qui deviendra le Sd.Kfz.9 FAMO. Parfaitement adapt\xE9 aux troupes chinoises
+    chaotiques, il est \xE0 la fois capable de transporter des soldats et m\xEAme
+    des pi\xE8ces d\u2019artillerie. L\u2019\xE9quipement de r\xE9paration et de
+    m\xE9decine qu\u2019elle porte, coupl\xE9 \xE0 sa formidable composition, lui
+    permet d\u2019\xEAtre un excellent support pour l\u2019arm\xE9e."
+  typeUnite: 1
+  LifeMax: 4
+  ShieldMax: 0
+  AttackRange: 0
+  MoveSpeed: 3
+  CreationCost: 4
+  numberOfUnitToAttack: 0
+  DamageMinimum: 0
+  NumberRangeMin: {x: 0, y: 0}
+  DamageMaximum: 0
+  NumberRangeMax: {x: 0, y: 0}
+  SonAttaque: {fileID: 8300000, guid: 6465c61dd228dbf4bac28a9b757e6d13, type: 3}
+  SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
+  SonMort: {fileID: 8300000, guid: d7670bed0d3f1e64eb67a3f34602a2e4, type: 3}
+  VoiceLine: {fileID: 0}
+  Sprite: {fileID: 8817114827379559720, guid: 6206c29678338e740997a55e4b722286, type: 3}
+  CanAttackEmptyTile: 0
+  UsefullToWin: 0
+  IsInRedArmy: 1
+  UnitAttributs: 000000000000000000000000
