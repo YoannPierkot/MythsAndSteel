@@ -33,7 +33,7 @@ MonoBehaviour:
   SonAttaque: {fileID: 8300000, guid: 672ed031b3907f14a9b1d2f3e52f71b8, type: 3}
   SonDeplacement: {fileID: 8300000, guid: d021c76a866619c49a06f80a66437243, type: 3}
   SonMort: {fileID: 8300000, guid: e6a589f501885164da7f356729363dfc, type: 3}
-  VoiceLine: {fileID: 0}
+  VoiceLine: {fileID: 8300000, guid: 672ed031b3907f14a9b1d2f3e52f71b8, type: 3}
   Sprite: {fileID: -63331653005519385, guid: 96b5fcfc7d69a794fad33f78793cdf74, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0

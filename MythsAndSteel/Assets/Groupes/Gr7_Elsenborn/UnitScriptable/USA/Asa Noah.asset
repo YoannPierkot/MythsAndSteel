@@ -34,8 +34,8 @@ MonoBehaviour:
   NumberRangeMax: {x: 11, y: 12}
   SonAttaque: {fileID: 8300000, guid: 29287153e5aec97449a9895cd955e088, type: 3}
   SonDeplacement: {fileID: 8300000, guid: eab7bf2c7a39e4c478e16cad7acc2d2c, type: 3}
-  SonMort: {fileID: 8300000, guid: 4f98db35ad521be46901a8b40777859f, type: 3}
-  VoiceLine: {fileID: 0}
+  SonMort: {fileID: 8300000, guid: bbe866998406ce94d9b8a18ca43de1b4, type: 3}
+  VoiceLine: {fileID: 8300000, guid: c9fd24da1040f6b4f81699cefc2a5678, type: 3}
   Sprite: {fileID: -8238649978054244826, guid: d88e673b4428ebe45bad9dccc8a603d3, type: 3}
   CanAttackEmptyTile: 0
   UsefullToWin: 0
