@@ -22,7 +22,7 @@ MonoBehaviour:
     Child: {fileID: 2443697204554867568, guid: 396d3d03c0655e24ea80eb7815c8b32c, type: 3}
   - _terrainName: Boue
     _description: "Inflige 1 point de d\xE9g\xE2ts aux unit\xE9s sur cette case ne
-      s'\xE9tant pas d\xE9plac\xE9 \xE0 la fin du tour."
+      s'\xE9tant pas d\xE9plac\xE9 \xE0 la fin de la phase d'action du joueur."
     _eventType: 09000000
     render: {fileID: 21300000, guid: e6660b087d95f3c48b9f80012d9c96f6, type: 3}
     MustBeInstantiate: 0

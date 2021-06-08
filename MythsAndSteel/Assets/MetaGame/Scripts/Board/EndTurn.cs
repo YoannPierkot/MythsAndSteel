@@ -263,18 +263,18 @@ public class EndTurn : MonoBehaviour
         switch (PlayerPrefs.GetInt("Bataille"))
         {
             case 2: // RETHEL
-                if (PlayerScript.Instance.RedPlayerInfos.GoalCapturePointsNumber == RedObjCount) /* RedObjCount = 2 */
+                if (PlayerScript.Instance.BluePlayerInfos.GoalCapturePointsNumber == BlueObjCount) /* RedObjCount = 2 */
                 {
                     Debug.Log("Pouet pouet");
-                    GameManager.Instance.VictoryForArmy(1);
+                    GameManager.Instance.VictoryForArmy(2);
                 }
-                else { PlayerScript.Instance.RedPlayerInfos.GoalCapturePointsNumber = 0;
+                else { PlayerScript.Instance.BluePlayerInfos.GoalCapturePointsNumber = 0;
                     Debug.Log("Pouet pouet");
                 }
 
-                if (GameManager.Instance.ActualTurnNumber == 12)
+                if (GameManager.Instance.ActualTurnNumber == 11)
                 {
-                    GameManager.Instance.VictoryForArmy(2);
+                    GameManager.Instance.VictoryForArmy(1);
                 }
                     break;
             case 1: // SHANGHAI
@@ -289,7 +289,7 @@ public class EndTurn : MonoBehaviour
                     Debug.Log("Pouet pouet");
                 }
 
-                if (GameManager.Instance.ActualTurnNumber == 12)
+                if (GameManager.Instance.ActualTurnNumber == 11)
                 {
                     GameManager.Instance.VictoryForArmy(1);
                 }
@@ -301,7 +301,7 @@ public class EndTurn : MonoBehaviour
                 }
                 else { PlayerScript.Instance.RedPlayerInfos.GoalCapturePointsNumber = 0; }
 
-                if (GameManager.Instance.ActualTurnNumber == 12)
+                if (GameManager.Instance.ActualTurnNumber == 11)
                 {
                     GameManager.Instance.VictoryForArmy(1);
                 }
@@ -314,7 +314,7 @@ public class EndTurn : MonoBehaviour
                     break;
 
             case 6: // HUSKY
-                if (GameManager.Instance.ActualTurnNumber == 10)
+                if (GameManager.Instance.ActualTurnNumber == 9)
                 {
                     GameManager.Instance.VictoryForArmy(2);
                 }
@@ -329,7 +329,7 @@ public class EndTurn : MonoBehaviour
                 }
                     break;
             case 4: // GUADALCANAL
-                if (GameManager.Instance.ActualTurnNumber == 12)
+                if (GameManager.Instance.ActualTurnNumber == 11)
                 {
                     GameManager.Instance.VictoryForArmy(2);
                 }
@@ -351,7 +351,7 @@ public class EndTurn : MonoBehaviour
                     GameManager.Instance.VictoryForArmy(2); 
                 }
 
-                if (GameManager.Instance.ActualTurnNumber == 10)
+                if (GameManager.Instance.ActualTurnNumber == 9)
                 {
                     GameManager.Instance.VictoryForArmy(2); 
                 }

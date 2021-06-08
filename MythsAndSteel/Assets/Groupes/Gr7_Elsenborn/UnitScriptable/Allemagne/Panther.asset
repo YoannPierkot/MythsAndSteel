@@ -26,10 +26,10 @@ MonoBehaviour:
   MoveSpeed: 2
   CreationCost: 4
   numberOfUnitToAttack: 1
-  DamageMinimum: 1
-  NumberRangeMin: {x: 8, y: 12}
-  DamageMaximum: 2
-  NumberRangeMax: {x: 4, y: 7}
+  DamageMinimum: 2
+  NumberRangeMin: {x: 4, y: 7}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 8, y: 12}
   SonAttaque: {fileID: 8300000, guid: 29287153e5aec97449a9895cd955e088, type: 3}
   SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
   SonMort: {fileID: 8300000, guid: 445a3ca21d0c82e438c1af32b8eee170, type: 3}

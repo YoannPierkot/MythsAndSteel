@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChargeCreuse: Capacity
 {
+    [SerializeField] RuntimeAnimatorController TransformationAnimator;
     public override void StartCpty()
     {
       
@@ -50,8 +51,10 @@ public class ChargeCreuse: Capacity
             base.EndCpty();
             GameManager.Instance.TileChooseList.Clear();
             Destroy(GetComponent<ChargeCreuse>());
-        
-            GameManager.Instance._eventCall -= EndCpty;
+        GetComponent<Animator>().runtimeAnimatorController = null;
+        GetComponent<Animator>().runtimeAnimatorController = TransformationAnimator;
+
+        GameManager.Instance._eventCall -= EndCpty;
             GetComponent<UnitScript>().EndCapacity();
             base.EndCpty();
             GameManager.Instance.TileChooseList.Clear();

@@ -5,7 +5,7 @@ using UnityEngine;
 public class HauteColline : TerrainParent
 {
     public bool cibled = false;
-
+    public bool cibled2 = false;
 
     public override int AttackRangeValue(int i = 0)
     {
@@ -28,10 +28,11 @@ public class HauteColline : TerrainParent
         {
             if (!TilesManager.Instance.TileList[AttackerUnit.ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Haute_colline) && !TilesManager.Instance.TileList[AttackerUnit.ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Colline))
             {
-                cibled = true;
+                cibled2 = true;
                 AttackerUnit.DiceBonus += -1;
                 Attaque.Instance._JaugeAttack.SynchAttackBorne(AttackerUnit);
             }
+
         }
         base.CibledByAttack(AttackerUnit, AttackerUnitCase);
     }
@@ -42,10 +43,15 @@ public class HauteColline : TerrainParent
         if (cibled)
         {
             cibled = false;
+            Unit.DiceBonus += 3;
+            Attaque.Instance._JaugeAttack.SynchAttackBorne(Unit);
+        }
+        else if (cibled2)
+        {
+            cibled2 = false;
             Unit.DiceBonus += 1;
             Attaque.Instance._JaugeAttack.SynchAttackBorne(Unit);
         }
-
         base.UnCibledByAttack(Unit);
 
     }

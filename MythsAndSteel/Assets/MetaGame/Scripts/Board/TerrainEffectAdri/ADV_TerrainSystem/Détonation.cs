@@ -9,7 +9,7 @@ public class Détonation : TerrainParent
 
     // Joueur qui a posé la détonation.
 
-    public override void EndPlayerTurnEffect(bool IsInRedArmy)
+    public override void EndPlayerTurnEffect(bool IsInRedArmy, UnitScript unit = null)
     {
         Debug.Log("bonsoir");
         if (IsInRedArmy != _IsInRedArmy)
