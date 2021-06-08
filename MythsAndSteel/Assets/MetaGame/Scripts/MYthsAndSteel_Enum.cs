@@ -67,7 +67,7 @@ public class MYthsAndSteel_Enum : MonoBehaviour
     /// </summary>
     public enum Scenario
     {
-        Shanghai, Rethel, Stalingrad, Guadalcanal, ElAlamein, Husky, Elsenborn
+        Shanghai, Rethel, Stalingrad, Guadalcanal, ElAlamein, Husky, Elsenborn, Credits
     }
 
     /// <summary>

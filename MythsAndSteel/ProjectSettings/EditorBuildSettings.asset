@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Groupes/Gr6_ElAlamein/_Scenes/ElAlamein_Scene.unity
     guid: 2791a484a5b8fe945a2981e4ab1959db
+  - enabled: 1
+    path: Assets/MetaGame/_Scenes/Menu/Credits.unity
+    guid: db64add5860a5ac40a8d00d49b70c49f
   m_configObjects: {}

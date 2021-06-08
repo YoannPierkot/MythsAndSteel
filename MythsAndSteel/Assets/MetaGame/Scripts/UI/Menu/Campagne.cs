@@ -225,20 +225,20 @@ public class Campagne : MonoBehaviour
     {
         int targetValue = ScenarioVal + 1;
 
-        if (targetValue > 0 && targetValue < 6)
+        if (targetValue > 0 && targetValue < 7)
         {
             _buttonLeft.GetComponent<Button>().interactable = true;
             _Scenario++;
             ScenarioVal++;
         }
-        else if (targetValue == 6)
+        else if (targetValue == 7)
         {
             _buttonLeft.GetComponent<Button>().interactable = true;
             _buttonRight.GetComponent<Button>().interactable = false;
             _Scenario++;
             ScenarioVal++;
         }
-        else if (targetValue > 6) { }
+        else if (targetValue > 7) { }
 
         if (targetValue == ScenarioVal)
         {
