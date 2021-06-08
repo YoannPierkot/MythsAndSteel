@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 3b8cf744f3121ef458089c821189df64
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1526142370129107679
+    second: cadre victoire-Sheet_0
+  - first:
+      213: 8846694706952071111
+    second: cadre victoire-Sheet_1
+  - first:
+      213: -1335956728227776791
+    second: cadre victoire-Sheet_2
+  - first:
+      213: 8540547031835989567
+    second: cadre victoire-Sheet_3
+  - first:
+      213: 8015519642309556173
+    second: cadre victoire-Sheet_4
+  - first:
+      213: 1718769064587716928
+    second: cadre victoire-Sheet_5
+  - first:
+      213: -5562821048820222827
+    second: cadre victoire-Sheet_6
+  - first:
+      213: -5699912352371106850
+    second: cadre victoire-Sheet_7
+  - first:
+      213: 867378541686212698
+    second: cadre victoire-Sheet_8
+  - first:
+      213: -6180775245296798323
+    second: cadre victoire-Sheet_9
+  - first:
+      213: -8720392717585887885
+    second: cadre victoire-Sheet_10
+  - first:
+      213: 6153576904858644355
+    second: cadre victoire-Sheet_11
+  - first:
+      213: -5868544149646930674
+    second: cadre victoire-Sheet_12
+  - first:
+      213: -8068516002250073220
+    second: cadre victoire-Sheet_13
+  - first:
+      213: 4740343133346547317
+    second: cadre victoire-Sheet_14
+  - first:
+      213: 8108478060720134196
+    second: cadre victoire-Sheet_15
+  - first:
+      213: -7367721598612275380
+    second: cadre victoire-Sheet_16
+  - first:
+      213: -5564712093437641458
+    second: cadre victoire-Sheet_17
+  - first:
+      213: 8978160701923553357
+    second: cadre victoire-Sheet_18
+  - first:
+      213: 3847586884932532918
+    second: cadre victoire-Sheet_19
+  - first:
+      213: 6592490533807250121
+    second: cadre victoire-Sheet_20
+  - first:
+      213: 1320994226555611898
+    second: cadre victoire-Sheet_21
+  - first:
+      213: 7302014198389076572
+    second: cadre victoire-Sheet_22
+  - first:
+      213: -8573762913833025251
+    second: cadre victoire-Sheet_23
+  - first:
+      213: -6027195438755285163
+    second: cadre victoire-Sheet_24
+  - first:
+      213: -3395853396101582003
+    second: cadre victoire-Sheet_25
+  - first:
+      213: -5131791356126377941
+    second: cadre victoire-Sheet_26
+  - first:
+      213: -5331134025714627329
+    second: cadre victoire-Sheet_27
+  - first:
+      213: -8010285084622773511
+    second: cadre victoire-Sheet_28
+  - first:
+      213: 5669416855444951593
+    second: cadre victoire-Sheet_29
+  - first:
+      213: -5412518843430290872
+    second: cadre victoire-Sheet_30
+  - first:
+      213: 8891195843362736356
+    second: cadre victoire-Sheet_31
+  - first:
+      213: 8364597576508511449
+    second: cadre victoire-Sheet_32
+  - first:
+      213: 3726682460859736863
+    second: cadre victoire-Sheet_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 975
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12528c7a99d02dae0800000000000000
+      internalID: -1526142370129107679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 975
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7e434d6f5c5ca70800000000000000
+      internalID: 8846694706952071111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 975
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6b0b21f6ab57de0800000000000000
+      internalID: -1335956728227776791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 975
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36d914964e168670800000000000000
+      internalID: 8540547031835989567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 975
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7f60a85a8dc3f60800000000000000
+      internalID: 8015519642309556173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 975
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0496ea99b5b4ad710800000000000000
+      internalID: 1718769064587716928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594310caab3ecc2b0800000000000000
+      internalID: -5562821048820222827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 780
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb1f0a3ae7d5e0b0800000000000000
+      internalID: -5699912352371106850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 780
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58c007203c890c00800000000000000
+      internalID: 867378541686212698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 780
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d857e8b59a9793aa0800000000000000
+      internalID: -6180775245296798323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 780
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dc366a601faf680800000000000000
+      internalID: -8720392717585887885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 780
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fa5288795e56550800000000000000
+      internalID: 6153576904858644355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d0993503ebe8ea0800000000000000
+      internalID: -5868544149646930674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 585
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b545dd17fd60090800000000000000
+      internalID: -8068516002250073220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 585
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5764590e6f419c140800000000000000
+      internalID: 4740343133346547317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 585
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438954ee5d9178070800000000000000
+      internalID: 8108478060720134196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 585
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ffdbeed3890c990800000000000000
+      internalID: -7367721598612275380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 585
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d345985db26c2b0800000000000000
+      internalID: -5564712093437641458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40768e0795d89c70800000000000000
+      internalID: 8978160701923553357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 390
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bafadee2ef556530800000000000000
+      internalID: 3847586884932532918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 390
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cad4b4463b3d7b50800000000000000
+      internalID: 6592490533807250121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 390
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa6038004d155210800000000000000
+      internalID: 1320994226555611898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 390
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52f6d7c937f55560800000000000000
+      internalID: 7302014198389076572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 390
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11809c3e00e30980800000000000000
+      internalID: -8573762913833025251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557f2219ea91b5ca0800000000000000
+      internalID: -6027195438755285163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 195
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43bf0804518fd0d0800000000000000
+      internalID: -3395853396101582003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 195
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28caa473f638c8b0800000000000000
+      internalID: -5131791356126377941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 195
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc084369d10406b0800000000000000
+      internalID: -5331134025714627329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 195
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f22375e720c5d090800000000000000
+      internalID: -8010285084622773511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 195
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92298689790ddae40800000000000000
+      internalID: 5669416855444951593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84aba35e9ced2e4b0800000000000000
+      internalID: -5412518843430290872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c010138fd36b70800000000000000
+      internalID: 8891195843362736356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d412e4ad25051470800000000000000
+      internalID: 8364597576508511449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cadre victoire-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 440
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13293e04f5d7b330800000000000000
+      internalID: 3726682460859736863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

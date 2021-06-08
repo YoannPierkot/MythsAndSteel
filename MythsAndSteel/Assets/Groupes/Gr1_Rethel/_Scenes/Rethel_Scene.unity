@@ -5428,7 +5428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _ownerObjectiv
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.size
@@ -9342,7 +9342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _ownerObjectiv
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _resourcesCounter
@@ -9354,7 +9354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.data[0]
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 4227640084239285831, guid: ee6b1ce0faa94234f9a29df7bd08b393, type: 3}
       propertyPath: _terrainEffectList.Array.data[1]
@@ -26072,8 +26072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b99b6264306c6c4984ffaaae3c8ab8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedObjCount: 1
-  BlueObjCount: 1
+  RedObjCount: 2
+  BlueObjCount: 0
   RedgoalTileList: []
   BluegoalTileList: []
   AnimResourcesRed: {fileID: 1074390070}
