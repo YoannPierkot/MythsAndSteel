@@ -70,6 +70,7 @@ public class VictoryScreen : MonoBehaviour
             DisplayVictoryScreen();
             TimeCounterM.text = TimeCounterM.text;
             TimeCounterS.text = TimeCounterS.text;
+            StartCoroutine(VictoryS(1.5f));
 
         }
     }
@@ -88,4 +89,11 @@ public class VictoryScreen : MonoBehaviour
             UIInstance.Instance.RedWin.SetActive(false);
         }
     }
+
+    IEnumerator VictoryS(float TimeToWait)
+    {
+        yield return new WaitForSeconds(TimeToWait);
+        Time.timeScale = 0;
+    }
+    
 }

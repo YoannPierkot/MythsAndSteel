@@ -884,7 +884,7 @@ public class Attaque : MonoSingleton<Attaque>
     
 
 
-        if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Haute_colline, selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId)) // Haute colline 2
+       /* if (PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Haute_colline, selectedUnitEnnemy.GetComponent<UnitScript>().ActualTiledId)) // Haute colline 2
         {
             if (!PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Colline, _selectedUnit.GetComponent<UnitScript>().ActualTiledId) || !PlayerStatic.CheckTiles(MYthsAndSteel_Enum.TerrainType.Haute_colline, _selectedUnit.GetComponent<UnitScript>().ActualTiledId))
             {
@@ -894,7 +894,7 @@ public class Attaque : MonoSingleton<Attaque>
                 Debug.Log("HautecollinesamerelapEffectApplyed");
 
             }
-        }
+        }*/
 
 
     }

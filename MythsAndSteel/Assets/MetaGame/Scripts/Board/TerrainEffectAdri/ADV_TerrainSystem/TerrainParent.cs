@@ -63,7 +63,7 @@ public class TerrainParent : MonoBehaviour
     {
 
     }
-    public virtual void EndPlayerTurnEffect(bool IsInRedArmy)
+    public virtual void EndPlayerTurnEffect(bool IsInRedArmy, UnitScript Unit = null)
     {
 
     }

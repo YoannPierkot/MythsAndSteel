@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Boue : TerrainParent
 {
-    public override void EndTurnEffect(TileScript ts, UnitScript Unit = null)
+ 
+    public override void EndPlayerTurnEffect(bool IsInRedArmy, UnitScript Unit)
     {
-        if(Unit != null)
+        if (Unit != null)
         {
-            if (!Unit._hasStartMove)
+           
+            if(Unit.UnitSO.IsInRedArmy == IsInRedArmy && !Unit._hasStartMove)
             {
                 Unit.TakeDamage(1);
+
             }
         }
-        base.EndTurnEffect(ts, Unit);
+        
+        base.EndPlayerTurnEffect(IsInRedArmy);
     }
 }

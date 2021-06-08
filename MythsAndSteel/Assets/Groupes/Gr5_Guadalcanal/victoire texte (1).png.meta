@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: fd1b699e520d37f4382b0e3799655bc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8402408965572514281
+    second: victoire texte (1)_0
+  - first:
+      213: 4496216473467679711
+    second: victoire texte (1)_1
+  - first:
+      213: 3901200735487070118
+    second: victoire texte (1)_2
+  - first:
+      213: 1017727455617428988
+    second: victoire texte (1)_3
+  - first:
+      213: 3763735160149503118
+    second: victoire texte (1)_4
+  - first:
+      213: 3708806206665705841
+    second: victoire texte (1)_5
+  - first:
+      213: 7062569023096436737
+    second: victoire texte (1)_6
+  - first:
+      213: -1436303617279949019
+    second: victoire texte (1)_7
+  - first:
+      213: -7403825739805082168
+    second: victoire texte (1)_8
+  - first:
+      213: 6776789736289812873
+    second: victoire texte (1)_9
+  - first:
+      213: 8114328773337915551
+    second: victoire texte (1)_10
+  - first:
+      213: -6402404779562885186
+    second: victoire texte (1)_11
+  - first:
+      213: 1440373087372879584
+    second: victoire texte (1)_12
+  - first:
+      213: 4882796929831922131
+    second: victoire texte (1)_13
+  - first:
+      213: -2840525632300814950
+    second: victoire texte (1)_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: victoire texte (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1d182bf6a5b9470800000000000000
+      internalID: 8402408965572514281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_1
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 417
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3fc468f05c56e30800000000000000
+      internalID: 4496216473467679711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_2
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 417
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af03344669d32630800000000000000
+      internalID: 3901200735487070118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 417
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd2d3e8ab1bf1e00800000000000000
+      internalID: 1017727455617428988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ceb51ef297b3430800000000000000
+      internalID: 3763735160149503118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_5
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 278
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179c2194893587330800000000000000
+      internalID: 3708806206665705841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 278
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108375f7b19430260800000000000000
+      internalID: 7062569023096436737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5278b6e4879311ce0800000000000000
+      internalID: -1436303617279949019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_8
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 139
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd360087b3504990800000000000000
+      internalID: -7403825739805082168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_9
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 139
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98141153c5efb0e50800000000000000
+      internalID: 6776789736289812873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 139
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90a98d1703eb9070800000000000000
+      internalID: 8114328773337915551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf14ed36c61627a0800000000000000
+      internalID: -6402404779562885186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_12
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6a4e801bb3df310800000000000000
+      internalID: 1440373087372879584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_13
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 0
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9eff000fd23c340800000000000000
+      internalID: 4882796929831922131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victoire texte (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 0
+        width: 474
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d6157bcfc6498d0800000000000000
+      internalID: -2840525632300814950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -218,8 +218,12 @@ public class GameManagerSO : ScriptableObject
                                                     {
                                                         if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
                                                         {
-
-                                                            Try3.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn);
+                                                            UnitScript u = null;
+                                                            if (TS.GetComponent<TileScript>().Unit != null)
+                                                            {
+                                                                u = TS.GetComponent<TileScript>().Unit.GetComponent<UnitScript>();
+                                                            }
+                                                            Try3.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn, u);
                                                         }
                                                     }
                                                 }
@@ -229,8 +233,13 @@ public class GameManagerSO : ScriptableObject
                                         {
                                             if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
                                             {
+                                                UnitScript u = null;
+                                               if (TS.GetComponent<TileScript>().Unit != null)
+                                                {
+                                                   u = TS.GetComponent<TileScript>().Unit.GetComponent<UnitScript>();
+                                                }
 
-                                                Try.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn);
+                                                Try.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn, u);
                                             }
                                         }
                                     }
@@ -410,8 +419,12 @@ public class GameManagerSO : ScriptableObject
                                                     {
                                                         if (Try2.TryGetComponent<TerrainParent>(out TerrainParent Try3))
                                                         {
-
-                                                            Try3.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn);
+                                                            UnitScript u = null;
+                                                            if (TS.GetComponent<TileScript>().Unit != null)
+                                                            {
+                                                                u = TS.GetComponent<TileScript>().Unit.GetComponent<UnitScript>();
+                                                            }
+                                                            Try3.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn, u);
                                                         }
                                                     }
                                                 }
@@ -421,8 +434,12 @@ public class GameManagerSO : ScriptableObject
                                         {
                                             if (Type.Child.TryGetComponent<TerrainParent>(out TerrainParent Try))
                                             {
-
-                                                Try.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn);
+                                                UnitScript u = null;
+                                                if (TS.GetComponent<TileScript>().Unit != null)
+                                                {
+                                                    u = TS.GetComponent<TileScript>().Unit.GetComponent<UnitScript>();
+                                                }
+                                                Try.EndPlayerTurnEffect(GameManager.Instance.IsPlayerRedTurn, u);
                                             }
                                         }
                                     }
