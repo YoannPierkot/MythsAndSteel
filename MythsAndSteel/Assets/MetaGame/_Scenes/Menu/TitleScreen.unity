@@ -481,7 +481,7 @@ PrefabInstance:
     - target: {fileID: 3964032965650286722, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7532dc31779a3a84fbb85acc230d46df, type: 3}
+      objectReference: {fileID: 21300000, guid: c7ffe740e4891ab48887d4253456b757, type: 3}
     - target: {fileID: 3964032965650286749, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062
@@ -3213,12 +3213,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3964032965197946269, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_Name
-      value: Guadelcanal
+      value: Guadalcanal
       objectReference: {fileID: 0}
     - target: {fileID: 3964032965650286722, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4342845869282926691, guid: 8c226d7c8c385364195cdce6959f079c, type: 3}
+      objectReference: {fileID: 21300000, guid: b799c2d1e3a1663419c173481af5d2d1, type: 3}
     - target: {fileID: 3964032965650286749, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062
@@ -4153,7 +4153,7 @@ PrefabInstance:
     - target: {fileID: 3964032965650286722, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 53f5d3cbb008a9e478a68fa176e3520d, type: 3}
+      objectReference: {fileID: 21300000, guid: 1c4ebf8813093ff42a023ca15063bfbf, type: 3}
     - target: {fileID: 3964032965650286749, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062
@@ -5828,7 +5828,7 @@ PrefabInstance:
     - target: {fileID: 3964032965650286722, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2296263835189297046, guid: 56f03e1a1754c67469b6da93819eb8af, type: 3}
+      objectReference: {fileID: 21300000, guid: f54d9c1e05c6bb44997791648d9dea62, type: 3}
     - target: {fileID: 3964032965650286749, guid: f51c8a88773ecef42b36032d9a962578, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00024414062

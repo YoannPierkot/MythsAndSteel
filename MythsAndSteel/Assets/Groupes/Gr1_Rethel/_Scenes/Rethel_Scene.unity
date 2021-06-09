@@ -1766,7 +1766,7 @@ MonoBehaviour:
   backgroundActivation: {fileID: 2057195738}
   isGamePaused: 0
   BackgroundPaused: {fileID: 2104470150}
-  _actualTurnNumber: 11
+  _actualTurnNumber: 0
   _TurnNumber: {fileID: 1228111641}
   _isPlayerRedStarting: 0
   _isPlayerRedTurn: 0
