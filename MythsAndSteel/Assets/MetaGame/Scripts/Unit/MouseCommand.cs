@@ -975,7 +975,7 @@ public class MouseCommand : MonoBehaviour
             GameManager.Instance.RenfortPhase.CreateTileJ1.Clear();
             GameManager.Instance.RenfortPhase.CreateLeader1.Clear();
         }
-
+        Debug.Log("C'est pa le renfort qui me quitte, c'est moi qui quitte le renfort");
         UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<CanvasGroup>().interactable = false;
         UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<CanvasGroup>().blocksRaycasts = false;
         UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<RenfortBtnUI>().HideCanvas();
