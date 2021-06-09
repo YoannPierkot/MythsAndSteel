@@ -356,6 +356,7 @@ public class EventCardClass : ScriptableObject{
 
         if((GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2) && 
             ((player == 1 && GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.RedPlayerInfos.EventUseLeft > 0) || (player == 2 && !GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.BluePlayerInfos.EventUseLeft > 0))){
+            OrgoneManager.Instance.DoingOrgoneCharge = true;
             RenfortPhase.Instance.craftUnit(1);
             Debug.Log("fdkjls");
             LaunchEventTile(1, player == 1 ? true : false, gamList, "Déploiement accéléré", "Êtes-vous sur de vouloir créer une unité d'infanterie sur cette case?", false);
@@ -881,12 +882,18 @@ foreach (GameObject element in TilesManager.Instance.TileList)
     }
 
     void LaunchDeplacementBombardement(GameObject unit){
+
         int player = DeterminArmy(MYthsAndSteel_Enum.EventCard.Bombardement_aérien);
         List<GameObject> tileList = new List<GameObject>();
 
         List<int> unitNeigh = PlayerStatic.GetNeighbourDiag(unit.GetComponent<UnitScript>().ActualTiledId, TilesManager.Instance.TileList[unit.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().Line, false);
         foreach(int i in unitNeigh){
-            tileList.Add(TilesManager.Instance.TileList[i]);
+            if (TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit == null)
+            {
+
+                tileList.Add(TilesManager.Instance.TileList[i]);
+            }
+
         }
 
         LaunchEventTile(1, player == 1 ? true : false, tileList, "Bombardement Aérien", "Êtes-vous sur de vouloir déplacer l'unité attaquée sur cette case?", false) ;

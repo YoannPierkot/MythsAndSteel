@@ -109,6 +109,7 @@ static class PlayerStatic{
         }
 
         if (topTile > 80){
+            Debug.Log("bonsoir à tous");
             currentList.Remove(topTile);
         }
         return currentList;

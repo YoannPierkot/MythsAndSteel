@@ -33,7 +33,11 @@ public class ChargeRedPlayer : ChargeOrgone
         List<int> unitNeigh = PlayerStatic.GetNeighbourDiag(GameManager.Instance.UnitChooseList[0].GetComponent<UnitScript>().ActualTiledId, TilesManager.Instance.TileList[GameManager.Instance.UnitChooseList[0].GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().Line, false);
         foreach (int i in unitNeigh)
         {
+            if (TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit == null)
+            {
+
             tileList.Add(TilesManager.Instance.TileList[i]);
+            }
         }
 
         GameManager.Instance.StartEventModeTiles(1, true, tileList, "Charge 5", "Êtes-vous sur de vouloir déplacer l'unité sur cette case?");

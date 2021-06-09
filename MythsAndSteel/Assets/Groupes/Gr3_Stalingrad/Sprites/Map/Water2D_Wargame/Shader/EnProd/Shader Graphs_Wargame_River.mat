@@ -66,12 +66,14 @@ Material:
     m_Floats:
     - Boolean_1b34253d59cb4226ac8471ccd13c85b0: 1
     - Vector1_BABBF5EC: 0
+    - Vector1_cdddb78833754051bbd1c9044bae1e06: 1
     - _Alpha: 1
     - _Cutoff: 1
     - _FlowSpeed: 0.02
-    - _FlowStrength: 0.005
+    - _FlowStrength: 0.01
     - _Size: 2
     m_Colors:
+    - Color_b02111cfae5b40119f08bd5a208d2c71: {r: 0.25, g: 0.25, b: 0.25, a: 0}
     - Vector2_0acd510b221c40d4bc0417c30cc9db59: {r: 10, g: 10, b: 0, a: 0}
     - _DepthWater_Color: {r: 1, g: 1, b: 1, a: 0}
     - _DepthWater_Speed: {r: -0.005, g: -0.01, b: 0, a: 0}
