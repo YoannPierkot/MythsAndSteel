@@ -18397,7 +18397,7 @@ PrefabInstance:
       objectReference: {fileID: 949663986}
     - target: {fileID: 1041681344671033463, guid: 952bdf0716382114eaa4a1733562d578, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1041681344810083681, guid: 952bdf0716382114eaa4a1733562d578, type: 3}
       propertyPath: m_SortingOrder
@@ -26221,6 +26221,8 @@ MonoBehaviour:
   _createTileJ2: []
   _createLeader1: []
   _createLeader2: []
+  idCreate: -1
+  redPlayerCreation: 0
 --- !u!1001 &1784909475
 PrefabInstance:
   m_ObjectHideFlags: 0

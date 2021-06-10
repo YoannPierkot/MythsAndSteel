@@ -6094,7 +6094,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4212960245422712261, guid: 50ea1da46568d724cb16f2697d023b57, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4212960245422712267, guid: 50ea1da46568d724cb16f2697d023b57, type: 3}
       propertyPath: m_Name
@@ -22158,6 +22158,8 @@ MonoBehaviour:
   _createTileJ2: []
   _createLeader1: []
   _createLeader2: []
+  idCreate: -1
+  redPlayerCreation: 0
 --- !u!1 &1785683546
 GameObject:
   m_ObjectHideFlags: 0
@@ -23758,7 +23760,7 @@ MonoBehaviour:
     ArmyNameNomFem: "sovi\xE9tique"
     ActivationLeft: 0
     ActivationCardValue: 0
-    _OrgoneValue: 0
+    _OrgoneValue: 5
     OrgoneExploseCancel: 0
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0
@@ -23774,7 +23776,7 @@ MonoBehaviour:
     ArmyNameNomFem: allemande
     ActivationLeft: 0
     ActivationCardValue: 0
-    _OrgoneValue: 0
+    _OrgoneValue: 5
     OrgoneExploseCancel: 0
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0

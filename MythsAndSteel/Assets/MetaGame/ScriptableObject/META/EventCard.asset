@@ -96,8 +96,7 @@ MonoBehaviour:
     _effectToSpawn: {fileID: 0}
     victoryScreen: {fileID: 0}
   - _eventName: "Illusion strat\xE9gique"
-    _description: "Echange la position de 2 unit\xE9s alli\xE9es d\xE9j\xE0 activ\xE9es
-      durant ce tour ou de 2 unit\xE9s ennemies."
+    _description: "Echange la position de 2 unit\xE9s ennemies."
     _eventType: 5
     _eventCost: 0
     _isEventInFinalGame: 1

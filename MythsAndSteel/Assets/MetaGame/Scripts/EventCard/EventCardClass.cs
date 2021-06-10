@@ -352,19 +352,21 @@ public class EventCardClass : ScriptableObject{
                     }
                     
                 }
-                else
-                {
-                    SoundController.Instance.PlaySound(SoundController.Instance.AudioClips[14]);
-                }
+             
             }
         }
 
         if((GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2) && 
-            ((player == 1 && GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.RedPlayerInfos.EventUseLeft > 0) || (player == 2 && !GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.BluePlayerInfos.EventUseLeft > 0))){
+            ((player == 1 && GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.RedPlayerInfos.EventUseLeft > 0) && (PlayerScript.Instance.RedPlayerInfos.Ressource >= 1)|| (player == 2 && !GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.BluePlayerInfos.Ressource >= 1&& PlayerScript.Instance.BluePlayerInfos.EventUseLeft > 0))){
 
         
             LaunchEventTile(1, player == 1 ? true : false, gamList, "Déploiement accéléré", "Êtes-vous sur de vouloir créer une unité d'infanterie sur cette case?", false);
             GameManager.Instance._eventCall += DéploiementAccéléré;
+        }
+        else
+        {
+            SoundController.Instance.PlaySound(SoundController.Instance.AudioClips[14]);
+          
         }
     }
     #endregion Reprogrammation

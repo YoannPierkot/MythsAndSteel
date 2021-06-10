@@ -306,11 +306,17 @@ public class PlayerScript : MonoSingleton<PlayerScript>
     /// <param name="value"></param>
     /// <param name="player"></param>
     public void AddOrgone(int value, int player){
+
         if(player == 1){
             RedPlayerInfos.ChangeOrgone(value, player);
+          
         }
         else{
+     
+        
+
             BluePlayerInfos.ChangeOrgone(value, player);
+            
         }
     }
 
