@@ -200,11 +200,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     private void Update()
     {
-        #region FPSCounter
-        deltaTimeX += Time.deltaTime;
-        deltaTimeX /= 2;
-        UIInstance.Instance.FpsText.text = "FPS : " + ((int)(1 / deltaTimeX)).ToString();
-        #endregion FPSCounter
+       
     }
 
     /// <summary>
@@ -900,7 +896,9 @@ public class GameManager : MonoSingleton<GameManager>
     public void UpdateTurn()
     {
         _TurnNumber.text = _actualTurnNumber.ToString();
+        
         victoryScreen.turnCounter = _actualTurnNumber;
+   
     }
 
     public void Paused()

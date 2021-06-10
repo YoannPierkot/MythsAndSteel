@@ -280,8 +280,13 @@ public class EventCardClass : ScriptableObject{
     public void DéploiementAccéléré()
     {
         UIInstance.Instance.ActivateNextPhaseButton();
-
-        foreach(GameObject tile in GameManager.Instance.TileChooseList){
+        OrgoneManager.Instance.DoingOrgoneCharge = true;
+        RenfortPhase.Instance.idCreate = 0;
+        int player = DeterminArmy(MYthsAndSteel_Enum.EventCard.Déploiement_accéléré);
+           if (player == 1) RenfortPhase.Instance.redPlayerCreation = true; 
+           else if (player == 2) RenfortPhase.Instance.redPlayerCreation = false;
+        RenfortPhase.Instance.CreateNewUnit();
+        foreach (GameObject tile in GameManager.Instance.TileChooseList){
             Debug.Log("Le jeu ajoute une infante");
         }
 
@@ -320,25 +325,25 @@ public class EventCardClass : ScriptableObject{
                         switch (dir)
                         {
                             case MYthsAndSteel_Enum.Direction.Nord:
-                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Sud))
+                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Sud) && TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit ==null)
                                 {
                                     gamList.Add(TilesManager.Instance.TileList[i]);
                                 }
                                 break;
                             case MYthsAndSteel_Enum.Direction.Sud:
-                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Nord))
+                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Nord)&& TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit == null)
                                 {
                                     gamList.Add(TilesManager.Instance.TileList[i]);
                                 }
                                 break;
                             case MYthsAndSteel_Enum.Direction.Est:
-                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Ouest))
+                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Ouest) && TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit == null)
                                 {
                                     gamList.Add(TilesManager.Instance.TileList[i]);
                                 }
                                 break;
                             case MYthsAndSteel_Enum.Direction.Ouest:
-                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Est))
+                                if (!TilesManager.Instance.TileList[i].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.Rivière_Est)&& TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit == null)
                                 {
                                     gamList.Add(TilesManager.Instance.TileList[i]);
                                 }
@@ -356,8 +361,8 @@ public class EventCardClass : ScriptableObject{
 
         if((GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2) && 
             ((player == 1 && GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.RedPlayerInfos.EventUseLeft > 0) || (player == 2 && !GameManager.Instance.IsPlayerRedTurn && PlayerScript.Instance.BluePlayerInfos.EventUseLeft > 0))){
-            RenfortPhase.Instance.craftUnit(1);
-            Debug.Log("fdkjls");
+
+        
             LaunchEventTile(1, player == 1 ? true : false, gamList, "Déploiement accéléré", "Êtes-vous sur de vouloir créer une unité d'infanterie sur cette case?", false);
             GameManager.Instance._eventCall += DéploiementAccéléré;
         }
@@ -881,12 +886,18 @@ foreach (GameObject element in TilesManager.Instance.TileList)
     }
 
     void LaunchDeplacementBombardement(GameObject unit){
+
         int player = DeterminArmy(MYthsAndSteel_Enum.EventCard.Bombardement_aérien);
         List<GameObject> tileList = new List<GameObject>();
 
         List<int> unitNeigh = PlayerStatic.GetNeighbourDiag(unit.GetComponent<UnitScript>().ActualTiledId, TilesManager.Instance.TileList[unit.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().Line, false);
         foreach(int i in unitNeigh){
-            tileList.Add(TilesManager.Instance.TileList[i]);
+            if (TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit == null)
+            {
+
+                tileList.Add(TilesManager.Instance.TileList[i]);
+            }
+
         }
 
         LaunchEventTile(1, player == 1 ? true : false, tileList, "Bombardement Aérien", "Êtes-vous sur de vouloir déplacer l'unité attaquée sur cette case?", false) ;

@@ -25,7 +25,7 @@ public class GameManagerSO : ScriptableObject
     {
 
         UIInstance.Instance.ActivateNextPhaseButton();
-
+        
         int phaseSuivante = ((int)GameManager.Instance.ActualTurnPhase) + 1;
         MYthsAndSteel_Enum.PhaseDeJeu nextPhase = MYthsAndSteel_Enum.PhaseDeJeu.Debut;
 

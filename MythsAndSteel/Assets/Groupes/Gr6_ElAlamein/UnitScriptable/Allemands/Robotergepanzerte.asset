@@ -28,8 +28,8 @@ MonoBehaviour:
   numberOfUnitToAttack: 1
   DamageMinimum: 0
   NumberRangeMin: {x: 0, y: 0}
-  DamageMaximum: 0
-  NumberRangeMax: {x: 0, y: 0}
+  DamageMaximum: 1
+  NumberRangeMax: {x: 6, y: 12}
   SonAttaque: {fileID: 8300000, guid: d3c46bd4c6809a8419bbd8696147fbad, type: 3}
   SonDeplacement: {fileID: 8300000, guid: f28fc7f5ba1d4b54ea9c7069e371e8b8, type: 3}
   SonMort: {fileID: 8300000, guid: de2caf5e444715b4bb4b1e5442723be2, type: 3}
