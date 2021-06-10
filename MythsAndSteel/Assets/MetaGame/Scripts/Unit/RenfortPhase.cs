@@ -29,8 +29,8 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
     List<GameObject> _leaderListRed = new List<GameObject>();
     List<GameObject> _leaderListBlue = new List<GameObject>();
 
-    int idCreate = -1;
-    bool redPlayerCreation = false;
+  public int idCreate = -1;
+    public bool redPlayerCreation = false;
 
     private void Start()
     {
@@ -120,7 +120,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                 {
                     case 0:
                         if(playerRed){
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource){
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge){
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<CanvasGroup>().blocksRaycasts = true;
                             }
@@ -131,7 +131,8 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                             }
                         }
                         else{
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource){
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
+                            {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité1.GetComponent<CanvasGroup>().blocksRaycasts = true;
                             }
@@ -146,7 +147,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                     case 1:
                         if(playerRed)
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité2.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité2.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -160,7 +161,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                         }
                         else
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité2.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité2.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -177,7 +178,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                     case 2:
                         if(playerRed)
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité3.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité3.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -191,7 +192,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                         }
                         else
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité3.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité3.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -208,7 +209,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                     case 3:
                         if(playerRed)
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité4.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité4.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -222,7 +223,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                         }
                         else
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité4.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité4.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -239,7 +240,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                     case 4:
                         if(playerRed)
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité5.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité5.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -253,7 +254,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                         }
                         else
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité5.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité5.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -270,7 +271,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                     case 5:
                         if(playerRed)
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité6.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité6.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -284,7 +285,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                         }
                         else
                         {
-                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource)
+                            if(PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[i].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
                             {
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité6.GetComponent<CanvasGroup>().interactable = true;
                                 UIInstance.Instance.ButtonRenfort._clicSurUnité6.GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -520,7 +521,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
     {
         if (GameManager.Instance.IsPlayerRedTurn)
         {
-            if (PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[unitId].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+            if (PlayerScript.Instance.UnitRef.UnitClassCreableListRedPlayer[unitId].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource || OrgoneManager.Instance.DoingOrgoneCharge)
             {
                 List<GameObject> tileList = new List<GameObject>();
                 tileList.AddRange(GameManager.Instance.RenfortPhase.CreateLeader1);
@@ -530,7 +531,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
                 idCreate = unitId;
 
                 redPlayerCreation = true;
-                
+                    
                 GameManager.Instance.StartEventModeTiles(1, true, tileList, "Création d'unité", "Êtes-vous sur de vouloir créer une unité sur cette case");
                 GameManager.Instance._eventCall += CreateNewUnit;
                 GameManager.Instance._eventCall += UIInstance.Instance.ActivateNextPhaseButton;
@@ -546,7 +547,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
         }
         else
         {
-            if (PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[unitId].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.RedPlayerInfos.Ressource)
+            if (PlayerScript.Instance.UnitRef.UnitClassCreableListBluePlayer[unitId].GetComponent<UnitScript>().UnitSO.CreationCost <= PlayerScript.Instance.BluePlayerInfos.Ressource ||OrgoneManager.Instance.DoingOrgoneCharge)
             {
                 
                 List<GameObject> tileList = new List<GameObject>();
@@ -573,7 +574,7 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
     /// <summary>
     /// Crée une nouvelle unité sur le terrain au niveau de la tile sélectionnée
     /// </summary>
-    void CreateNewUnit(){
+    public void CreateNewUnit(){
       
         if(redPlayerCreation)
         {
@@ -623,7 +624,8 @@ public class RenfortPhase : MonoSingleton<RenfortPhase>
         SoundController.Instance.PlaySound(SoundController.Instance.AudioClips[8]);
         GameManager.Instance.TileChooseList.Clear();
         OrgoneManager.Instance.DoingOrgoneCharge = false;
-        UIInstance.Instance.boutonAnnulerRenfort.SetActive(true);
+        UIInstance.Instance.boutonAnnulerRenfort.GetComponent<Button>().enabled = true ;
+       UIInstance.Instance.boutonAnnulerRenfort.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
 
     }
     #endregion CréerUnité

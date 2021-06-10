@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 public class ChargeRedPlayer : ChargeOrgone
 {
     [SerializeField] GameObject mouseCommand;
@@ -132,7 +133,8 @@ public class ChargeRedPlayer : ChargeOrgone
         List<GameObject> TempSelectablelist = PlayerInstance.GetComponent<UnitReference>().UnitClassCreableListRedPlayer;
         PlayerInstance.GetComponent<UnitReference>().UnitClassCreableListRedPlayer = UnitListForOrgone;
         RenfortPhase.Instance.CreateRenfort(true);
-        UIInstance.Instance.boutonAnnulerRenfort.SetActive(false);
+        UIInstance.Instance.boutonAnnulerRenfort.GetComponent<Button>().enabled = false;
+        UIInstance.Instance.boutonAnnulerRenfort.GetComponent<Image>().color = new Color(0.8941177f, 0.7960785f, 0.6431373f, 1);
         mouseCommand.GetComponent<MouseCommand>().MenuRenfortUI(true);
 
         while (GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ1)
@@ -270,7 +272,8 @@ public class ChargeRedPlayer : ChargeOrgone
         List<GameObject> TempSelectablelist = PlayerInstance.GetComponent<UnitReference>().UnitClassCreableListRedPlayer;
         PlayerInstance.GetComponent<UnitReference>().UnitClassCreableListRedPlayer = UnitListForOrgone;
         RenfortPhase.Instance.CreateRenfort(false);
-        UIInstance.Instance.boutonAnnulerRenfort.SetActive(false);
+        UIInstance.Instance.boutonAnnulerRenfort.GetComponent<Button>().interactable = false;
+        UIInstance.Instance.boutonAnnulerRenfort.GetComponent<Image>().color = new Color(0.8941177f, 0.7960785f, 0.6431373f, 1);
         mouseCommand.GetComponent<MouseCommand>().MenuRenfortUI(true);
 
         while (GameManager.Instance.ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.OrgoneJ1)
