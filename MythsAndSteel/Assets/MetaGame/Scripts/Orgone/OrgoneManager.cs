@@ -183,6 +183,15 @@ public class OrgoneManager : MonoSingleton<OrgoneManager>
                         if(i > 4)
                         {
                             ExplosionOrgone(1);
+                            yield return new WaitForSeconds(3.25f);
+                            List<GameObject> unitList = Player == 1 ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer;
+
+                            Debug.Log($"ok {unitList.Count}");
+
+                            for(int y = 0; y < 3; y++){
+                                int r = Random.Range(0, unitList.Count);
+                                unitList[r].GetComponent<UnitScript>().TakeDamage(1, true);
+                            }
                         }
                         OrgoneRunning1 = false;
                         break;
@@ -247,6 +256,17 @@ public class OrgoneManager : MonoSingleton<OrgoneManager>
                         if (i > 4)
                         {
                             ExplosionOrgone(2);
+                            yield return new WaitForSeconds(3.25f);
+                            List<GameObject> unitList = Player == 1 ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer;
+
+                            Debug.Log($"ok {unitList.Count}");
+
+                            for(int y = 0; y < 3; y++)
+                            {
+                                int r = Random.Range(0, unitList.Count);
+                                unitList[r].GetComponent<UnitScript>().TakeDamage(1, true);
+                                Debug.Log(unitList[r]);
+                            }
                         }
                         // Explosion.
                         OrgoneRunning2 = false;
