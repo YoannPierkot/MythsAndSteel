@@ -802,7 +802,7 @@ public class Mouvement : MonoSingleton<Mouvement>
         else
         {
             ActualUnit.Add(mEnd.GetComponent<TileScript>().Unit.GetComponent<UnitScript>());
-            if (mEnd.GetComponent<TileScript>().LastUnit)
+            if (mEnd.GetComponent<TileScript>().LastUnit != null)
             {
                 LastUnit.Add(mEnd.GetComponent<TileScript>().LastUnit.GetComponent<UnitScript>());
             }
@@ -845,6 +845,7 @@ public class Mouvement : MonoSingleton<Mouvement>
             {
                 for (int i = 0; i < TileUnit.Count; i++)
                 {
+                    Debug.Log("apply");
                     TileUnit[i].AddUnitInfo(ActualUnit[i], LastUnit[i]);
                 }
             }
