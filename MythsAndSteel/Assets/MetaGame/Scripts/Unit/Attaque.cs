@@ -765,7 +765,6 @@ public class Attaque : MonoSingleton<Attaque>
 
         _selected = false;
         RaycastManager.Instance.ActualTileSelected = null;
-            Debug.Log("fdjks");
         }
    
     }
@@ -813,7 +812,6 @@ public class Attaque : MonoSingleton<Attaque>
                     selectedUnitEnnemy = TilesManager.Instance.TileList[i].GetComponent<TileScript>().Unit;
                     if(selectedUnitEnnemy != null)
                     {
-                        Debug.Log("fds");
                         ChooseAttackType(_numberRangeMin, _damageMinimum, _numberRangeMax, _damageMaximum, DiceResult);
                     }
                     else

@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class Player
 {
     #region Variables
-  public  int EventUseLeft;
+    public int EventUseLeft;
+
     [Header("ARMY INFO")]
     //nom de l'armée
     public string ArmyName;
@@ -16,7 +17,7 @@ public class Player
 
     [Header("ACTIVATION")]
     //Nombre d'activation restante
-    public int ActivationLeft; 
+    public int ActivationLeft;
     //Valeur de la carte activation posée
     public int ActivationCardValue;
 
@@ -24,6 +25,7 @@ public class Player
     //Nombre de charges d'orgone actuel
     [SerializeField] private int _OrgoneValue;
     public bool OrgoneExploseCancel = true;
+    public int exploseWaiter = 0;
     public int OrgoneValue
     {
         get
@@ -32,7 +34,7 @@ public class Player
         }
     }
     //Nombre de pouvoirs d'orgone encore activable
-    public int OrgonePowerLeft; 
+    public int OrgonePowerLeft;
     //Permet de se souvenir de la dernière valeur d'orgone avant Update
     public int _LastKnownOrgoneValue;
     //Tile qui correspond au centre de la zone d'Orgone
@@ -51,18 +53,18 @@ public class Player
         }
         set
         {
-            
+
             if (_Ressource > value)
             {
                 if (GameManager.Instance.IsPlayerRedTurn)
                 {
                     PlayerScript.Instance.AnimRessource(1);
-                    
+
                 }
                 else if (!GameManager.Instance.IsPlayerRedTurn)
                 {
                     PlayerScript.Instance.AnimRessource(2);
-                
+
                 }
             }
 
@@ -73,7 +75,7 @@ public class Player
 
     [Header("Objectif actuellement capturé")]
     //Nombre d'objectif actuellement capturé
-    public int GoalCapturePointsNumber;     
+    public int GoalCapturePointsNumber;
 
     public bool HasCreateUnit; //est ce que le joueur a créer une unité durant sont tour
     #endregion Variables
@@ -82,77 +84,92 @@ public class Player
     /// Check si l'orgone va exploser
     /// </summary>
     /// <returns></returns>
-    public bool OrgoneExplose(){
-      
-        
-         
-      
+    public bool OrgoneExplose()
+    {
+
+
+
+
         return OrgoneValue > 5 ? true : false;
     }
-    
+
     /// <summary>
     /// Change la valeur (pos/neg) de la jauge d'orgone.
     /// </summary>
     /// <param name="Value">Valeur positive ou négative.</param>
-    public void ChangeOrgone(int Value, int player){
+    public void ChangeOrgone(int Value, int player)
+    {
         if (Value != 0)
         {
             _LastKnownOrgoneValue = _OrgoneValue;
             _OrgoneValue += Value;
             UpdateOrgoneUI(player);
-       
+
         }
     }
 
-    public void CheckOrgone(int player){
- 
+    public void CheckOrgone(int player)
+    {
+        Debug.Log("Check Orgone");
         GameManager.Instance.IsCheckingOrgone = true;
-      
-        if (OrgoneExplose() && !GameManager.Instance.ChooseUnitForEvent)
+        if (!GameManager.Instance.DoingEpxlosionOrgone)
         {
-            
-            GameManager.Instance.DoingEpxlosionOrgone = true;
-            List<GameObject> unitList = player == 1 ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer;
-
-
-            GameManager.Instance.StartEventModeUnit(4, player == 1 ? true : false, unitList, "Explosion d'orgone", "Êtes-vous sur de vouloir infliger des dégâts à ces unités?", true);
-            GameManager.Instance._eventCall += GiveDamageToUnitForOrgone;
-       
-            if (player == 1) GameManager.Instance._eventCallCancel += CancelOrgoneP1;
-            else GameManager.Instance._eventCallCancel += CancelOrgoneP2;
-            PLayerOrgoneExplose = player;
-
-            if (OrgoneExploseCancel == true)
+            Debug.Log("tu passes");
+            if (OrgoneExplose() && !GameManager.Instance.ChooseUnitForEvent)
             {
-                UpdateOrgoneUI(player);
-            
-                OrgoneExploseCancel = false;
+                GameManager.Instance.DoingEpxlosionOrgone = true;
+
+
+                List<GameObject> unitList = player == 1 ? PlayerScript.Instance.UnitRef.UnitListRedPlayer : PlayerScript.Instance.UnitRef.UnitListBluePlayer;
+
+
+                Debug.Log("launchedd");
+                GameManager.Instance.StartEventModeUnit(4, player == 1 ? true : false, unitList, "Explosion d'orgone", "Êtes-vous sur de vouloir infliger des dégâts à ces unités?", true);
+                GameManager.Instance._eventCall += GiveDamageToUnitForOrgone;
+
+                if (player == 1) GameManager.Instance._eventCallCancel += CancelOrgoneP1;
+                else GameManager.Instance._eventCallCancel += CancelOrgoneP2;
+                PLayerOrgoneExplose = player;
+
+                if (OrgoneExploseCancel == true)
+                {
+                    UpdateOrgoneUI(player);
+
+                    OrgoneExploseCancel = false;
+                }
+
+
             }
-          
-            
+            else
+            {
+                if (OrgoneExploseCancel == true)
+                {
+
+                    UpdateOrgoneUI(player);
+
+                }
+
+
+                GameManager.Instance.IsCheckingOrgone = false;
+                if (GameManager.Instance._waitToCheckOrgone != null)
+                {
+                    GameManager.Instance._waitToCheckOrgone();
+                }
+            }
         }
         else
         {
-            if (OrgoneExploseCancel == true)
-            {
-
-            UpdateOrgoneUI(player);
-              
-            }
-          
-
-            GameManager.Instance.IsCheckingOrgone = false;
-            if(GameManager.Instance._waitToCheckOrgone != null)
-            {
-                GameManager.Instance._waitToCheckOrgone();
-            }
+            exploseWaiter = player;
+            Debug.Log("Set waiter" + exploseWaiter);
         }
+        Debug.Log("hum hum");
     }
 
     /// <summary>
     /// When Orgone explode
     /// </summary>
-    void GiveDamageToUnitForOrgone(){
+    void GiveDamageToUnitForOrgone()
+    {
         UIInstance.Instance.ActivateNextPhaseButton();
 
         i = 0;
@@ -169,8 +186,9 @@ public class Player
 
 
     int i = 0;
-    public void DealDamageToUnit(){
-        if(GameManager.Instance.UnitChooseList.Count > i)
+    public void DealDamageToUnit()
+    {
+        if (GameManager.Instance.UnitChooseList.Count > i)
         {
             GameManager.Instance.UnitChooseList[i].GetComponent<UnitScript>().TakeDamage(1);
             i++;
@@ -186,10 +204,10 @@ public class Player
 
             GameManager.Instance.IsCheckingOrgone = false;
 
-            if(GameManager.Instance._waitToCheckOrgone != null)
+            if (GameManager.Instance._waitToCheckOrgone != null)
             {
                 GameManager.Instance._waitToCheckOrgone();
-             
+
             }
         }
     }
@@ -203,9 +221,9 @@ public class Player
             GameManager.Instance._waitEvent -= DealOrgoneDamageToUnit;
             GameManager.Instance._waitEvent += DealOrgoneDamageToUnit;
             GameManager.Instance.WaitToMove(.035f);
-            
+
         }
-   
+
         else
         {
             GameManager.Instance._waitEvent -= DealOrgoneDamageToUnit;
@@ -214,12 +232,12 @@ public class Player
             OrgoneExploseCancel = true;
             GameManager.Instance.IsCheckingOrgone = false;
 
-          
+
 
             if (GameManager.Instance._waitToCheckOrgone != null)
             {
                 GameManager.Instance._waitToCheckOrgone();
-             
+
             }
         }
     }
@@ -227,9 +245,11 @@ public class Player
     /// <summary>
     /// Si le joueur appuie sur le bouton annuler 
     /// </summary>
-    void CancelOrgoneP1(){
+    void CancelOrgoneP1()
+    {
         CheckOrgone(1);
-       
+        Debug.Log("Launch Check");
+
     }
 
     /// <summary>
@@ -238,7 +258,8 @@ public class Player
     void CancelOrgoneP2()
     {
         CheckOrgone(2);
-     
+        Debug.Log("Launch Check");
+
     }
 
     /// <summary>
@@ -246,7 +267,8 @@ public class Player
     /// </summary>
     public void UpdateOrgoneUI(int player)
     {
-        if (player == 1){
+        if (player == 1)
+        {
             OrgoneManager.Instance.StartOrgoneAnimation(1, _LastKnownOrgoneValue, OrgoneValue);
         }
         else

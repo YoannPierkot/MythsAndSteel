@@ -439,7 +439,6 @@ public class Mouvement : MonoSingleton<Mouvement>
         {
 
         RaycastManager.Instance.ActualTileSelected = null;
-            Debug.Log("fdjks");
         }
         
 

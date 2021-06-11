@@ -448,7 +448,7 @@ public bool MélodieSinistre = false;
     /// <param name="Damage"></param>
     public void TakeDamage(int Damage, bool IsOrgoneDamage = false, bool terrain = true)
     {
-        Debug.Log("jfkdms");
+
         Debug.Log(terrain);
         if (terrain)
         {
@@ -630,7 +630,10 @@ public bool MélodieSinistre = false;
 
                         PlayerScript.Instance.AddOrgone(1, 1);
                         FxOrgoneSpawn(true);
+                        Debug.Log("Launch Check");
                         PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
+                        PlayerScript.Instance.BluePlayerInfos.CheckOrgone(2);
+
                     }
                     else
                     {
@@ -654,8 +657,10 @@ public bool MélodieSinistre = false;
 
 
 
-
+                        Debug.Log("Launch Check");
+                        PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
                         PlayerScript.Instance.BluePlayerInfos.CheckOrgone(2);
+
                     }
                     else
                     {
@@ -678,8 +683,10 @@ public bool MélodieSinistre = false;
     /// </summary>
     void AddOrgoneToPlayer()
     {
+        Debug.Log("Launch Check");
         PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
         PlayerScript.Instance.BluePlayerInfos.CheckOrgone(2);
+
 
         GameManager.Instance._waitToCheckOrgone = null;
     }
@@ -731,19 +738,24 @@ public bool MélodieSinistre = false;
                 Debug.Log("doing orgone" + GameManager.Instance.DoingEpxlosionOrgone);
                 PlayerScript.Instance.AddOrgone(1, 1);
                 FxOrgoneSpawn(true);
+                Debug.Log("Launch Check");
                 PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
+                PlayerScript.Instance.BluePlayerInfos.CheckOrgone(2);
+
             }
             else if (TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().TerrainEffectList.Contains(MYthsAndSteel_Enum.TerrainType.OrgoneBlue))
             {
                 PlayerScript.Instance.AddOrgone(1, 2);
                 FxOrgoneSpawn(false);
+                Debug.Log("Launch Check");
+                PlayerScript.Instance.RedPlayerInfos.CheckOrgone(1);
                 PlayerScript.Instance.BluePlayerInfos.CheckOrgone(2);
+
             }
             else { }
         }
         else
         {
-            Debug.Log("fdkj");
             TilesManager.Instance.TileList[ActualTiledId].GetComponent<TileScript>().DesActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
             GameManager.Instance.DeathByOrgone--;
         }

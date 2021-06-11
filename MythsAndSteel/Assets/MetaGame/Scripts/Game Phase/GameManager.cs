@@ -24,10 +24,10 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField] private SaveData saveData;
     public GameObject détonationPrefab;
     public VictoryScreen victoryScreen;
-   
+
     [Header("INFO TOUR ACTUEL")]
     //Correspond à la valeur du tour actuel
-  public  int armeEpidemelogiqueStat = 0;
+    public int armeEpidemelogiqueStat = 0;
     public bool filBbarbelés = false;
     public int VolDeRavitaillementStat = 3;
     public bool possesion = false;
@@ -36,7 +36,7 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField]
     GameObject pauseMenu;
     /// <param name="sceneId"></param>
-   public  bool menuOptionOuvert = false;
+    public bool menuOptionOuvert = false;
     [SerializeField]
     GameObject backgroundActivation;
     public bool isGamePaused = false;
@@ -55,7 +55,7 @@ public class GameManager : MonoSingleton<GameManager>
             _actualTurnNumber = value;
         }
     }
-  
+
     [SerializeField] TextMeshProUGUI _TurnNumber;
 
     //Permet de savoir si c'est le joueur 1 (TRUE) ou le joueur 2 (FALSE) qui commence durant ce tour
@@ -184,7 +184,7 @@ public class GameManager : MonoSingleton<GameManager>
     private int _valueOrgone = 0;
     public int ValueOrgone => _valueOrgone;
     #endregion CheckOrgone
-  
+
     #endregion Variables
 
     /// <summary>
@@ -200,7 +200,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     private void Update()
     {
-       
+
     }
 
     /// <summary>
@@ -420,7 +420,6 @@ public class GameManager : MonoSingleton<GameManager>
 
             UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = false;
         }
-
         UIInstance.Instance.DesactivateNextPhaseButton();
         _titleValidation = title;
         _descriptionValidation = description;
@@ -433,13 +432,14 @@ public class GameManager : MonoSingleton<GameManager>
         _selectableUnit.AddRange(_unitSelectable);
         _redPlayerUseEvent = redPlayer;
         _canSelectMultiples = multiplesUnit;
-        if(!DoingEpxlosionOrgone)
-        {
 
-        foreach (GameObject gam in _selectableUnit)
+        if (!DoingEpxlosionOrgone)
         {
-            TilesManager.Instance.TileList[gam.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
-        }
+            foreach (GameObject gam in _selectableUnit)
+            {
+                TilesManager.Instance.TileList[gam.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
+            }
+
         }
         else
         {
@@ -447,39 +447,41 @@ public class GameManager : MonoSingleton<GameManager>
             {
                 if (gam.GetComponent<UnitScript>()._hasStartMove && Mouvement.Instance._selectedTileId != null)
                 {
-                    TilesManager.Instance.TileList[Mouvement.Instance._selectedTileId[Mouvement.Instance._selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
+
+
+                    //TilesManager.Instance.TileList[Mouvement.Instance._selectedTileId[Mouvement.Instance._selectedTileId.Count == 0 ? 0 : Mouvement.Instance._selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
 
                 }
                 else
                 {
 
-                     TilesManager.Instance.TileList[gam.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
+                    TilesManager.Instance.TileList[gam.GetComponent<UnitScript>().ActualTiledId].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
                 }
             }
         }
-       if(!DoingEpxlosionOrgone && PlayerPrefs.GetInt("Avertissement") == 0 || PlayerPrefs.GetInt("Avertissement") == 1)
+        if (!DoingEpxlosionOrgone && PlayerPrefs.GetInt("Avertissement") == 0 || PlayerPrefs.GetInt("Avertissement") == 1)
         {
 
-        _eventCall += StopEventModeUnit;
-          
-        }
-       
+            _eventCall += StopEventModeUnit;
 
-        
+        }
+
+
+
 
     }
 
     /// <summary>
     /// Arrete le choix d'unité
     /// </summary>
- public   void StopEventModeUnit()
+    public void StopEventModeUnit()
     {
         if (GameManager.Instance.IsPlayerRedTurn)
         {
             if (UIInstance.Instance.RedRenfortCount == 0)
             {
 
-            UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = true;
+                UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = true;
             }
         }
         else
@@ -487,7 +489,7 @@ public class GameManager : MonoSingleton<GameManager>
             if (UIInstance.Instance.BlueRenfortCount == 0)
             {
 
-            UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = true;
+                UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = true;
             }
         }
         _titleValidation = "";
@@ -585,20 +587,44 @@ public class GameManager : MonoSingleton<GameManager>
             if (_unitChooseList.Count == _numberOfUnitToChoose)
             {
                 _chooseUnitForEvent = false;
+                Debug.Log("avertissement : " + PlayerPrefs.GetInt("Avertissement"));
                 if (PlayerPrefs.GetInt("Avertissement") == 0)
                 {
-                    if(DoingEpxlosionOrgone)
+                    Debug.Log("je suis arrvié jusque la");
+                    if (DoingEpxlosionOrgone)
                     {
+                        _eventCall += CheckWaiterExplosion;
                         _eventCall += StopEventModeUnit;
 
-                       DoingEpxlosionOrgone = false;
                     }
                     _eventCall();
-         
                 }
-               
+
+                if (DoingEpxlosionOrgone)
+                {
+                    _eventCall += CheckWaiterExplosion;
+                }
+
                 UIInstance.Instance.ShowValidationPanel(_titleValidation, _descriptionValidation);
             }
+        }
+    }
+
+    public void CheckWaiterExplosion()
+    {
+        Debug.Log("boom boom");
+        DoingEpxlosionOrgone = false;
+        if (PlayerScript.Instance.RedPlayerInfos.exploseWaiter != 0)
+        {
+            Debug.Log("REd waiter");
+            PlayerScript.Instance.RedPlayerInfos.CheckOrgone(PlayerScript.Instance.RedPlayerInfos.exploseWaiter);
+            PlayerScript.Instance.RedPlayerInfos.exploseWaiter = 0;
+        }
+        else if (PlayerScript.Instance.BluePlayerInfos.exploseWaiter != 0)
+        {
+            Debug.Log("Blue waiter");
+            PlayerScript.Instance.BluePlayerInfos.CheckOrgone(PlayerScript.Instance.BluePlayerInfos.exploseWaiter);
+            PlayerScript.Instance.BluePlayerInfos.exploseWaiter = 0;
         }
     }
 
@@ -676,16 +702,16 @@ public class GameManager : MonoSingleton<GameManager>
             if (UIInstance.Instance.RedRenfortCount == 0)
             {
 
-            UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = true;
+                UIInstance.Instance.ButtonRenfortJ1.GetComponent<Button>().interactable = true;
             }
 
         }
-        else if(!IsPlayerRedTurn && ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2)
+        else if (!IsPlayerRedTurn && ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ1 || ActualTurnPhase == MYthsAndSteel_Enum.PhaseDeJeu.ActionJ2)
         {
             if (UIInstance.Instance.BlueRenfortCount == 0)
             {
 
-            UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = true;
+                UIInstance.Instance.ButtonRenfortJ2.GetComponent<Button>().interactable = true;
             }
 
         }
@@ -742,14 +768,14 @@ public class GameManager : MonoSingleton<GameManager>
                     if (PlayerPrefs.GetInt("Avertissement") == 0)
                     {
                         _eventCall();
-                    UIInstance.Instance.ShowValidationPanel(_titleValidation, _descriptionValidation);
-         
-                       
-     
+                        UIInstance.Instance.ShowValidationPanel(_titleValidation, _descriptionValidation);
+
+
+
                     }
                     else
                     {
-                        if(OrgoneManager.Instance.DoingOrgoneCharge)
+                        if (OrgoneManager.Instance.DoingOrgoneCharge)
                         {
                             _eventCall();
                         }
@@ -785,7 +811,7 @@ public class GameManager : MonoSingleton<GameManager>
                         element.GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect, _normalEventSprite);
                     }
                 }
-                
+
             }
         }
     }
@@ -797,35 +823,35 @@ public class GameManager : MonoSingleton<GameManager>
     public void RemoveTileToList(GameObject tile)
     {
 
-        if(!filBbarbelés)
+        if (!filBbarbelés)
         {
-         
+
             _tileChooseList.Remove(tile);
-        if (!_tileChooseList.Contains(tile))
-        {
+            if (!_tileChooseList.Contains(tile))
+            {
                 SoundController.Instance.PlaySound(SoundController.Instance.AudioClips[10]);
                 tile.GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect, _normalEventSprite);
-        }
+            }
         }
 
         if (filBbarbelés)
         {
             if (_tileChooseList.Contains(tile))
             {
-            SoundController.Instance.PlaySound(SoundController.Instance.AudioClips[10]);
+                SoundController.Instance.PlaySound(SoundController.Instance.AudioClips[10]);
                 _selectableTiles.Clear();
                 _selectableTiles.AddRange(TilesManager.Instance.TileList);
-            Debug.Log("test3");
-            foreach (int element in PlayerStatic.GetNeighbourDiag(_tileChooseList[0].GetComponent<TileScript>().TileId, _tileChooseList[0].GetComponent<TileScript>().Line, false))
-            {
-               
-          TilesManager.Instance.TileList[element].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect, _normalEventSprite);
-                Debug.Log("test4");
-                _tileChooseList.Remove(tile);
-            }
+                Debug.Log("test3");
+                foreach (int element in PlayerStatic.GetNeighbourDiag(_tileChooseList[0].GetComponent<TileScript>().TileId, _tileChooseList[0].GetComponent<TileScript>().Line, false))
+                {
+
+                    TilesManager.Instance.TileList[element].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect, _normalEventSprite);
+                    Debug.Log("test4");
+                    _tileChooseList.Remove(tile);
+                }
             }
 
-            
+
         }
     }
 
@@ -860,8 +886,8 @@ public class GameManager : MonoSingleton<GameManager>
                 }
         }
         _eventCall();
-    
-        DoingEpxlosionOrgone = false;
+
+        //DoingEpxlosionOrgone = false;
     }
 
     /// <summary>
@@ -896,9 +922,9 @@ public class GameManager : MonoSingleton<GameManager>
     public void UpdateTurn()
     {
         _TurnNumber.text = _actualTurnNumber.ToString();
-        
+
         victoryScreen.turnCounter = _actualTurnNumber;
-   
+
     }
 
     public void Paused()
