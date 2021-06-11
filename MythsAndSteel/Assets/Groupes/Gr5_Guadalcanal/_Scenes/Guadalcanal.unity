@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13417,16 +13417,16 @@ MonoBehaviour:
   - valeurActivation: 38
     IndexCarteActivation: 7
     inputCarteActivation: 102
-  - valeurActivation: 41
+  - valeurActivation: 39
     IndexCarteActivation: 8
     inputCarteActivation: 119
-  - valeurActivation: 44
+  - valeurActivation: 41
     IndexCarteActivation: 9
     inputCarteActivation: 120
-  - valeurActivation: 45
+  - valeurActivation: 44
     IndexCarteActivation: 10
     inputCarteActivation: 99
-  - valeurActivation: 49
+  - valeurActivation: 45
     IndexCarteActivation: 11
     inputCarteActivation: 118
   RedPlayerPanel: {fileID: 1036443882}
@@ -27177,6 +27177,8 @@ MonoBehaviour:
   _createTileJ2: []
   _createLeader1: []
   _createLeader2: []
+  idCreate: -1
+  redPlayerCreation: 0
 --- !u!1001 &1784909475
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14476,17 +14476,17 @@ MonoBehaviour:
     IndexCarteActivation: 7
     inputCarteActivation: 102
   - valeurActivation: 39
-    IndexCarteActivation: 11
-    inputCarteActivation: 118
-  - valeurActivation: 41
     IndexCarteActivation: 8
     inputCarteActivation: 119
-  - valeurActivation: 44
+  - valeurActivation: 41
     IndexCarteActivation: 9
     inputCarteActivation: 120
-  - valeurActivation: 45
+  - valeurActivation: 44
     IndexCarteActivation: 10
     inputCarteActivation: 99
+  - valeurActivation: 45
+    IndexCarteActivation: 11
+    inputCarteActivation: 118
   RedPlayerPanel: {fileID: 1036443882}
   ConfirmPanelRed: {fileID: 535228434}
   HasConfirmedPanelRed: {fileID: 425017111}
