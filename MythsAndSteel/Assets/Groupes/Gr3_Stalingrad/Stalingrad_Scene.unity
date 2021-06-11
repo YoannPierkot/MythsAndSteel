@@ -23760,7 +23760,7 @@ MonoBehaviour:
     ArmyNameNomFem: "sovi\xE9tique"
     ActivationLeft: 0
     ActivationCardValue: 0
-    _OrgoneValue: 5
+    _OrgoneValue: 0
     OrgoneExploseCancel: 0
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0
@@ -23776,7 +23776,7 @@ MonoBehaviour:
     ArmyNameNomFem: allemande
     ActivationLeft: 0
     ActivationCardValue: 0
-    _OrgoneValue: 5
+    _OrgoneValue: 0
     OrgoneExploseCancel: 0
     OrgonePowerLeft: 0
     _LastKnownOrgoneValue: 0

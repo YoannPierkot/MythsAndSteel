@@ -400,6 +400,10 @@ public class GameManager : MonoSingleton<GameManager>
 
     }
 
+    private void FixedUpdate()
+    {
+        
+    }
     #region EventMode
     /// <summary>
     /// Commence le mode event pour choisir une unité
@@ -445,7 +449,7 @@ public class GameManager : MonoSingleton<GameManager>
         {
             foreach (GameObject gam in _selectableUnit)
             {
-                if (gam.GetComponent<UnitScript>()._hasStartMove && Mouvement.Instance._selectedTileId != null)
+                if (gam.GetComponent<UnitScript>()._hasStartMove && Mouvement.Instance._selectedTileId.Count > 0)
                 {
                     TilesManager.Instance.TileList[Mouvement.Instance._selectedTileId[Mouvement.Instance._selectedTileId.Count - 1]].GetComponent<TileScript>().ActiveChildObj(MYthsAndSteel_Enum.ChildTileType.EventSelect);
 
